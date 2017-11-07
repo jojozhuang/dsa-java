@@ -9,12 +9,12 @@ public class ArrayStack {
         top = -1;
     }
 
-    // Add new element to the end of the array
+    // Add item to the end of the array
     public void push(int value) {
         arr[++top] = value;
     }
 
-    // Remove the last element from the array and return its value
+    // Remove the last item from the array and return its value
     public int pop() throws Exception {
         if (top < 0) {
             throw new Exception();
@@ -24,7 +24,7 @@ public class ArrayStack {
         return value;
     }
 
-    // Get the top element
+    // Get the top item
     public int peek() throws Exception {
         if (top < 0) {
             throw new Exception();

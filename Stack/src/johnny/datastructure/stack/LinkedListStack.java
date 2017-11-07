@@ -9,14 +9,14 @@ public class LinkedListStack {
         head = null;
     }
 
-    // Add element to the beginning of the list
+    // Add item to the head of the list
     public void push(int value) {
         ListNode oldHead = head;
         head = new ListNode(value);
         head.next = oldHead;
     }
 
-    // Remove value from the beginning of the list and return the value
+    // Remove the first item from the list and return its value
     public int pop() throws Exception {
         if (head == null) {
             throw new Exception();
@@ -26,7 +26,7 @@ public class LinkedListStack {
         return value;
     }
 
-    // Get the top element
+    // Get the value of the first item
     public int peek() throws Exception {
         if (head == null) {
             throw new Exception();

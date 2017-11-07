@@ -13,12 +13,12 @@ public class QueueStack {
         queue2 = new LinkedList<Integer>(); // queue2 always be empty after pop or top
     }
 
-    // Push new element onto stack
+    // Push new item onto stack
     public void push(int value) {
         queue1.offer(value);
     }
 
-    // Remove the element on top of the stack and return that element
+    // Remove the top item of the stack and return its value
     public int pop() throws Exception {
         if (queue1.isEmpty()) {
             throw new Exception();
@@ -35,7 +35,7 @@ public class QueueStack {
         return lastnum;
     }
 
-    // Get the top element
+    // Get the top item
     public int peek() throws Exception {
         if (queue1.isEmpty()) {
             throw new Exception();
