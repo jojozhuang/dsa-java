@@ -1,4 +1,4 @@
-package johnny.datastructure.basic;
+package johnny.datastructure.linkedlist;
 
 public class DoublyLinkedNode {
     public int val;

@@ -1,4 +1,4 @@
-package johnny.datastructure.basic;
+package johnny.datastructure.linkedlist;
 
 public class SinglyLinkedList {
     // create a singly linked list with the given array

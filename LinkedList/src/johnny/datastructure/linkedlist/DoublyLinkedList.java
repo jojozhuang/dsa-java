@@ -1,4 +1,4 @@
-package johnny.datastructure.basic;
+package johnny.datastructure.linkedlist;
 
 public class DoublyLinkedList {
     // create a doubly linked list with the given array
