@@ -17,23 +17,29 @@ public class StackQueue {
     }
 
     // Remove the first item from the queue and return its value
-    public int dequeue() {
+    public int dequeue() throws Exception {
         if (!stack2.isEmpty()) {
             return stack2.pop();
         }
         while (!stack1.isEmpty()) {
             stack2.push(stack1.pop());
         }
+        if (stack2.isEmpty()) {
+            throw new Exception();
+        }
         return stack2.pop();
     }
 
     // Get the first element
-    public int peek() {
+    public int peek() throws Exception {
         if (!stack2.isEmpty()) {
             return stack2.peek();
         }
         while (!stack1.isEmpty()) {
             stack2.push(stack1.pop());
+        }
+        if (stack2.isEmpty()) {
+            throw new Exception();
         }
         return stack2.peek();
     }
