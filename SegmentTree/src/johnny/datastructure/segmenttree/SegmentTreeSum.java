@@ -3,15 +3,25 @@ package johnny.datastructure.segmenttree;
 import johnny.datastructure.common.SegmentTreeNode;
 
 public class SegmentTreeSum {
+    /**
+     * @param arr, array of integer
+     * @return root node of the sum segment tree
+     */
     public SegmentTreeNode buildSum(int[] arr) {
         if (arr == null || arr.length == 0) {
             return null;
         }
 
-        return buildHelpler(arr, 0, arr.length - 1);
+        return buildSumHelpler(arr, 0, arr.length - 1);
     }
 
-    private SegmentTreeNode buildHelpler(int[] arr, int start, int end) {
+    /**
+     * @param arr, array of integer
+     * @param start, first index of the array
+     * @param end, last index of the array
+     * @return root node of the sum segment tree
+     */
+    private SegmentTreeNode buildSumHelpler(int[] arr, int start, int end) {
         if (start > end) {
             return null;
         }
@@ -23,12 +33,18 @@ public class SegmentTreeSum {
         }
 
         int mid = start + (end - start) / 2;
-        root.left = buildHelpler(arr, start, mid);
-        root.right = buildHelpler(arr, mid + 1, end);
+        root.left = buildSumHelpler(arr, start, mid);
+        root.right = buildSumHelpler(arr, mid + 1, end);
         root.sum = root.left.sum + root.right.sum;
         return root;
     }
 
+    /**
+     * @param root, root node of the segment tree
+     * @param start, start of the search range
+     * @param end, end of the search range
+     * @return the sum of the given range
+     */
     public int querySum(SegmentTreeNode root, int start, int end) {
         if (root == null) {
             return 0;
@@ -48,6 +64,7 @@ public class SegmentTreeSum {
                 leftsum = querySum(root.left, start, end);
             }
         }
+
         if (mid < end) {
             if (start <= mid) {
                 rightsum = querySum(root.right, mid + 1, end);

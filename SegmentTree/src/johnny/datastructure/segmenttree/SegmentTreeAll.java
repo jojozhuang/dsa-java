@@ -3,6 +3,10 @@ package johnny.datastructure.segmenttree;
 import johnny.datastructure.common.SegmentTreeNode;
 
 public class SegmentTreeAll {
+    /**
+     * @param arr, array of integer
+     * @return root node of the segment tree
+     */
     public SegmentTreeNode build(int[] arr) {
         if (arr == null || arr.length == 0) {
             return null;
@@ -11,6 +15,12 @@ public class SegmentTreeAll {
         return buildHelpler(arr, 0, arr.length - 1);
     }
 
+    /**
+     * @param arr, array of integer
+     * @param start, first index of the array
+     * @param end, last index of the array
+     * @return root node of the segment tree
+     */
     private SegmentTreeNode buildHelpler(int[] arr, int start, int end) {
         if (start > end) {
             return null;
@@ -34,10 +44,10 @@ public class SegmentTreeAll {
     }
 
     /**
-     * @param root
-     * @param start
-     * @param end
-     * @return
+     * @param root, root node of the segment tree
+     * @param start, start of the search range
+     * @param end, end of the search range
+     * @return the minimum value of the given range
      */
     public int queryMin(SegmentTreeNode root, int start, int end) {
         if (root == null) {
@@ -69,6 +79,12 @@ public class SegmentTreeAll {
         return Math.min(leftmin, rightmin);
     }
 
+    /**
+     * @param root, root node of the segment tree
+     * @param start, start of the search range
+     * @param end, end of the search range
+     * @return the maximum value of the given range
+     */
     public int queryMax(SegmentTreeNode root, int start, int end) {
         if (root == null) {
             return 0;
@@ -98,7 +114,13 @@ public class SegmentTreeAll {
 
         return Math.max(leftmax, rightmax);
     }
-    
+
+    /**
+     * @param root, root node of the segment tree
+     * @param start, start of the search range
+     * @param end, end of the search range
+     * @return the sum of the given range
+     */
     public int querySum(SegmentTreeNode root, int start, int end) {
         if (root == null) {
             return 0;
@@ -118,6 +140,7 @@ public class SegmentTreeAll {
                 leftsum = querySum(root.left, start, end);
             }
         }
+
         if (mid < end) {
             if (start <= mid) {
                 rightsum = querySum(root.right, mid + 1, end);

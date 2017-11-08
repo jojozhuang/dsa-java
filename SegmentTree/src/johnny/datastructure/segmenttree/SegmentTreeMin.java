@@ -4,8 +4,8 @@ import johnny.datastructure.common.SegmentTreeNode;
 
 public class SegmentTreeMin {
     /**
-     * @param arr, 
-     * @return
+     * @param arr, array of integer
+     * @return root node of the minimum segment tree
      */
     public SegmentTreeNode buildMin(int[] arr) {
         if (arr == null || arr.length == 0) {
@@ -15,6 +15,12 @@ public class SegmentTreeMin {
         return buildMinHelpler(arr, 0, arr.length - 1);
     }
 
+    /**
+     * @param arr, array of integer
+     * @param start, first index of the array
+     * @param end, last index of the array
+     * @return root node of the minimum segment tree
+     */
     private SegmentTreeNode buildMinHelpler(int[] arr, int start, int end) {
         if (start > end) {
             return null;
@@ -34,10 +40,10 @@ public class SegmentTreeMin {
     }
 
     /**
-     * @param root
-     * @param start
-     * @param end
-     * @return
+     * @param root, root node of the segment tree
+     * @param start, start of the search range
+     * @param end, end of the search range
+     * @return the minimum value of the given range
      */
     public int queryMin(SegmentTreeNode root, int start, int end) {
         if (root == null) {
@@ -58,6 +64,7 @@ public class SegmentTreeMin {
                 leftmin = queryMin(root.left, start, end);
             }
         }
+
         if (mid < end) {
             if (start <= mid) {
                 rightmin = queryMin(root.right, mid + 1, end);
