@@ -4,7 +4,6 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class TreeFactory {
-    //TreeNode root = TreeFactory.createInstance(new String[]{"1","#","3"});
     public static TreeNode createInstance(String[] arr) {
         if(arr == null || arr.length == 0) {
             return null;
@@ -28,7 +27,7 @@ public class TreeFactory {
                 if (!str.equals("#")) {
                     node.right = new TreeNode(Integer.parseInt(str));
                     queueNode.add(node.right);
-                }             
+                }
             }
         }
 
