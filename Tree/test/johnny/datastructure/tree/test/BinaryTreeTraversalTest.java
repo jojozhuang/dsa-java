@@ -67,17 +67,17 @@ public class BinaryTreeTraversalTest {
         List<Integer> expResult = new ArrayList<Integer>();
         List<Integer> result = bttObj.inorderRecursion(root);
         assertEquals(expResult, result);
-        
+
         TreeNode root1 = TreeFactory.createInstance(new String[]{"1"});
         List<Integer> result1 = bttObj.inorderRecursion(root1);
         List<Integer> expect1 = ListUtil.buildIntegerList(new Integer[]{1});
         assertEquals(expect1, result1);
-        
+
         TreeNode root2 = TreeFactory.createInstance(new String[]{"1","2","3"});
         List<Integer> expect2 = ListUtil.buildIntegerList(new Integer[]{2,1,3});
         List<Integer> result2 = bttObj.inorderRecursion(root2);
         assertEquals(expect2, result2);
-        
+
         TreeNode root3 = TreeFactory.createInstance(new String[]{"1","#","2","3","#"});
         List<Integer> expect3 = ListUtil.buildIntegerList(new Integer[]{1,3,2});
         List<Integer> result3 = bttObj.inorderRecursion(root3);
@@ -143,17 +143,17 @@ public class BinaryTreeTraversalTest {
         List<Integer> expResult = new ArrayList<Integer>();
         List<Integer> result = bttObj.inorderIteration(root);
         assertEquals(expResult, result);
-        
+
         TreeNode root1 = TreeFactory.createInstance(new String[]{"1"});
         List<Integer> result1 = bttObj.inorderIteration(root1);
         List<Integer> expect1 = ListUtil.buildIntegerList(new Integer[]{1});
         assertEquals(expect1, result1);
-        
+
         TreeNode root2 = TreeFactory.createInstance(new String[]{"1","2","3"});
         List<Integer> expect2 = ListUtil.buildIntegerList(new Integer[]{2,1,3});
         List<Integer> result2 = bttObj.inorderIteration(root2);
         assertEquals(expect2, result2);
-        
+
         TreeNode root3 = TreeFactory.createInstance(new String[]{"1","#","2","3","#"});
         List<Integer> expect3 = ListUtil.buildIntegerList(new Integer[]{1,3,2});
         List<Integer> result3 = bttObj.inorderIteration(root3);
