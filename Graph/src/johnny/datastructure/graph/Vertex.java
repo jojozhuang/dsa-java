@@ -1,23 +1,18 @@
 package johnny.datastructure.graph;
 
-public class Vertex implements Comparable {
+public class Vertex {
     public int index;
-    public String label;
+    public String name;
     public boolean visited;
 
-    public Vertex(int index, String label) {
+    public Vertex(int index, String name) {
         this.index = index;
-        this.label = label;
+        this.name = name;
         this.visited = false; 
     }
 
     @Override
     public String toString() {
-        return label;
-    }
-    
-    @Override
-    public int compareTo(Object other) {
-    		return this.index - ((Vertex)other).index;
+        return name;
     }
 }

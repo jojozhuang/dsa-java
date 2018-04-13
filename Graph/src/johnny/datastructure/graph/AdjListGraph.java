@@ -5,45 +5,32 @@ import java.util.Queue;
 import java.util.Stack;
 
 /*
- * A graph, implemented using an adjacency matrix.
+ * A graph, implemented using an adjacency list.
  */
-public class AdjMatrixGraph {
-    private int MAX_VERTS = 0;
-    private Vertex[] vertexList; // array of vertices
-    private int[][] adjMatrix; // adjacency matrix
-    private int nVerts; // current number of vertices
+public class AdjListGraph {
+    private LinkedList<Vertex>[] adjList; // array of adjacency list
+    private Vertex[] vertexList; // maintains the vertex list
 
-    public AdjMatrixGraph(int maxverts)
+    @SuppressWarnings("unchecked")
+    public AdjListGraph(String[] verts)
     {
-        MAX_VERTS = maxverts; // maximum number of vertices
-        vertexList = new Vertex[MAX_VERTS];
-        adjMatrix = new int[MAX_VERTS][MAX_VERTS];
-        nVerts = 0;
+        adjList = new LinkedList[verts.length];
+        vertexList = new Vertex[verts.length];
 
-        // initialize matrix
-        for(int i=0; i<MAX_VERTS; i++) {
-            for(int j=0; j<MAX_VERTS; j++) {
-                adjMatrix[i][j] = 0;
-            }
+        // initialize array
+        for (int i=0; i< adjList.length; i++) {
+            adjList[i] = new LinkedList<Vertex>();
+            vertexList[i] = new Vertex(i, verts[i]);
         }
     }
 
-    public void addVertex(String label) {
-        int index = nVerts++;
-        vertexList[index] = new Vertex(index, label);
-    }
-
     public void addEdge(int start, int end) {
-        adjMatrix[start][end] = 1;
-        adjMatrix[end][start] = 1; 
+        adjList[start].add(vertexList[end]);
+        adjList[end].add(vertexList[start]);
     }
 
-    public Vertex[] getVertices() {
-        return vertexList;
-    }
-
-    public int[][] getAdjMatrix() {
-        return adjMatrix;
+    public LinkedList<Vertex>[] getAdjList() {
+        return adjList;
     }
 
     public void displayVertex(int index) {
@@ -67,9 +54,8 @@ public class AdjMatrixGraph {
             }
         }
 
-        // stack is empty, so we’re done 
-        for (int i=0; i<nVerts; i++) {
-            vertexList[i].visited = false;
+        for (Vertex vertex : vertexList) {
+            vertex.visited = false;
         }
     }
 
@@ -79,7 +65,7 @@ public class AdjMatrixGraph {
         vertexList[0].visited = true;
         displayVertex(0); 
         queue.add(vertexList[0]);
-        while (!queue.isEmpty() ) {
+        while (!queue.isEmpty()) {
             Vertex v1 = queue.poll();
             int v2;
             while ((v2=getAdjUnvisitedVertex(v1.index)) != -1) {
@@ -89,16 +75,15 @@ public class AdjMatrixGraph {
             }
         }
 
-        // queue is empty, so we’re done 
-        for (int i=0; i<nVerts; i++) {
-            vertexList[i].visited = false;
+        for (Vertex vertex : vertexList) {
+            vertex.visited = false;
         }
     }
 
     private int getAdjUnvisitedVertex(int index) {
-        for (int i=0; i<nVerts; i++) {
-            if (adjMatrix[index][i] == 1 && vertexList[i].visited == false) {
-                return i;
+        for (int i=0; i<adjList[index].size(); i++) {
+            if (adjList[index].get(i).visited == false) {
+                return adjList[index].get(i).index;
             }
         }
         return -1;
