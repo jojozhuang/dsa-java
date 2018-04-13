@@ -1,17 +1,13 @@
 package johnny.datastructure.graph.test;
 
-import static org.junit.Assert.*;
-
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import johnny.datastructure.graph.AdjListGraph;
 import johnny.datastructure.graph.Node;
 import johnny.datastructure.graph.NodeGraph;
-import johnny.datastructure.graph.Vertex;
 
 public class NodeGraphTest {
 

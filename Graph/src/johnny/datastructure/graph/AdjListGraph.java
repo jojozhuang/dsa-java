@@ -54,6 +54,7 @@ public class AdjListGraph {
             }
         }
 
+        // reset vertices
         for (Vertex vertex : vertexList) {
             vertex.visited = false;
         }
@@ -75,6 +76,7 @@ public class AdjListGraph {
             }
         }
 
+        // reset vertices
         for (Vertex vertex : vertexList) {
             vertex.visited = false;
         }

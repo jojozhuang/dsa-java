@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /*
- * A graph, implemented using an adjacency list.
+ * A graph, implemented using an neighbor nodes.
  */
 public class NodeGraph {
     public Node[] nodes;

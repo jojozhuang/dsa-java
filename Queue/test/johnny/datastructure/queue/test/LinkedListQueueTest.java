@@ -9,7 +9,6 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import johnny.datastructure.queue.LinkedListQueue;
-import johnny.datastructure.queue.StackQueue;
 
 public class LinkedListQueueTest {
 

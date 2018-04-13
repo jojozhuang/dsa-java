@@ -67,7 +67,7 @@ public class AdjMatrixGraph {
             }
         }
 
-        // stack is empty, so we’re done 
+        // reset vertices
         for (int i=0; i<nVerts; i++) {
             vertexList[i].visited = false;
         }
@@ -89,7 +89,7 @@ public class AdjMatrixGraph {
             }
         }
 
-        // queue is empty, so we’re done 
+        // reset vertices
         for (int i=0; i<nVerts; i++) {
             vertexList[i].visited = false;
         }
