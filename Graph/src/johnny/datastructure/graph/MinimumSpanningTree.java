@@ -1,19 +1,17 @@
 package johnny.datastructure.graph;
 
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Stack;
 
 /*
- * A graph, implemented using an adjacency matrix.
+ * A Minimum Spanning Tree, implemented using an adjacency matrix.
  */
-public class AdjMatrixGraph {
+public class MinimumSpanningTree {
     private int MAX_VERTS = 0;
     private Vertex[] vertexList; // array of vertices
     private int[][] adjMatrix; // adjacency matrix
     private int nVerts; // current number of vertices
 
-    public AdjMatrixGraph(int maxverts)
+    public MinimumSpanningTree(int maxverts)
     {
         MAX_VERTS = maxverts; // maximum number of vertices
         vertexList = new Vertex[MAX_VERTS];
@@ -50,42 +48,22 @@ public class AdjMatrixGraph {
         System.out.print(vertexList[index].name);
     }
 
-    // dfs
+    // mst, similar with dfs
     private Stack<Vertex> stack = new Stack<Vertex>();
-    public void dfs() {
-        vertexList[0].visited = true;
-        displayVertex(0);
+    public void mst() {
+        vertexList[0].visited = true; // different start vertex leads to different mst.
         stack.push(vertexList[0]);
         while (!stack.isEmpty()) {
-            int index = getAdjUnvisitedVertex(stack.peek().index);
+            int currentVertex = stack.peek().index;
+            int index = getAdjUnvisitedVertex(currentVertex);
             if (index == -1) { // no unvisited neighbor
                 stack.pop();
             } else {
                 vertexList[index].visited = true;
-                displayVertex(index);
                 stack.push(vertexList[index]);
-            }
-        }
-
-        // reset vertices
-        for (int i=0; i<nVerts; i++) {
-            vertexList[i].visited = false;
-        }
-    }
-
-    // bfs
-    private Queue<Vertex> queue = new LinkedList<Vertex>();
-    public void bfs() {
-        vertexList[0].visited = true;
-        displayVertex(0); 
-        queue.add(vertexList[0]);
-        while (!queue.isEmpty() ) {
-            Vertex v1 = queue.poll();
-            int v2;
-            while ((v2=getAdjUnvisitedVertex(v1.index)) != -1) {
-                vertexList[v2].visited = true;
-                displayVertex(v2);
-                queue.add(vertexList[v2]);
+                displayVertex(currentVertex);
+                displayVertex(index);
+                System.out.print(" ");
             }
         }
 
