@@ -9,9 +9,9 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import johnny.datastructure.common.EmptyException;
-import johnny.datastructure.queue.ArrayQueue;
+import johnny.datastructure.queue.CircularArrayQueue;
 
-public class ArrayQueueTest {
+public class CircularArrayQueueTest {
 
     @BeforeClass
     public static void setUpBeforeClass() throws Exception {
@@ -30,9 +30,9 @@ public class ArrayQueueTest {
     }
 
     @Test
-    public void testArrayQueue() throws Exception {
-        System.out.println("testArrayQueue");
-        ArrayQueue queue = new ArrayQueue(100);
+    public void testCircularArrayQueue() throws Exception {
+        System.out.println("testCircularArrayQueue");
+        CircularArrayQueue queue = new CircularArrayQueue(100);
         assertEquals(true, queue.isEmpty());
         queue.enqueue(1);
         queue.enqueue(2);
@@ -53,9 +53,9 @@ public class ArrayQueueTest {
     }
     
     @Test(expected = EmptyException.class)
-    public void testArrayQueueCapacity() throws EmptyException {
-        System.out.println("testArrayQueueCapacity");
-        ArrayQueue queue = new ArrayQueue(5);
+    public void testCircularArrayQueueCapacity() throws EmptyException {
+        System.out.println("testCircularArrayQueueCapacity");
+        CircularArrayQueue queue = new CircularArrayQueue(5);
         assertEquals(true, queue.isEmpty());
         queue.enqueue(1);
         queue.enqueue(2);
@@ -65,18 +65,22 @@ public class ArrayQueueTest {
         queue.enqueue(6); // will be skipped
         
         assertEquals(false, queue.isEmpty());
-        assertEquals(1, queue.dequeue());
-        assertEquals(2, queue.dequeue());
+        assertEquals(1, queue.dequeue()); // 2,3,4,5
+        assertEquals(2, queue.dequeue()); // 3,4,5
         assertEquals(false, queue.isEmpty());
         assertEquals(3, queue.peek());
         assertEquals(3, queue.peek());
         assertEquals(false, queue.isEmpty());
-        queue.enqueue(7); // will be skipped, even though the array has space actually.
-        queue.enqueue(8); // will be skipped, even though the array has space actually.
+        queue.enqueue(7); // 3,4,5,7
+        queue.enqueue(8); // 3,4,5,7,8
+        queue.enqueue(9); // will be skipped
         assertEquals(3, queue.dequeue());
         assertEquals(false, queue.isEmpty());
         assertEquals(4, queue.dequeue());
         assertEquals(5, queue.dequeue());
+        assertEquals(false, queue.isEmpty());
+        assertEquals(7, queue.dequeue());
+        assertEquals(8, queue.dequeue());
         assertEquals(true, queue.isEmpty());
         queue.dequeue(); // exception
         assertEquals(true, queue.isEmpty());

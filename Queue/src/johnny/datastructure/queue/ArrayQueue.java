@@ -1,5 +1,7 @@
 package johnny.datastructure.queue;
 
+import johnny.datastructure.common.EmptyException;
+
 public class ArrayQueue {
     private int head; // the first node
     private int tail; // the last node
@@ -13,6 +15,9 @@ public class ArrayQueue {
 
     // Add item to the end of the array
     public void enqueue(int value) {
+        if (tail >= arr.length - 1) {
+            return;
+        }
         arr[++tail] = value;
         if (head == -1) {
             head = 0;
@@ -20,9 +25,9 @@ public class ArrayQueue {
     }
 
     // Remove the first item from the array and return its value
-    public int dequeue() throws Exception {
+    public int dequeue() throws EmptyException {
         if (isEmpty()) {
-            throw new Exception();
+            throw new EmptyException("Array Queue is empty when dequeue!");
         }
         int value = arr[head];
         head++;
@@ -30,15 +35,15 @@ public class ArrayQueue {
     }
 
     // Get the first item
-    public int peek() throws Exception {
+    public int peek() throws EmptyException {
         if (isEmpty()) {
-            throw new Exception();
+            throw new EmptyException("Array Queue is empty when peek!");
         }
         return arr[head];
     }
 
     // Return whether the queue is empty
     public boolean isEmpty() {
-        return (head > tail) || (head == -1);
+        return (head == -1) || (head == tail);
     }
 }
