@@ -9,24 +9,24 @@ public class TreeFactory {
             return null;
         }
 
-        Queue<TreeNode> queueNode = new LinkedList<>();
+        Queue<TreeNode> queue = new LinkedList<>();
 
         TreeNode root = new TreeNode(Integer.parseInt(arr[0]));
-        queueNode.offer(root);
+        queue.offer(root);
 
         int index = 0;
         while (index < arr.length - 1) {
-            TreeNode node = queueNode.poll();
+            TreeNode node = queue.poll();
             if (node != null) {
                 String str = arr[++index];
                 if (!str.equals("#")) {
                     node.left = new TreeNode(Integer.parseInt(str));
-                    queueNode.add(node.left);
+                    queue.add(node.left);
                 }
                 str = arr[++index];
                 if (!str.equals("#")) {
                     node.right = new TreeNode(Integer.parseInt(str));
-                    queueNode.add(node.right);
+                    queue.add(node.right);
                 }
             }
         }
