@@ -15,7 +15,7 @@ public class BinarySearchTree {
     
     public boolean search(int val) {
         BSTNode current = root;
-        while( current != null) {
+        while ( current != null) {
             if (current.val == val) {
                 return true;
             } else if (current.val > val) {
@@ -34,21 +34,19 @@ public class BinarySearchTree {
             return;
         }
         BSTNode current = root;
-        BSTNode parent = null;
         while (true) {
-            parent = current;
             if (val < current.val) {
+                if (current.left == null) {
+                    current.left = newNode;
+                    return;
+                }
                 current = current.left;
-                if (current == null){
-                    parent.left = newNode;
-                    return;
-                }
             } else {
-                current = current.right;
-                if (current == null){
-                    parent.right = newNode;
+                if (current.right == null) {
+                    current.right = newNode;
                     return;
                 }
+                current = current.right;
             }
         }
     }
