@@ -70,5 +70,18 @@ public class SegmentTreeTest {
         assertEquals(3, instance.querySum(0, 1));
         assertEquals(4, instance.querySum(1, 4));
     }
+    
+    @Test
+    public void testModify() {
+        System.out.println("testModify");
+        SegmentTree instance = new SegmentTree(new int[]{4,-1,3,0,2});
+        assertEquals(-1, instance.queryMin(0, 4));
+        assertEquals(4, instance.queryMax(0, 4));
+        assertEquals(8, instance.querySum(0, 4));
+        instance.modify(1, 5);
+        assertEquals(0, instance.queryMin(0, 4));
+        assertEquals(5, instance.queryMax(0, 4));
+        assertEquals(14, instance.querySum(0, 4));
+    }
 
 }

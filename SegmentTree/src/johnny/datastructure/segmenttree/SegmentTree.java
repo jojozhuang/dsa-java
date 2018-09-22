@@ -52,31 +52,24 @@ public class SegmentTree {
             return 0;
         }
 
+        // case 1: search range is same with the range of root node
         if (root.start == start && root.end == end) {
             return root.min;
         }
 
         int mid = root.start + (root.end - root.start) / 2;
-        int leftmin = Integer.MAX_VALUE;
-        int rightmin = Integer.MAX_VALUE;
-        // left range
-        if (start <= mid) {
-            if (mid < end) {
-                leftmin = queryMin(root.left, start, mid);
-            } else {
-                leftmin = queryMin(root.left, start, end);
-            }
+        if (end <= mid) {
+            // case 2: search range is in the range of left child node
+            return queryMin(root.left, start, end);
+        } else if (start > mid) {
+            // case 3: search range is in the range of right child node
+            return queryMin(root.right, start, end);
+        } else {
+            //case 4: search range crosses both left and right children
+            int leftmin = queryMin(root.left, start, mid);
+            int rightmin = queryMin(root.right, mid + 1, end);
+            return Math.min(leftmin, rightmin);
         }
-        // right range
-        if (mid < end) {
-            if (start <= mid) {
-                rightmin = queryMin(root.right, mid + 1, end);
-            } else {
-                rightmin = queryMin(root.right, start, end);
-            }
-        }
-
-        return Math.min(leftmin, rightmin);
     }
 
     public int queryMax(int start, int end) {
@@ -88,31 +81,24 @@ public class SegmentTree {
             return 0;
         }
 
+        // case 1: search range is same with the range of root node
         if (root.start == start && root.end == end) {
             return root.max;
         }
 
         int mid = root.start + (root.end - root.start) / 2;
-        int leftmax = Integer.MIN_VALUE;
-        int rightmax = Integer.MIN_VALUE;
-        // left range
-        if (start <= mid) {
-            if (mid < end) {
-                leftmax = queryMax(root.left, start, mid);
-            } else {
-                leftmax = queryMax(root.left, start, end);
-            }
+        if (end <= mid) {
+            // case 2: search range is in the range of left child node
+            return queryMax(root.left, start, end);
+        } else if (start > mid) {
+            // case 3: search range is in the range of right child node
+            return queryMax(root.right, start, end);
+        } else {
+            //case 4: search range crosses both left and right children
+            int leftmax = queryMax(root.left, start, mid);
+            int rightmax = queryMax(root.right, mid + 1, end);
+            return Math.max(leftmax, rightmax);
         }
-        // right range
-        if (mid < end) {
-            if (start <= mid) {
-                rightmax = queryMax(root.right, mid + 1, end);
-            } else {
-                rightmax = queryMax(root.right, start, end);
-            }
-        }
-
-        return Math.max(leftmax, rightmax);
     }
 
     public int querySum(int start, int end) {
@@ -124,30 +110,51 @@ public class SegmentTree {
             return 0;
         }
 
+        // case 1: search range is same with the range of root node
         if (root.start == start && root.end == end) {
             return root.sum;
         }
 
         int mid = root.start + (root.end - root.start) / 2;
-        int leftsum = 0;
-        int rightsum = 0;
-        // left range
-        if (start <= mid) {
-            if (mid < end) {
-                leftsum = querySum(root.left, start, mid);
-            } else {
-                leftsum = querySum(root.left, start, end);
-            }
+        if (end <= mid) {
+            // case 2: search range is in the range of left child node
+            return querySum(root.left, start, end);
+        } else if (start > mid) {
+            // case 3: search range is in the range of right child node
+            return querySum(root.right, start, end);
+        } else {
+            //case 4: search range crosses both left and right children
+            int leftsum = querySum(root.left, start, mid);
+            int rightsum = querySum(root.right, mid + 1, end);
+            return leftsum + rightsum;
         }
-        // right range
-        if (mid < end) {
-            if (start <= mid) {
-                rightsum = querySum(root.right, mid + 1, end);
-            } else {
-                rightsum = querySum(root.right, start, end);
-            }
+    }
+    
+    public void modify(int index, int value) {
+        modify(this.root, index, value);
+    }
+    
+    private void modify(SegmentTreeNode root, int index, int value) {
+        if (root == null) {
+            return;
         }
 
-        return leftsum + rightsum;
+        if (root.start == root.end && root.start == index) {
+            root.min = value;
+            root.max = value;
+            root.sum = value;
+            return;
+        }
+
+        int mid = root.start + (root.end - root.start) / 2;
+        if (index <= mid) {
+            modify(root.left, index, value);
+        } else {
+            modify(root.right, index, value);
+        }
+
+        root.min = Math.min(root.left.min, root.right.min);
+        root.max = Math.max(root.left.max, root.right.max);
+        root.sum = root.left.sum + root.right.sum;
     }
 }
