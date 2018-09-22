@@ -48,6 +48,7 @@ public class SegmentTreeMin {
             return 0;
         }
 
+        // case 1: search range is same with the range of root node.
         if (root.start == start && root.end == end) {
             return root.min;
         }
@@ -58,16 +59,20 @@ public class SegmentTreeMin {
         // left range
         if (start <= mid) {
             if (mid < end) {
+                // case 4: search range crosses both left and right children
                 leftmin = queryMin(root.left, start, mid);
             } else {
+                // case 2: search range is in the range of left child node
                 leftmin = queryMin(root.left, start, end);
             }
         }
         // right range
         if (mid < end) {
             if (start <= mid) {
+                // case 4: search range crosses both left and right children
                 rightmin = queryMin(root.right, mid + 1, end);
             } else {
+                // case 3: search range is in the range of right child node
                 rightmin = queryMin(root.right, start, end);
             }
         }
