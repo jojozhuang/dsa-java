@@ -3,11 +3,17 @@ package johnny.datastructure.segmenttree;
 import johnny.datastructure.common.SegmentTreeNode;
 
 public class SegmentTreeMin {
-    /**
-     * @param arr, array of integer
-     * @return root node of the minimum segment tree
-     */
-    public SegmentTreeNode buildMin(int[] arr) {
+    private SegmentTreeNode root;
+
+    public SegmentTreeMin(int[] arr) {
+        this.root = build(arr);
+    }
+    
+    public SegmentTreeNode getRoot() {
+        return this.root;
+    }
+    
+    private SegmentTreeNode build(int[] arr) {
         if (arr == null || arr.length == 0) {
             return null;
         }
@@ -15,12 +21,6 @@ public class SegmentTreeMin {
         return buildMinHelpler(arr, 0, arr.length - 1);
     }
 
-    /**
-     * @param arr, array of integer
-     * @param start, first index of the array
-     * @param end, last index of the array
-     * @return root node of the minimum segment tree
-     */
     private SegmentTreeNode buildMinHelpler(int[] arr, int start, int end) {
         if (start > end) {
             return null;
@@ -39,13 +39,11 @@ public class SegmentTreeMin {
         return root;
     }
 
-    /**
-     * @param root, root node of the segment tree
-     * @param start, start of the search range
-     * @param end, end of the search range
-     * @return the minimum value of the given range
-     */
-    public int queryMin(SegmentTreeNode root, int start, int end) {
+    public int queryMin(int start, int end) {
+        return queryMin(this.root, start, end);
+    }
+    
+    private int queryMin(SegmentTreeNode root, int start, int end) {
         if (root == null) {
             return 0;
         }
@@ -57,6 +55,7 @@ public class SegmentTreeMin {
         int mid = root.start + (root.end - root.start) / 2;
         int leftmin = Integer.MAX_VALUE;
         int rightmin = Integer.MAX_VALUE;
+        // left range
         if (start <= mid) {
             if (mid < end) {
                 leftmin = queryMin(root.left, start, mid);
@@ -64,7 +63,7 @@ public class SegmentTreeMin {
                 leftmin = queryMin(root.left, start, end);
             }
         }
-
+        // right range
         if (mid < end) {
             if (start <= mid) {
                 rightmin = queryMin(root.right, mid + 1, end);
