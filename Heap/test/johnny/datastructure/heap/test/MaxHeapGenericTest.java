@@ -31,23 +31,23 @@ public class MaxHeapGenericTest {
     @Test
     public void testMaxHeap() {
         System.out.println("testMaxHeap");
-        MaxHeapGeneric heap = new MaxHeapGeneric(); // it is a max heap
+        MaxHeapGeneric<Integer> heap = new MaxHeapGeneric<Integer>(); // it is a max heap
         heap.add(18);
         heap.add(26);
         heap.add(35);
         assertEquals(3, heap.size());
-        assertEquals(35, heap.peek());
-        assertEquals(35, heap.remove());
-        assertEquals(26, heap.peek());
+        assertEquals(Integer.valueOf(35), heap.peek());
+        assertEquals(Integer.valueOf(35), heap.remove());
+        assertEquals(Integer.valueOf(26), heap.peek());
         heap.add(36);
         heap.add(30);
         heap.add(10);
         assertEquals(5, heap.size());
-        assertEquals(36, heap.remove());
-        assertEquals(30, heap.remove());
-        assertEquals(26, heap.remove());
-        assertEquals(18, heap.remove());
-        assertEquals(10, heap.remove());
+        assertEquals(Integer.valueOf(36), heap.remove());
+        assertEquals(Integer.valueOf(30), heap.remove());
+        assertEquals(Integer.valueOf(26), heap.remove());
+        assertEquals(Integer.valueOf(18), heap.remove());
+        assertEquals(Integer.valueOf(10), heap.remove());
     }
     
     public void testMaxHeap2() {

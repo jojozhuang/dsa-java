@@ -31,23 +31,23 @@ public class MinHeapGenericTest {
     @Test
     public void testMinHeap() {
         System.out.println("testMinHeap");
-        MinHeapGeneric heap = new MinHeapGeneric(); // it is a min heap
+        MinHeapGeneric<Integer> heap = new MinHeapGeneric<Integer>(); // it is a min heap
         heap.add(18);
         heap.add(26);
         heap.add(35);
         assertEquals(3, heap.size());
-        assertEquals(18, heap.peek());
-        assertEquals(18, heap.remove());
-        assertEquals(26, heap.peek());
+        assertEquals(Integer.valueOf(18), heap.peek());
+        assertEquals(Integer.valueOf(18), heap.remove());
+        assertEquals(Integer.valueOf(26), heap.peek());
         heap.add(36);
         heap.add(30);
         heap.add(10);
         assertEquals(5, heap.size());
-        assertEquals(10, heap.remove());
-        assertEquals(26, heap.remove());
-        assertEquals(30, heap.remove());
-        assertEquals(35, heap.remove());
-        assertEquals(36, heap.remove());
+        assertEquals(Integer.valueOf(10), heap.remove());
+        assertEquals(Integer.valueOf(26), heap.remove());
+        assertEquals(Integer.valueOf(30), heap.remove());
+        assertEquals(Integer.valueOf(35), heap.remove());
+        assertEquals(Integer.valueOf(36), heap.remove());
     }
     
     public void testMinHeap2() {
