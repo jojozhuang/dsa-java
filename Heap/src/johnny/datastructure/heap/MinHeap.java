@@ -2,125 +2,105 @@ package johnny.datastructure.heap;
 
 import java.util.Arrays;
 
-// Reference: https://courses.cs.washington.edu/courses/cse373/11wi/homework/5/BinaryHeap.java
-// Implement generic MinHeap with array. 
-public class MinHeap<T extends Comparable<T>> {
-    private static final int DEFAULT_CAPACITY = 10;
-    protected T[] array;
+public class MinHeap {
+    private int capacity = 10;
+    protected Integer[] array;
     protected int size;
 
-    /**
-     * Constructs a new MinHeap.
-     */
-    @SuppressWarnings("unchecked")
     public MinHeap () {
-        // Java doesn't allow construction of arrays of placeholder data types 
-        array = (T[])new Comparable[DEFAULT_CAPACITY];
+        array = new Integer[capacity];
+        size = 0;
+    }
+    
+    public MinHeap (int capacity) {
+        this.capacity = capacity;
+        array = new Integer[capacity];
         size = 0;
     }
 
-    /**
-     * Adds a value to the min-heap.
-     */
-    public void add(T value) {
-        // grow array if needed
+    // add new element into heap
+    public void add(int value) {
         if (size >= array.length - 1) {
             array = this.resize();
         }
 
-        // place element into heap at bottom
-        int index = size;
-        array[index] = value;
+        // place element into heap at bottom (right most)
+        array[size] = value;
         size++;
         
         bubbleUp();
     }
 
-    /**
-     * Returns true if the heap has no elements; false otherwise.
-     */
-    public boolean isEmpty() {
-        return size == 0;
+    // bubble up the last node with it's parent until they are in the order of max heap
+    protected void bubbleUp() {
+        int index = this.size - 1;  // last node (right most)
+
+        while (hasParent(index) && (parent(index) > array[index])) {
+            // parent and child are out of order; swap them
+            swap(index, parentIndex(index));
+            index = parentIndex(index);
+        }
     }
 
-    /**
-     * Returns heap size.
-     */
-    public int size() {
-        return size;
-    }
 
-    /**
-     * Returns (but does not remove) the minimum element in the heap.
-     */
-    public T peek() {
+    // remove and return the maximum element in the heap
+    public int remove() {
         if (this.isEmpty()) {
             throw new IllegalStateException();
         }
+        // get the root, which is the maximum value
+        int result = peek();
 
-        return array[0]; // root
+        // move the last leaf to root
+        array[0] = array[size - 1];
+        array[size - 1] = null;
+        size--;
+
+        bubbleDown();
+
+        return result;
     }
 
-    /**
-     * Removes and returns the minimum element in the heap.
-     */
-    public T remove() {
-            // get the root, which is the minimum value
-            T result = peek();
-
-            // get rid of the last leaf/decrement
-            array[0] = array[size - 1];
-            array[size - 1] = null;
-            size--;
-
-            bubbleDown();
-
-            return result;
-    }
-
-    /**
-     * Performs the "bubble down" operation to place the element that is at the 
-     * root of the heap in its correct place so that the heap maintains the 
-     * min-heap order property.
-     */
+    // bubble down the new root to proper position to maintain the order of max heap
     protected void bubbleDown() {
-        int index = 0; // root
+        // root
+        int index = 0;
 
-        // bubble down
-        while (hasLeftChild(index)) {
-            // which child is smaller?
-            int smallerChild = leftIndex(index);
+        // heap is complete tree, so it's safe to check left child first
+        while (hasLeftChild(index)) { 
+            int biggerChild = leftIndex(index);
 
-            // bubble with the smaller child, if it exists
+            // find the smaller child
             if (hasRightChild(index)
-                && array[leftIndex(index)].compareTo(array[rightIndex(index)]) > 0) {
-                smallerChild = rightIndex(index);
+                && array[leftIndex(index)] > (array[rightIndex(index)])) {
+                biggerChild = rightIndex(index);
             } 
 
-            if (array[index].compareTo(array[smallerChild]) < 0) {
+            if (array[index] < array[biggerChild]) {
                 break;
             } else {
-                swap(index, smallerChild);
-                // make sure to update loop counter/index of where last el is put
-                index = smallerChild;
+                // parent and child are out of order; swap them
+                swap(index, biggerChild);
+                index = biggerChild;
             }
         }
     }
 
-    /**
-     * Performs the "bubble up" operation to place a newly inserted element 
-     * (i.e. the element that is at the size index) in its correct place so 
-     * that the heap maintains the min-heap order property.
-     */
-    protected void bubbleUp() {
-        int index = this.size - 1;  // last/right most
-
-        while (hasParent(index)
-                && (parent(index).compareTo(array[index]) > 0)) {
-            // parent/child are out of order; swap them
-            swap(index, parentIndex(index));
-            index = parentIndex(index);
+    // get the root without removing it from heap
+    public int peek() {
+        if (this.isEmpty()) {
+            throw new IllegalStateException();
         }
+
+        return array[0];
+    }
+
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
+    public int size() {
+        return size;
     }
 
     protected boolean hasParent(int i) {
@@ -128,11 +108,11 @@ public class MinHeap<T extends Comparable<T>> {
     }
 
     protected int leftIndex(int i) {
-        return i * 2 + 1;
+        return 2 * i + 1;
     }
 
     protected int rightIndex(int i) {
-        return i * 2 + 2;
+        return 2 * i + 2;
     }
 
     protected boolean hasLeftChild(int i) {
@@ -143,7 +123,7 @@ public class MinHeap<T extends Comparable<T>> {
         return rightIndex(i) <= size - 1;
     }
 
-    protected T parent(int i) {
+    protected int parent(int i) {
         return array[parentIndex(i)];
     }
 
@@ -151,12 +131,12 @@ public class MinHeap<T extends Comparable<T>> {
         return (i - 1) / 2;
     }
 
-    protected T[] resize() {
+    protected Integer[] resize() {
         return Arrays.copyOf(array, array.length * 2);
     }
 
     protected void swap(int index1, int index2) {
-        T tmp = array[index1];
+        int tmp = array[index1];
         array[index1] = array[index2];
         array[index2] = tmp;
     }
