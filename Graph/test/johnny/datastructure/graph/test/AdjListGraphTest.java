@@ -1,13 +1,17 @@
 package johnny.datastructure.graph.test;
 
+import static org.junit.Assert.assertArrayEquals;
+
+import java.util.Arrays;
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import johnny.datastructure.common.Vertex;
 import johnny.datastructure.graph.AdjListGraph;
-import johnny.datastructure.graph.Vertex;
 
 public class AdjListGraphTest {
 
@@ -28,87 +32,87 @@ public class AdjListGraphTest {
     }
 
     @Test
-    public void testAdjListGraphInteger() {
-        System.out.println("testAdjListGraphInteger");
+    public void testAdjListGraph() {
+        System.out.println("testAdjListGraph");
         /*
         A: B->E
-        B: A->E->C->D
+        B: A->C->D->E
         C: B->D
-        D: B->E->C
-        E: D->A->B
+        D: B->C->E
+        E: A->B->D
         */
-        AdjListGraph alg = new AdjListGraph(new String[] {"A","B","C","D","E"});
-        alg.addEdge(0, 1);
-        alg.addEdge(0, 4);
-        alg.addEdge(1, 2);
-        alg.addEdge(1, 3);
-        alg.addEdge(1, 4);
-        alg.addEdge(2, 3);
-        alg.addEdge(3, 4);
-        
-        for (int i = 0; i < alg.getAdjList().length; i++)
+        AdjListGraph alg = createListGraph();
+        // print [A, B, C, D, E]
+        System.out.print("Vertices: ");
+        System.out.println(Arrays.toString(alg.getVertices()));
+        /*
+        // print
+        Adjacency list of vertex 0: head->B->E
+        Adjacency list of vertex 1: head->A->C->D->E
+        Adjacency list of vertex 2: head->B->D
+        Adjacency list of vertex 3: head->B->C->E
+        Adjacency list of vertex 4: head->A->B->D
+        */
+        for (int i = 0; i < alg.getVertexList().length; i++)
         {
             System.out.print("Adjacency list of vertex "+ i + ": head");
-            for (Vertex vertex: alg.getAdjList()[i]){
+            for (Vertex vertex: alg.getVertexList()[i]){
                 System.out.print("->"+vertex);
             }
             System.out.println();
         }
-        /*
-         Adjacency list of vertex 0: head->B->E
-         Adjacency list of vertex 1: head->A->C->D->E
-         Adjacency list of vertex 2: head->B->D
-         Adjacency list of vertex 3: head->B->C->E
-         Adjacency list of vertex 4: head->A->B->D
-        */
     }
     
     @Test
-    public void testDFSAdjList() {
-        System.out.println("testDFSAdjList");
+    public void testDFS() {
+        System.out.println("testDFS");
         /*
         A: B->E
-        B: A->E->C->D
+        B: A->C->D->E
         C: B->D
-        D: B->E->C
-        E: D->A->B
+        D: B->C->E
+        E: A->B->D
         */
-        AdjListGraph alg = new AdjListGraph(new String[] {"A","B","C","D","E"});
-        alg.addEdge(0, 1);
-        alg.addEdge(0, 4);
-        alg.addEdge(1, 2);
-        alg.addEdge(1, 3);
-        alg.addEdge(1, 4);
-        alg.addEdge(2, 3);
-        alg.addEdge(3, 4);
-
+        AdjListGraph alg = createListGraph();
+        String[] result = alg.dfs();
+        // print Visits: [A, B, C, D, E]
         System.out.print("Visits: ");
-        alg.dfs();  // Visits: ABCDE
-        System.out.println();
+        System.out.println(Arrays.toString(result));
+        assertArrayEquals(new String[] {"A","B","C","D","E"}, result);
     }
     
     @Test
-    public void testBFSAdjList() {
-        System.out.println("testBFSAdjList");
+    public void testBFS() {
+        System.out.println("testBFS");
         /*
         A: B->E
-        B: A->E->C->D
+        B: A->C->D->E
         C: B->D
-        D: B->E->C
-        E: D->A->B
+        D: B->C->E
+        E: A->B->D
         */
-        AdjListGraph alg = new AdjListGraph(new String[] {"A","B","C","D","E"});
-        alg.addEdge(0, 1);
-        alg.addEdge(0, 4);
-        alg.addEdge(1, 2);
-        alg.addEdge(1, 3);
-        alg.addEdge(1, 4);
-        alg.addEdge(2, 3);
-        alg.addEdge(3, 4);
-
+        AdjListGraph alg = createListGraph();
+        String[] result = alg.bfs();
+        // print Visits: [A, B, E, C, D]
         System.out.print("Visits: ");
-        alg.bfs();  // Visits: ABECD
-        System.out.println();
+        System.out.println(Arrays.toString(result));
+        assertArrayEquals(new String[] {"A","B","E","C","D"}, result);
+    }
+    
+    private AdjListGraph createListGraph() {
+        AdjListGraph alg = new AdjListGraph(5);
+        alg.addVertex("A");
+        alg.addVertex("B");
+        alg.addVertex("C");
+        alg.addVertex("D");
+        alg.addVertex("E");
+        alg.addEdge(0, 1);  //AB
+        alg.addEdge(0, 4);  //AE
+        alg.addEdge(1, 2);  //BC
+        alg.addEdge(1, 3);  //BD
+        alg.addEdge(1, 4);  //BE
+        alg.addEdge(2, 3);  //CD
+        alg.addEdge(3, 4);  //DE
+        return alg;
     }
 }
-//https://www.geeksforgeeks.org/graph-and-its-representations/

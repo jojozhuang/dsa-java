@@ -1,4 +1,4 @@
-package johnny.datastructure.graph;
+package johnny.datastructure.common;
 
 public class Vertex {
     public int index;

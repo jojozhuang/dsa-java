@@ -1,12 +1,16 @@
 package johnny.datastructure.graph.test;
 
+import static org.junit.Assert.assertArrayEquals;
+
+import java.util.Arrays;
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import johnny.datastructure.graph.Node;
+import johnny.datastructure.common.Node;
 import johnny.datastructure.graph.NodeGraph;
 
 public class NodeGraphTest {
@@ -37,33 +41,27 @@ public class NodeGraphTest {
         D: B->C->E
         E: A->B->D
         */
-        NodeGraph ng = new NodeGraph(5);
-        ng.nodes[0] = new Node("A");
-        ng.nodes[1] = new Node("B");
-        ng.nodes[2] = new Node("C");
-        ng.nodes[3] = new Node("D");
-        ng.nodes[4] = new Node("E");
-        ng.addNeighbors(0, new Node[] {ng.nodes[1], ng.nodes[4]});
-        ng.addNeighbors(1, new Node[] {ng.nodes[0], ng.nodes[2], ng.nodes[3], ng.nodes[4]});
-        ng.addNeighbors(2, new Node[] {ng.nodes[1], ng.nodes[3]});
-        ng.addNeighbors(3, new Node[] {ng.nodes[1], ng.nodes[2], ng.nodes[4]});
-        ng.addNeighbors(4, new Node[] {ng.nodes[0], ng.nodes[1], ng.nodes[3]});
+        NodeGraph ng = createNodeGraph();
+        // print [A, B, C, D, E]
+        System.out.print("Nodes: ");
+        System.out.println(Arrays.toString(ng.nodes));
+        /*
+        // print
+        Node list of vertex 0: head->B->E
+        Node list of vertex 1: head->A->C->D->E
+        Node list of vertex 2: head->B->D
+        Node list of vertex 3: head->B->C->E
+        Node list of vertex 4: head->A->B->D
+        */
         
         for (int i = 0; i < ng.nodes.length; i++)
         {
-            System.out.print("Adjacency list of vertex "+ i + ": head");
+            System.out.print("Node list of vertex "+ i + ": head");
             for (Node neighbor: ng.nodes[i].neighbors){
                 System.out.print("->"+neighbor.name);
             }
             System.out.println();
         }
-        /*
-         Adjacency list of vertex 0: head->B->E
-         Adjacency list of vertex 1: head->A->C->D->E
-         Adjacency list of vertex 2: head->B->D
-         Adjacency list of vertex 3: head->B->C->E
-         Adjacency list of vertex 4: head->A->B->D
-        */
     }
     
     @Test
@@ -76,21 +74,12 @@ public class NodeGraphTest {
         D: B->C->E
         E: A->B->D
         */
-        NodeGraph ng = new NodeGraph(5);
-        ng.nodes[0] = new Node("A");
-        ng.nodes[1] = new Node("B");
-        ng.nodes[2] = new Node("C");
-        ng.nodes[3] = new Node("D");
-        ng.nodes[4] = new Node("E");
-        ng.addNeighbors(0, new Node[] {ng.nodes[1], ng.nodes[4]});
-        ng.addNeighbors(1, new Node[] {ng.nodes[0], ng.nodes[2], ng.nodes[3], ng.nodes[4]});
-        ng.addNeighbors(2, new Node[] {ng.nodes[1], ng.nodes[3]});
-        ng.addNeighbors(3, new Node[] {ng.nodes[1], ng.nodes[2], ng.nodes[4]});
-        ng.addNeighbors(4, new Node[] {ng.nodes[0], ng.nodes[1], ng.nodes[3]});
-
+        NodeGraph ng = createNodeGraph();
+        String[] result = ng.dfs(ng.nodes[0]);
+        // print Visits: [A, B, C, D, E]
         System.out.print("Visits: ");
-        ng.dfs(ng.nodes[0]);  // Visits: ABCDE
-        System.out.println();
+        System.out.println(Arrays.toString(result));
+        assertArrayEquals(new String[] {"A","B","C","D","E"}, result);
     }
     
     @Test
@@ -103,6 +92,15 @@ public class NodeGraphTest {
         D: B->C->E
         E: A->B->D
         */
+        NodeGraph ng = createNodeGraph();
+        String[] result = ng.bfs(ng.nodes[0]);
+        // print Visits: [A, B, E, C, D]
+        System.out.print("Visits: ");
+        System.out.println(Arrays.toString(result));
+        assertArrayEquals(new String[] {"A","B","E","C","D"}, result);
+    }
+    
+    private NodeGraph createNodeGraph() {
         NodeGraph ng = new NodeGraph(5);
         ng.nodes[0] = new Node("A");
         ng.nodes[1] = new Node("B");
@@ -114,10 +112,7 @@ public class NodeGraphTest {
         ng.addNeighbors(2, new Node[] {ng.nodes[1], ng.nodes[3]});
         ng.addNeighbors(3, new Node[] {ng.nodes[1], ng.nodes[2], ng.nodes[4]});
         ng.addNeighbors(4, new Node[] {ng.nodes[0], ng.nodes[1], ng.nodes[3]});
-
-        System.out.print("Visits: ");
-        ng.bfs(ng.nodes[0]);  // Visits: ABECD
-        System.out.println();
+        return ng;
     }
 
 }

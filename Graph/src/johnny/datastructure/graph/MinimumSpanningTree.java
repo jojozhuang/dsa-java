@@ -2,6 +2,8 @@ package johnny.datastructure.graph;
 
 import java.util.Stack;
 
+import johnny.datastructure.common.Vertex;
+
 /*
  * A Minimum Spanning Tree, implemented using an adjacency matrix.
  */

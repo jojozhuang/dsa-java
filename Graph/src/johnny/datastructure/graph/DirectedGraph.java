@@ -1,5 +1,7 @@
 package johnny.datastructure.graph;
 
+import johnny.datastructure.common.Vertex;
+
 /*
  * A directed graph, implemented using an adjacency matrix.
  */

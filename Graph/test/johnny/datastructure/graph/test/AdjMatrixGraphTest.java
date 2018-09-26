@@ -1,5 +1,7 @@
 package johnny.datastructure.graph.test;
 
+import static org.junit.Assert.*;
+
 import java.util.Arrays;
 
 import org.junit.After;
@@ -32,28 +34,20 @@ public class AdjMatrixGraphTest {
     public void testAdjMatrixGraph() {
         System.out.println("testAdjMatrixGraph");
         /*
-        Vertex | A | B | C | D
-        -------|---|---|---|---
-        A      | 0 | 1 | 1 | 1
-        B      | 1 | 0 | 0 | 1
-        C      | 1 | 0 | 0 | 0
-        D      | 1 | 1 | 0 | 0
+        Vertex | A | B | C | D | E
+        -------|---|---|---|---|---
+        A      | 0 | 1 | 0 | 0 | 1
+        B      | 1 | 0 | 1 | 1 | 1
+        C      | 0 | 1 | 0 | 1 | 0
+        D      | 0 | 1 | 1 | 0 | 1
+        E      | 1 | 1 | 0 | 1 | 0
         */
-        AdjMatrixGraph amg = new AdjMatrixGraph(4);
-        amg.addVertex("A");
-        amg.addVertex("B");
-        amg.addVertex("C");
-        amg.addVertex("D");
-        amg.addEdge(0, 1);
-        amg.addEdge(0, 2);
-        amg.addEdge(0, 3);
-        amg.addEdge(1, 0);
-        amg.addEdge(1, 3);
-        amg.addEdge(2, 0);
-        amg.addEdge(3, 0);
-        amg.addEdge(3, 1);
-        
+        AdjMatrixGraph amg = createMatrixGraph();
+        // print [A, B, C, D, E]
+        System.out.print("Vertices: ");
         System.out.println(Arrays.toString(amg.getVertices()));
+        // print [[0, 1, 0, 0, 1], [1, 0, 1, 1, 1], [0, 1, 0, 1, 0], [0, 1, 1, 0, 1], [1, 1, 0, 1, 0]]
+        System.out.print("Matrix: ");
         System.out.println(Arrays.deepToString(amg.getAdjMatrix()));
     }
     
@@ -63,26 +57,18 @@ public class AdjMatrixGraphTest {
         /*
         Vertex | A | B | C | D | E
         -------|---|---|---|---|---
-        A      | 0 | 1 | 0 | 1 | 0
-        B      | 1 | 0 | 1 | 0 | 0
-        C      | 0 | 1 | 0 | 0 | 0
-        D      | 1 | 0 | 0 | 0 | 1
-        E      | 0 | 0 | 0 | 1 | 0
+        A      | 0 | 1 | 0 | 0 | 1
+        B      | 1 | 0 | 1 | 1 | 1
+        C      | 0 | 1 | 0 | 1 | 0
+        D      | 0 | 1 | 1 | 0 | 1
+        E      | 1 | 1 | 0 | 1 | 0
         */
-        AdjMatrixGraph amg = new AdjMatrixGraph(5);
-        amg.addVertex("A");
-        amg.addVertex("B");
-        amg.addVertex("C");
-        amg.addVertex("D");
-        amg.addVertex("E");
-        amg.addEdge(0, 1);  //AB
-        amg.addEdge(1, 2);  //BC
-        amg.addEdge(0, 3);  //AD
-        amg.addEdge(3, 4);  //DE
-
+        AdjMatrixGraph amg = createMatrixGraph();
+        String[] result = amg.dfs();
+        // print Visits: [A, B, C, D, E]
         System.out.print("Visits: ");
-        amg.dfs();  // Visits: ABCDE
-        System.out.println();
+        System.out.println(Arrays.toString(result));
+        assertArrayEquals(new String[] {"A","B","C","D","E"}, result);
     }
     
     @Test
@@ -91,12 +77,21 @@ public class AdjMatrixGraphTest {
         /*
         Vertex | A | B | C | D | E
         -------|---|---|---|---|---
-        A      | 0 | 1 | 0 | 1 | 0
-        B      | 1 | 0 | 1 | 0 | 0
-        C      | 0 | 1 | 0 | 0 | 0
-        D      | 1 | 0 | 0 | 0 | 1
-        E      | 0 | 0 | 0 | 1 | 0
+        A      | 0 | 1 | 0 | 0 | 1
+        B      | 1 | 0 | 1 | 1 | 1
+        C      | 0 | 1 | 0 | 1 | 0
+        D      | 0 | 1 | 1 | 0 | 1
+        E      | 1 | 1 | 0 | 1 | 0
         */
+        AdjMatrixGraph amg = createMatrixGraph();
+        String[] result = amg.bfs();
+        // print Visits: [A, B, E, C, D]
+        System.out.print("Visits: ");
+        System.out.println(Arrays.toString(result));
+        assertArrayEquals(new String[] {"A","B","E","C","D"}, result);
+    }
+    
+    private AdjMatrixGraph createMatrixGraph() {
         AdjMatrixGraph amg = new AdjMatrixGraph(5);
         amg.addVertex("A");
         amg.addVertex("B");
@@ -104,13 +99,12 @@ public class AdjMatrixGraphTest {
         amg.addVertex("D");
         amg.addVertex("E");
         amg.addEdge(0, 1);  //AB
+        amg.addEdge(0, 4);  //AE
         amg.addEdge(1, 2);  //BC
-        amg.addEdge(0, 3);  //AD
+        amg.addEdge(1, 3);  //BD
+        amg.addEdge(1, 4);  //BE
+        amg.addEdge(2, 3);  //CD
         amg.addEdge(3, 4);  //DE
-
-        System.out.print("Visits: ");
-        amg.bfs();  // Visits: ABDCE
-        System.out.println();
+        return amg;
     }
-
 }

@@ -1,4 +1,4 @@
-package johnny.datastructure.graph;
+package johnny.datastructure.common;
 
 public class Node {
     public String name;
@@ -16,6 +16,6 @@ public class Node {
 
     @Override
     public String toString() {
-        return "name:" + name  + " neighbors:" + neighbors;
+        return name;
     }
 }

@@ -35,7 +35,7 @@ public class MaxHeap {
     protected void bubbleUp() {
         int index = this.size - 1;  // last node (right most)
 
-        while (hasParent(index) && (parent(index) < array[index])) {
+        while (hasParent(index) && parent(index) < array[index]) {
             // parent and child are out of order; swap them
             swap(index, parentIndex(index));
             index = parentIndex(index);
