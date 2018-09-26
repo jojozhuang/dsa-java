@@ -100,7 +100,6 @@ public class AdjMatrixGraph {
         }
         return -1;
     }
-    
 
     public Vertex[] getVertices() {
         return vertices;

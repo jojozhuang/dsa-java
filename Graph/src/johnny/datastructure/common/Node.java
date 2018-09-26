@@ -9,10 +9,6 @@ public class Node {
         this.name = name;
         this.visited = false;
     }
-    
-    public void setNeighbors(Node[] neighbors) {
-        this.neighbors = neighbors;
-    }
 
     @Override
     public String toString() {

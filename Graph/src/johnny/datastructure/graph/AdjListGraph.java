@@ -41,7 +41,6 @@ public class AdjListGraph {
     public String[] dfs() {
         String[] res = new String[size];
         vertices[0].visited = true;
-        //displayVertex(0);
         int idx = 0;
         res[idx++] = vertices[0].name;
         stack.push(vertices[0]);
@@ -51,7 +50,6 @@ public class AdjListGraph {
                 stack.pop();
             } else {
                 vertices[index].visited = true;
-                displayVertex(index);
                 res[idx++] = vertices[index].name;
                 stack.push(vertices[index]);
             }
@@ -106,9 +104,5 @@ public class AdjListGraph {
     
     public LinkedList<Vertex>[] getVertexList() {
         return vertexList;
-    }
-
-    public void displayVertex(int index) {
-        System.out.print(vertices[index].name);
     }
 }

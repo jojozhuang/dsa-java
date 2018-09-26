@@ -2,7 +2,9 @@ package johnny.datastructure.graph.test;
 
 import static org.junit.Assert.assertArrayEquals;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -80,6 +82,25 @@ public class NodeGraphTest {
         System.out.print("Visits: ");
         System.out.println(Arrays.toString(result));
         assertArrayEquals(new String[] {"A","B","C","D","E"}, result);
+    }
+    
+    @Test
+    public void testDFS_Recursion() {
+        System.out.println("testDFS_Recursion");
+        /*
+        A: B->E
+        B: A->C->D->E
+        C: B->D
+        D: B->C->E
+        E: A->B->D
+        */
+        NodeGraph ng = createNodeGraph();
+        List<String> result = new ArrayList<String>();
+        ng.dfs2(ng.nodes[0], result);
+        // print Visits: [A, B, C, D, E]
+        System.out.print("Visits: ");
+        System.out.println(result);
+       // assertArrayEquals(new String[] {"A","B","C","D","E"}, result);
     }
     
     @Test

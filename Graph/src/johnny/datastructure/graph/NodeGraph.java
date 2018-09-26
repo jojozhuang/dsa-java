@@ -1,6 +1,7 @@
 package johnny.datastructure.graph;
 
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 import java.util.Stack;
 
@@ -21,11 +22,7 @@ public class NodeGraph {
         nodes[index].neighbors = neighbors;
     }
 
-    public void displayNode(Node node) {
-        System.out.print(node.name);
-    }
-
-    // dfs
+    // dfs, stack
     private Stack<Node> stack = new Stack<Node>();
     public String[] dfs(Node root) {
         String[] res = new String[nodes.length];
@@ -58,16 +55,17 @@ public class NodeGraph {
         }
         return null;
     }
-    
-    public void dfsRecusion(Node root) {
+
+    // dfs, recursion
+    public void dfs2(Node root, List<String> list) {
         if (root == null) {
             return;
         }
-        displayNode(root);
+        list.add(root.name);
         root.visited = true;
         for (Node neighbor : root.neighbors) {
             if (neighbor.visited == false) {
-                dfs(neighbor);
+                dfs2(neighbor, list);
             }
         }
     }
