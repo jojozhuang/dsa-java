@@ -1,8 +1,8 @@
 package johnny.datastructure.graph;
 
 public class DisjointSetOptimized {
-    private int[] parents;
-    private int[] rank;
+    public int[] parents;
+    public int[] rank;
     
     public DisjointSetOptimized(int size)
     {
@@ -39,20 +39,19 @@ public class DisjointSetOptimized {
             return;
         }
         
-        // If i’s rank is less than j’s rank
+        // If root1’s rank is less than root2’s rank
         if (rank[root1] < rank[root2]) {
-            // Then move i under j
+            // Then move root1 under root2
             parents[root1] = root2;
+        // If root1’s rank is larger than root2’s rank
         } else if (rank[root1] > rank[root2]) {
-            // Then move j under i
+            // Then move root2 under root1
             parents[root2] = root1;
-        } else {
+        // if ranks are the same 
+        } else { 
+            // Then move root1 under root2 (doesn't matter which one goes where) 
             parents[root1] = root2;
             rank[root2]++;
         }
-    }
-    
-    public int[] getParents() {
-        return this.parents;
     }
 }

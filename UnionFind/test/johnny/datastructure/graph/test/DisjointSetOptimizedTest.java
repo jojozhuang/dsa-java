@@ -90,7 +90,7 @@ public class DisjointSetOptimizedTest {
         djso.union(3, 4); // parents = [5,3,3,4,5,5]
         djso.find(3);     // parents = [5,3,3,5,5,5]
         // G1 = {0,1,2,3,4,5}
-        System.out.println(Arrays.toString(djso.getParents()));
-        assertArrayEquals(new int[] {5,3,3,5,5,5}, djso.getParents());
+        System.out.println(Arrays.toString(djso.parents));
+        assertArrayEquals(new int[] {5,3,3,5,5,5}, djso.parents);
     }
 }
