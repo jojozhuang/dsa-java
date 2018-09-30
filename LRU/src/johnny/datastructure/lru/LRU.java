@@ -1,4 +1,4 @@
-package johnny.datastructure.cache;
+package johnny.datastructure.lru;
 
 import java.util.HashMap;
 

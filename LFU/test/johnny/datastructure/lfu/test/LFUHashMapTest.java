@@ -1,4 +1,4 @@
-package johnny.datastructure.cache.test;
+package johnny.datastructure.lfu.test;
 
 import static org.junit.Assert.*;
 
@@ -8,8 +8,8 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import johnny.datastructure.cache.LFUHashMap;
-import johnny.datastructure.cache.LFU;
+import johnny.datastructure.lfu.LFU;
+import johnny.datastructure.lfu.LFUHashMap;
 
 public class LFUHashMapTest {
 
