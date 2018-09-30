@@ -11,7 +11,7 @@ public class LRU {
     private int capacity;
     private HashMap<Integer, Node> map;
     private Node head; // The latest accessed element
-    private Node tail;
+    private Node tail; // The least recently used element
     private final int MIN = Integer.MIN_VALUE;
     
     public LRU(int capacity) {
@@ -54,7 +54,7 @@ public class LRU {
         // move current node to head
         moveToHead(current);
 
-        return value;
+        return map.get(value).value;
     }
 
     private void moveToHead(Node node) {
