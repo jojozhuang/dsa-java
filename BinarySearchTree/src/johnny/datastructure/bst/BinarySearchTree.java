@@ -1,4 +1,4 @@
-package johnny.datastructure.tree;
+package johnny.datastructure.bst;
 
 import johnny.datastructure.common.BSTNode;
 
