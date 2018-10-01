@@ -1,55 +1,27 @@
 package johnny.datastructure.lfu;
 
-import java.util.HashMap;
-import java.util.LinkedHashSet;
+import johnny.datastructure.common.BST;
 
 /*
- * not possible to use max heap, as you can get the minimum value within O(log(n))
+ * not possible to use max heap, as you can't get the minimum value within O(log(n))
  */
 public class LFUBST {
-    HashMap<Integer, Integer> vals;
-    HashMap<Integer, Integer> counts;
-    HashMap<Integer, LinkedHashSet<Integer>> lists;
-    int cap;
-    int min = -1;
+    private BST bst;
+    
     public LFUBST(int capacity) {
-        cap = capacity;
-        vals = new HashMap<>();
-        counts = new HashMap<>();
-        lists = new HashMap<>();
-        lists.put(1, new LinkedHashSet<>());
+        this.bst = new BST(capacity);
     }
     
-    public int get(int key) {
-        if(!vals.containsKey(key))
-            return -1;
-        int count = counts.get(key);
-        counts.put(key, count+1);
-        lists.get(count).remove(key);
-        if(count==min && lists.get(count).size()==0)
-            min++;
-        if(!lists.containsKey(count+1))
-            lists.put(count+1, new LinkedHashSet<>());
-        lists.get(count+1).add(key);
-        return vals.get(key);
+    public void add(int value) {
+        bst.insert(0, value);
     }
     
-    public void put(int key, int value) {
-        if(cap<=0)
-            return;
-        if(vals.containsKey(key)) {
-            vals.put(key, value);
-            get(key);
-            return;
-        } 
-        if(vals.size() >= cap) {
-            int evit = lists.get(min).iterator().next();
-            lists.get(min).remove(evit);
-            vals.remove(evit);
-        }
-        vals.put(key, value);
-        counts.put(key, 1);
-        min = 1;
-        lists.get(1).add(key);
+    public int get(int value) {
+        return bst.get(value);
+    }
+    
+    // methods for testing
+    public int[][] getAll() {
+        return bst.getAll();
     }
 }

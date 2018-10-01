@@ -42,7 +42,7 @@ public class LRUDeque {
         }
 
         // remove current
-        deque.remove(value); // performance issue, the time complexity for random access is O(n)
+        deque.remove(value); // equivalent to removeFirstOccurrence(), performance issue, O(n)
         // move it to head
         deque.addFirst(value);
 
