@@ -11,23 +11,25 @@ public class BST {
         public BSTNode left, right, parent;
         public Deque deque;
 
-        public BSTNode(int count, int value) {
+        public BSTNode(int count, int key) {
             this.count = count;
             this.deque = new Deque();
-            this.deque.addFirst(value);
+            this.deque.addFirst(key);
         }
     }
     
     private int capacity;
     private BSTNode root;
-    private Map<Integer, Integer> map; // value, count
-    private int size;      // total number of all values
-    private int node_size; // total number of nodes, =< size
+    private Map<Integer, Integer> values; // key, value
+    private Map<Integer, Integer> counts; // key, count
+    private int size;                     // total number of all values
+    private int node_size;                // total number of nodes, =< size
     
     public BST(int capacity) {
         this.capacity = capacity;
         this.root = null;
-        this.map = new HashMap<>();
+        this.values = new HashMap<>();
+        this.counts = new HashMap<>();
         this.size = 0;
         this.node_size = 0;
     }
@@ -40,7 +42,7 @@ public class BST {
             current = current.left;
         }
         Deque deque =  current.deque;
-        map.remove(deque.last());
+        counts.remove(deque.last());
         if (deque.size() == 1) {
             // remove the entire node
             current.parent.left = null;
@@ -52,19 +54,18 @@ public class BST {
         size--;
     }
     
-    public void insert(int count, int value) {
-        insert(count, value, true);
+    public void add(int count, int key, int value) {
+        if (size == capacity) {
+            removeMin();
+        }
+        this.size++;
+        this.counts.put(key, 0);
+        this.values.put(key, value);
+        insert(count, key);
     }
     
-    public void insert(int count, int value, boolean newElement) {
-        if (newElement) {
-            if (size == capacity) {
-                removeMin();
-            }
-            this.size++;
-            this.map.put(value, 0);
-        }
-        BSTNode newNode = new BSTNode(count, value);
+    private void insert(int count, int key) {
+        BSTNode newNode = new BSTNode(count, key);
         if (root == null) {
             this.node_size++;
             root = newNode;
@@ -91,15 +92,15 @@ public class BST {
             } else {
                 // if node exists, just add new element to the head
                 Deque deque = current.deque;
-                deque.addFirst(value);
+                deque.addFirst(key);
                 return;
             }
         }
     }
     
-    public int get(int value) {
+    public int get(int key) {
         BSTNode current = root;
-        int count = map.get(value);
+        int count = counts.get(key);
         int height = 0;
         while (current != null) {
             height++;
@@ -118,8 +119,8 @@ public class BST {
         }
         
         Deque deque =  current.deque;
-        // remove the value
-        deque.remove(value);
+        // remove the key
+        deque.remove(key);
         // remove node if no element left in the deque
         if (deque.size() == 0) {
             if (current.parent.left != null && current.parent.left == current) {
@@ -131,16 +132,16 @@ public class BST {
         }
         // update count
         count++;
-        map.put(value, count);
+        counts.put(key, count);
         // insert new element to bst
-        insert(count, value, false);
+        insert(count, key);
         
         // rebalance
         if (node_size > 2 && height > log2(node_size)) {
             root = rebalanceBST(root);
         }
         // return
-        return value;
+        return values.get(key);
     }
     
     private int log2(int n){
@@ -218,23 +219,6 @@ public class BST {
         return this.size;
     }
     
-    public int[][] getAll() {
-        int[][] res = new int[2][this.size];
-
-        List<BSTNode> list = inorder(this.root);
-        int index = 0;
-        for (int i = list.size() - 1; i >=0; i--) {
-            Deque deque = list.get(i).deque;
-            List<Integer> values = deque.getValues();
-            for (int j = 0; j < values.size(); j++) {
-                res[0][index] = values.get(j);
-                res[1][index] = list.get(i).count;
-                index++;
-            }
-        }
-        return res;
-    }
-    
     // rebalance bst
     private BSTNode rebalanceBST(BSTNode root) {
         List<BSTNode> list = inorder(root);
@@ -283,4 +267,23 @@ public class BST {
 
         return res;
     }
+    
+    // for testing
+    public int[][] getAll() {
+        int[][] res = new int[2][this.size];
+
+        List<BSTNode> list = inorder(this.root);
+        int index = 0;
+        for (int i = list.size() - 1; i >=0; i--) {
+            Deque deque = list.get(i).deque;
+            List<Integer> keys = deque.getKeys();
+            for (int j = 0; j < keys.size(); j++) {
+                res[0][index] = values.get(keys.get(j));
+                res[1][index] = list.get(i).count;
+                index++;
+            }
+        }
+        return res;
+    }
+
 }

@@ -6,9 +6,9 @@ import johnny.datastructure.common.Node;
 
 public class LFU {
     private int capacity;
-    private HashMap<Integer, Node> map;
-    private Node head; // The most frequently accessed element
-    private Node tail; // The least frequently used element
+    private HashMap<Integer, Node> map; // key, node
+    private Node head;                  // The most frequently accessed element
+    private Node tail;                  // The least frequently used element
     private final int MAX = Integer.MAX_VALUE;
     private final int MIN = Integer.MIN_VALUE;
     
@@ -21,8 +21,8 @@ public class LFU {
         tail.prev = head;
     }
     
-    public void add(int value) {
-        if (map.containsKey(value)) {
+    public void add(int key, int value) {
+        if (map.containsKey(key)) {
             return;
         }
 
@@ -32,20 +32,20 @@ public class LFU {
             tail.prev.next = tail;
         }
 
-        Node newNode = new Node(value, 0);
-        map.put(value, newNode);
+        Node newNode = new Node(key, 0);
+        map.put(key, newNode);
         
         // move new node to proper position
         move(newNode);
     }
     
-    public int get(int value) {
-        if (!map.containsKey(value)) {
+    public int get(int key) {
+        if (!map.containsKey(key)) {
             return this.MIN;
         }
 
         // remove current
-        Node current = map.get(value);
+        Node current = map.get(key);
         current.prev.next = current.next;
         current.next.prev = current.prev;
 
@@ -54,7 +54,7 @@ public class LFU {
         // move current node to proper position
         move(current);
 
-        return map.get(value).value;
+        return map.get(key).value;
     }
 
     private void move(Node node) {

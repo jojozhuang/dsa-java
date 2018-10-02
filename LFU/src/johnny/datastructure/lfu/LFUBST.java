@@ -12,12 +12,12 @@ public class LFUBST {
         this.bst = new BST(capacity);
     }
     
-    public void add(int value) {
-        bst.insert(0, value);
+    public void add(int key, int value) {
+        bst.add(0, key, value);
     }
     
-    public int get(int value) {
-        return bst.get(value);
+    public int get(int key) {
+        return bst.get(key);
     }
     
     // methods for testing

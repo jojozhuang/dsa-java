@@ -6,20 +6,20 @@ import java.util.List;
 
 public class Deque {
     class Node {
-        public int value;
+        public int key;
         public Node prev;
         public Node next;
 
-        public Node(int value) {
-            this.value = value;
+        public Node(int key) {
+            this.key = key;
             this.prev = null;
             this.next = null;
         }
     }
     
-    private Node head; // The most frequently accessed element
-    private Node tail; // The least frequently used element
-    private HashMap<Integer, Node> map;
+    private Node head;                  // The most frequently accessed element
+    private Node tail;                  // The least frequently used element
+    private HashMap<Integer, Node> map; // key, node
     private int size;
     private final int MAX = Integer.MAX_VALUE;
     private final int MIN = Integer.MIN_VALUE;
@@ -34,9 +34,9 @@ public class Deque {
     }
     
     // O(1)
-    public void addFirst(int value) {
-        Node node = new Node(value);
-        map.put(value, node);
+    public void addFirst(int key) {
+        Node node = new Node(key);
+        map.put(key, node);
         
         // move new node to head
         node.prev = head;
@@ -48,24 +48,24 @@ public class Deque {
     
     // O(1)
     public void removeLast() {
-        map.remove(tail.prev.value);
+        map.remove(tail.prev.key);
         tail.prev = tail.prev.prev;
         tail.prev.next = tail;
         size--;
     }
     
     // O(1)
-    public void remove(int value) {
-        Node node = map.get(value);
+    public void remove(int key) {
+        Node node = map.get(key);
         node.prev.next = node.next;
         node.next.prev = node.prev;
-        map.remove(value);
+        map.remove(key);
         size--;
     }
     
     public int first() {
         if (size > 0) {
-            return head.next.value;
+            return head.next.key;
         } else {
             return Integer.MAX_VALUE;
         }
@@ -73,18 +73,18 @@ public class Deque {
     
     public int last() {
         if (size > 0) {
-            return tail.prev.value;
+            return tail.prev.key;
         } else {
             return Integer.MIN_VALUE;
         }
     }
     
-    public List<Integer> getValues() {
+    public List<Integer> getKeys() {
         List<Integer> res = new ArrayList<>();
         Node root = head.next;
         while (root != null) {
-            if (root.value != MIN) {
-                res.add(root.value);
+            if (root.key != MIN) {
+                res.add(root.key);
             }
             root = root.next;
         }
