@@ -1,23 +1,19 @@
 package johnny.datastructure.lfu;
 
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.PriorityQueue;
 
 public class LFUHeap {
     private HashMap<Integer, Integer> values;               // key, value
-    private HashMap<Integer, Integer> counts;               // value, count
+    private HashMap<Integer, Integer> counts;               // key, count
     private PriorityQueue<Integer> heap;                    // sorted count, ascending
-    private HashMap<Integer, LinkedHashSet<Integer>> lists; // count, list
+    private HashMap<Integer, LinkedHashSet<Integer>> lists; // count, list->keys
 
     private int capacity;
     public LFUHeap(int capacity) {
@@ -27,9 +23,10 @@ public class LFUHeap {
         heap = new PriorityQueue<>();
         lists = new HashMap<>();
         lists.put(0, new LinkedHashSet<>()); // always keep a minimum, as 0 is the smallest.
+        heap.offer(0);
     }
     
-    public void put(int key, int value) {
+    public void add(int key, int value) {
         if (capacity <= 0) {
             return;
         }
@@ -44,6 +41,10 @@ public class LFUHeap {
             lists.get(min).remove(evict);
             values.remove(evict);
             counts.remove(evict);
+            if (lists.get(min).size() == 0) {
+                //lists.remove(min);
+                heap.poll();
+            }
         }
         values.put(key, value);
         counts.put(key, 0);
@@ -57,35 +58,43 @@ public class LFUHeap {
         int count = counts.get(key);
         counts.put(key, count + 1);
         lists.get(count).remove(key);
-
+        if (lists.get(count).size() == 0) {
+            //lists.remove(count);
+            heap.remove(count);
+        }
+        
         if (!lists.containsKey(count+1)) {
             lists.put(count + 1, new LinkedHashSet<>());
+            heap.offer(count + 1);
         }
         lists.get(count + 1).add(key);
         return values.get(key);
     }
     
     // methods for testing
-    public int[] getAll() {
-        int[] res = new int[counts.size()];
+    public int[][] getAll() {
+        int[][] res = new int[2][values.size()];
         int[][] pairs = sortByValue(counts);
         int i = 0;
         while (i < pairs.length) {
             if (i < pairs.length - 1) {
                 if (pairs[i][1] > pairs[i+1][1]) {
-                    res[i] = pairs[i][0];
+                    res[0][i] = pairs[i][0];
+                    res[1][i] = counts.get(pairs[i][0]);
                     i++;
                 } else {
                     LinkedHashSet<Integer> list = lists.get(pairs[i][1]);
                     int j = list.size() - 1;
                     for (Integer key : list) {
-                        res[i+j] = values.get(key);
+                        res[0][i+j] = values.get(key);
+                        res[1][i+j] = counts.get(key);
                         j--;
                     }
                     i += list.size();
                 }
             } else {
-                res[i] = pairs[i][0];
+                res[0][i] = pairs[i][0];
+                res[1][i] = counts.get(pairs[i][0]);
                 i++;
             }
         }
