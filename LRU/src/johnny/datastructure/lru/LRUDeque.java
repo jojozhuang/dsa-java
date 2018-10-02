@@ -10,8 +10,8 @@ import java.util.LinkedList;
  */
 public class LRUDeque {
     private int capacity;
-    private HashMap<Integer, Integer> map;
-    private Deque<Integer> deque;
+    private HashMap<Integer, Integer> map; // key, value
+    private Deque<Integer> deque;          // key
     private final int MIN = Integer.MIN_VALUE;
     
     public LRUDeque(int capacity) {
@@ -20,8 +20,8 @@ public class LRUDeque {
         this.deque = new LinkedList<Integer>(); 
     }
     
-    public void add(int value) {
-        if (map.containsKey(value)) {
+    public void add(int key, int value) {
+        if (map.containsKey(key)) {
             return;
         }
 
@@ -31,22 +31,22 @@ public class LRUDeque {
         }
 
         // add to map
-        map.put(value, value);
+        map.put(key, value);
         // add to the head of deque
-        deque.addFirst(value);
+        deque.addFirst(key);
     }
     
-    public int get(int value) {
-        if (!map.containsKey(value)) {
+    public int get(int key) {
+        if (!map.containsKey(key)) {
             return this.MIN;
         }
 
         // remove current
-        deque.remove(value); // equivalent to removeFirstOccurrence(), performance issue, O(n)
+        deque.remove(key); // equivalent to removeFirstOccurrence(), performance issue, O(n)
         // move it to head
-        deque.addFirst(value);
+        deque.addFirst(key);
 
-        return map.get(value);
+        return map.get(key);
     }
 
     // methods for testing
