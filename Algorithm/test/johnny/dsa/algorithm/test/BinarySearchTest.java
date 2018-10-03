@@ -1,4 +1,4 @@
-package johnny.datastructure.graph.test;
+package johnny.dsa.algorithm.test;
 
 import static org.junit.Assert.*;
 
