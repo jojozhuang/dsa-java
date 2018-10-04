@@ -1,4 +1,4 @@
-package johnny.datastructure.stack.test;
+package johnny.dsa.stack.test;
 
 import static org.junit.Assert.*;
 
@@ -8,7 +8,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import johnny.datastructure.stack.LinkedListStack;
+import johnny.dsa.stack.LinkedListStack;
 
 public class LinkedListStackTest {
 

@@ -1,6 +1,6 @@
-package johnny.datastructure.stack;
+package johnny.dsa.stack;
 
-import johnny.datastructure.common.ListNode;
+import johnny.dsa.common.ListNode;
 
 public class LinkedListStack {
     private ListNode head; // the first node

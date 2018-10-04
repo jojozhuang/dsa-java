@@ -1,4 +1,4 @@
-package johnny.datastructure.stack;
+package johnny.dsa.stack;
 
 public class ArrayStack {
     private int top;

@@ -1,4 +1,4 @@
-package johnny.datastructure.stack.test;
+package johnny.dsa.stack.test;
 
 import static org.junit.Assert.*;
 
@@ -10,9 +10,9 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import johnny.datastructure.stack.StackInsertionSort;
+import johnny.dsa.stack.StackMergeSort;
 
-public class StackInsertionSortTest {
+public class StackMergeSortTest {
 
     @BeforeClass
     public static void setUpBeforeClass() throws Exception {
@@ -31,10 +31,10 @@ public class StackInsertionSortTest {
     }
 
     @Test
-    public void testInsertionSort() {
-        System.out.println("testInsertionSort");
+    public void testStackMergeSort() {
+        System.out.println("testStackMergeSort");
 
-        StackInsertionSort instance = new StackInsertionSort();
+        StackMergeSort instance = new StackMergeSort();
         Stack<Integer> result1 = instance.sort(null);
         Stack<Integer> expect1 = null;
         assertEquals(expect1, result1);
