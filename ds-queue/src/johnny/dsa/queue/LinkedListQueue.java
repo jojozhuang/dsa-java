@@ -1,6 +1,6 @@
-package johnny.datastructure.queue;
+package johnny.dsa.queue;
 
-import johnny.datastructure.common.ListNode;
+import johnny.dsa.common.ListNode;
 
 public class LinkedListQueue {
     private ListNode head; // the first node

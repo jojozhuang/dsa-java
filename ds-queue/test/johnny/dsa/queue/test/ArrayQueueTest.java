@@ -1,4 +1,4 @@
-package johnny.datastructure.queue.test;
+package johnny.dsa.queue.test;
 
 import static org.junit.Assert.*;
 
@@ -8,8 +8,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import johnny.datastructure.common.EmptyException;
-import johnny.datastructure.queue.ArrayQueue;
+import johnny.dsa.queue.ArrayQueue;
 
 public class ArrayQueueTest {
 
@@ -52,8 +51,8 @@ public class ArrayQueueTest {
         assertEquals(true, queue.isEmpty());
     }
     
-    @Test(expected = EmptyException.class)
-    public void testArrayQueueCapacity() throws EmptyException {
+    @Test(expected = Exception.class)
+    public void testArrayQueueCapacity() throws Exception {
         System.out.println("testArrayQueueCapacity");
         ArrayQueue queue = new ArrayQueue(5);
         assertEquals(true, queue.isEmpty());

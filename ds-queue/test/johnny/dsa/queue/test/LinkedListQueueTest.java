@@ -1,4 +1,4 @@
-package johnny.datastructure.queue.test;
+package johnny.dsa.queue.test;
 
 import static org.junit.Assert.*;
 
@@ -8,9 +8,9 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import johnny.datastructure.queue.StackQueue;
+import johnny.dsa.queue.LinkedListQueue;
 
-public class StackQueueTest {
+public class LinkedListQueueTest {
 
     @BeforeClass
     public static void setUpBeforeClass() throws Exception {
@@ -29,9 +29,9 @@ public class StackQueueTest {
     }
 
     @Test
-    public void testStackQueue() throws Exception {
-        System.out.println("testStackQueue");
-        StackQueue queue = new StackQueue();
+    public void testLinkedListQueue() throws Exception {
+        System.out.println("testLinkedListQueue");
+        LinkedListQueue queue = new LinkedListQueue();
         assertEquals(true, queue.isEmpty());
         queue.enqueue(1);
         queue.enqueue(2);

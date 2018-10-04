@@ -1,6 +1,4 @@
-package johnny.datastructure.queue;
-
-import johnny.datastructure.common.EmptyException;
+package johnny.dsa.queue;
 
 public class ArrayQueue {
     private int head; // the first node
@@ -25,9 +23,9 @@ public class ArrayQueue {
     }
 
     // Remove the first item from the array and return its value
-    public int dequeue() throws EmptyException {
+    public int dequeue() throws Exception {
         if (isEmpty()) {
-            throw new EmptyException("Array Queue is empty when dequeue!");
+            throw new Exception();
         }
         int value = arr[head];
         head++;
@@ -35,15 +33,15 @@ public class ArrayQueue {
     }
 
     // Get the first item
-    public int peek() throws EmptyException {
+    public int peek() throws Exception {
         if (isEmpty()) {
-            throw new EmptyException("Array Queue is empty when peek!");
+            throw new Exception();
         }
         return arr[head];
     }
 
     // Return whether the queue is empty
     public boolean isEmpty() {
-        return (head == -1) || (head == tail);
+        return (head == -1) || (head > tail);
     }
 }

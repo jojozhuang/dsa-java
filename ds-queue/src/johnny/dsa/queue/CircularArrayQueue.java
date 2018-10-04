@@ -1,6 +1,4 @@
-package johnny.datastructure.queue;
-
-import johnny.datastructure.common.EmptyException;
+package johnny.dsa.queue;
 
 public class CircularArrayQueue {
     private int head; // the first node in queue, not the first item in array
@@ -33,9 +31,9 @@ public class CircularArrayQueue {
     }
 
     // Remove the first item from the queue and return its value
-    public int dequeue() throws EmptyException {
+    public int dequeue() throws Exception {
         if (isEmpty()) {
-            throw new EmptyException("Array Queue is empty when dequeue!");
+            throw new Exception("Array Queue is empty when dequeue!");
         }
         
         int value = arr[head];
@@ -52,9 +50,9 @@ public class CircularArrayQueue {
     }
 
     // Get the first item
-    public int peek() throws EmptyException {
+    public int peek() throws Exception {
         if (isEmpty()) {
-            throw new EmptyException("Array Queue is empty when peek!");
+            throw new Exception("Array Queue is empty when peek!");
         }
         return arr[head];
     }

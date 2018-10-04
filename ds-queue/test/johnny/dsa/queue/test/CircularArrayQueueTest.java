@@ -1,4 +1,4 @@
-package johnny.datastructure.queue.test;
+package johnny.dsa.queue.test;
 
 import static org.junit.Assert.*;
 
@@ -8,8 +8,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import johnny.datastructure.common.EmptyException;
-import johnny.datastructure.queue.CircularArrayQueue;
+import johnny.dsa.queue.CircularArrayQueue;
 
 public class CircularArrayQueueTest {
 
@@ -52,8 +51,8 @@ public class CircularArrayQueueTest {
         assertEquals(true, queue.isEmpty());
     }
     
-    @Test(expected = EmptyException.class)
-    public void testCircularArrayQueueCapacity() throws EmptyException {
+    @Test(expected = Exception.class)
+    public void testCircularArrayQueueCapacity() throws Exception {
         System.out.println("testCircularArrayQueueCapacity");
         CircularArrayQueue queue = new CircularArrayQueue(5);
         assertEquals(true, queue.isEmpty());

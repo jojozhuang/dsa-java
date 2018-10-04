@@ -1,4 +1,4 @@
-package johnny.datastructure.queue;
+package johnny.dsa.queue;
 
 import java.util.LinkedList;
 import java.util.Queue;

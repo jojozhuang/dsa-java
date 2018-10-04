@@ -1,4 +1,4 @@
-package johnny.datastructure.queue.test;
+package johnny.dsa.queue.test;
 
 import static org.junit.Assert.*;
 
@@ -11,7 +11,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import johnny.datastructure.queue.QueueMergeSort;
+import johnny.dsa.queue.QueueMergeSort;
 
 public class QueueMergeSortTest {
 
