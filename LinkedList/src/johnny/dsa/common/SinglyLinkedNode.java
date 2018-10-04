@@ -1,4 +1,4 @@
-package johnny.datastructure.linkedlist;
+package johnny.dsa.common;
 
 public class SinglyLinkedNode {
     public int val;

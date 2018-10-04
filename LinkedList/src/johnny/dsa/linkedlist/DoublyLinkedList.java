@@ -1,4 +1,6 @@
-package johnny.datastructure.linkedlist;
+package johnny.dsa.linkedlist;
+
+import johnny.dsa.common.DoublyLinkedNode;
 
 public class DoublyLinkedList {
     // create a doubly linked list with the given array

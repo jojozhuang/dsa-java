@@ -1,4 +1,6 @@
-package johnny.datastructure.linkedlist;
+package johnny.dsa.linkedlist;
+
+import johnny.dsa.common.SinglyLinkedNode;
 
 public class SinglyLinkedList {
     // create a singly linked list with the given array

@@ -1,6 +1,6 @@
-package johnny.datastructure.linkedlist;
+package johnny.dsa.linkedlist;
 
-import johnny.datastructure.common.ListNode;
+import johnny.dsa.common.ListNode;
 
 public class LinkedList {
     /**

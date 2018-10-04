@@ -1,9 +1,15 @@
-package johnny.datastructure.common;
+package johnny.dsa.common;
 
-import johnny.datastructure.common.ListNode;
-
-public class ListNodeFactory {
-	public static ListNode createInstance(int[] arr) {  
+public class ListNode {
+    public int val;
+    public ListNode next;
+    public ListNode(int val) {
+        this.val = val;
+        this.next = null;
+    }
+    
+    // static methods
+    public static ListNode createInstance(int[] arr) {  
         if (arr == null || arr.length == 0) {
             return null;
         }
