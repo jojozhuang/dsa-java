@@ -1,6 +1,6 @@
-package johnny.datastructure.segmenttree;
+package johnny.dsa.segmenttree;
 
-import johnny.datastructure.common.SegmentTreeNode;
+import johnny.dsa.common.SegmentTreeNode;
 
 public class SegmentTree {
     private SegmentTreeNode root;

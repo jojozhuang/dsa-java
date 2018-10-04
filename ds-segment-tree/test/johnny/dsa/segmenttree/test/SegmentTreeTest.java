@@ -1,4 +1,4 @@
-package johnny.datastructure.segmenttree.test;
+package johnny.dsa.segmenttree.test;
 
 import static org.junit.Assert.*;
 
@@ -8,8 +8,8 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import johnny.datastructure.common.SegmentTreeNode;
-import johnny.datastructure.segmenttree.SegmentTree;
+import johnny.dsa.common.SegmentTreeNode;
+import johnny.dsa.segmenttree.SegmentTree;
 
 public class SegmentTreeTest {
 

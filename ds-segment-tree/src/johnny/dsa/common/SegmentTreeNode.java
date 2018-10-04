@@ -1,4 +1,4 @@
-package johnny.datastructure.common;
+package johnny.dsa.common;
 
 public class SegmentTreeNode {
     public int start, end;
