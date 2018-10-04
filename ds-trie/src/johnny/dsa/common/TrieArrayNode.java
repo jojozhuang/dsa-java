@@ -1,4 +1,4 @@
-package johnny.datastructure.common;
+package johnny.dsa.common;
 
 /*
  * Another implementation of trie node. Use array instead of map in case all the characters 

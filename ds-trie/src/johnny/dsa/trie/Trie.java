@@ -1,24 +1,21 @@
-package johnny.datastructure.trie;
+package johnny.dsa.trie;
 
-import johnny.datastructure.common.TrieArrayNode;
+import johnny.dsa.common.TrieNode;
 
-/*
- * Another implementation of trie, constructed with array node.
- */
-public class TrieArray {
-    private TrieArrayNode root;
+public class Trie {
+    private TrieNode root;
     
-    public TrieArray() {
-        this.root = new TrieArrayNode();
+    public Trie() {
+        this.root = new TrieNode();
     }
     
-    public TrieArrayNode getRoot() {
+    public TrieNode getRoot() {
         return this.root;
     }
     
     // Return true if the word is in trie
     public boolean search(String word) {
-        TrieArrayNode tn = searchNode(word);
+        TrieNode tn = searchNode(word);
         if (tn != null && tn.leaf) {
             return true;
         } else {
@@ -35,13 +32,13 @@ public class TrieArray {
         }
     }
 
-    private TrieArrayNode searchNode(String str) {
-        TrieArrayNode current = root;
+    private TrieNode searchNode(String str) {
+        TrieNode current = root;
 
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
-            if (current.children[ch-'a'] != null) {
-                current = current.children[ch-'a'];
+            if (current.children.containsKey(ch)) {
+                current = current.children.get(ch);
             } else {
                 return null;
             }
@@ -52,39 +49,39 @@ public class TrieArray {
     
     // Insert a word into trie
     public void insert(String word) {
-        TrieArrayNode current = root;
+        TrieNode current = root;
 
         for (int i = 0; i < word.length(); i++) {
             char ch = word.charAt(i);
-            if (current.children[ch-'a'] == null) {
-                current.children[ch-'a'] = new TrieArrayNode();
+            if (!current.children.containsKey(ch)) {
+                current.children.put(ch, new TrieNode());
             }
-            current = current.children[ch-'a'];
+            current = current.children.get(ch);
         }
 
         current.leaf = true;
     }
     
     public boolean delete(String word) {
-        TrieArrayNode current = root;
-        TrieArrayNode lastBranchNode = null;
+        TrieNode current = root;
+        TrieNode lastBranchNode = null;
         Character lastBrachChar = null;
 
-        for (int i = 0; i < word.length(); i++){
+        for (int i = 0; i < word.length(); i++) {
             char ch = word.charAt(i);
-            if (current.children[ch-'a'] != null) {
-                if (current.children.length > 1) {
+            if (current.children.containsKey(ch)) {
+                if (current.children.size() > 1) {
                     lastBranchNode = current;
                     lastBrachChar = ch;
                 }
-                current = current.children[ch-'a'];
+                current = current.children.get(ch);
             } else {
                 // word not found
                 return false;
             }
         }
         
-        if (current.children.length > 0) {
+        if (current.children.size() > 0) {
             // case 1: The to-be deleted word is prefix of another long word in trie.
             current.leaf = false;
             return true;
@@ -92,11 +89,11 @@ public class TrieArray {
         
         if (lastBranchNode != null) {
             // case 2: The to-be deleted word has other words as prefix
-            lastBranchNode.children[lastBrachChar - 'a'] = null;
+            lastBranchNode.children.remove(lastBrachChar);
             return true;
         } else {
             // case 3: The to-be deleted word present as unique word
-            root.children[word.charAt(0) - 'a'] = null;
+            root.children.remove(word.charAt(0));
             return true;
         }
     }
