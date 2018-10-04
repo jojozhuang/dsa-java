@@ -1,9 +1,9 @@
-package johnny.datastructure.bst;
+package johnny.dsa.bst;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import johnny.datastructure.common.BSTNode;
+import johnny.dsa.common.BSTNode;
 
 public class BalancedBST {
     public BSTNode rebalanceBST(BSTNode root) {

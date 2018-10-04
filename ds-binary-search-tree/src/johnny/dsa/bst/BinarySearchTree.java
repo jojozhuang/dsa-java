@@ -1,6 +1,6 @@
-package johnny.datastructure.bst;
+package johnny.dsa.bst;
 
-import johnny.datastructure.common.BSTNode;
+import johnny.dsa.common.BSTNode;
 
 public class BinarySearchTree {
     private BSTNode root;

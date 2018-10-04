@@ -1,4 +1,4 @@
-package johnny.datastructure.bst.test;
+package johnny.dsa.bst.test;
 
 import static org.junit.Assert.*;
 
@@ -8,8 +8,8 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import johnny.datastructure.bst.BinarySearchTree;
-import johnny.datastructure.common.BSTNode;
+import johnny.dsa.bst.BinarySearchTree;
+import johnny.dsa.common.BSTNode;
 
 public class BinarySearchTreeTest {
 
