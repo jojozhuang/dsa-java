@@ -1,9 +1,19 @@
-package johnny.datastructure.common;
+package johnny.dsa.common;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class TreeFactory {
+public class TreeNode {
+    public int val;
+    public TreeNode left;
+    public TreeNode right;
+    public TreeNode(int val) {
+        this.val = val; 
+        this.left = null;
+        this.right = null;
+    }
+    
+    // static methods
     public static TreeNode createInstance(String[] arr) {
         if(arr == null || arr.length == 0) {
             return null;

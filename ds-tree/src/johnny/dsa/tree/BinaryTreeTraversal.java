@@ -1,4 +1,4 @@
-package johnny.datastructure.tree;
+package johnny.dsa.tree;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Queue;
 import java.util.Stack;
 
-import johnny.datastructure.common.TreeNode;
+import johnny.dsa.common.TreeNode;
 
 public class BinaryTreeTraversal {
     /**

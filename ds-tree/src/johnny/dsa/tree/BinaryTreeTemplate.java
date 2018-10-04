@@ -1,4 +1,4 @@
-package johnny.datastructure.tree;
+package johnny.dsa.tree;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -6,7 +6,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
 
-import johnny.datastructure.common.TreeNode;
+import johnny.dsa.common.TreeNode;
 
 /*
  * We have a tree, there are totally 6 traversal ways.
