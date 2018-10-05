@@ -1,2 +1,25 @@
-# DataStructure
-Samples for basic and advanced data structures, eg. linked list, stack and segment tree. Implemented with Java.
+# Data Structure and Algorithm
+Simplified implementation for common data structures and classic algorithms, both are written in Java.
+## Data Structures
+* Linked List
+* Stack
+* Queue
+* Tree
+* Binary Search Tree
+* Trie
+* Segment Tree
+* HashMap
+* Heap
+* Graph
+* LRU Cache
+* LFU Cache
+
+## Algorithms
+* Binary Search
+* Union and Find
+
+# Setup Locally
+```bash
+git clone https://github.com/jojozhuang/dsa-java.git
+```
+Open the project in Eclipse, compile and run the JUnit test cases.
