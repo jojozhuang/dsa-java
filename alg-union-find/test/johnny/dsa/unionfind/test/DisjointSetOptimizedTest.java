@@ -1,4 +1,4 @@
-package johnny.datastructure.graph.test;
+package johnny.dsa.unionfind.test;
 
 import static org.junit.Assert.*;
 
@@ -10,8 +10,8 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import johnny.datastructure.graph.DisjointSet;
-import johnny.datastructure.graph.DisjointSetOptimized;;
+import johnny.dsa.unionfind.DisjointSet;
+import johnny.dsa.unionfind.DisjointSetOptimized;;
 
 public class DisjointSetOptimizedTest {
 

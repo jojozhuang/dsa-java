@@ -1,4 +1,4 @@
-package johnny.datastructure.graph;
+package johnny.dsa.unionfind;
 
 public class DisjointSet {
     private int[] parents;
