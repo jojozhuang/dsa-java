@@ -1,22 +1,23 @@
-package johnny.datastructure.hashmap;
+package johnny.dsa.hashmap;
 
 import java.util.ArrayList;
-import johnny.datastructure.common.HashNodeInt;
+
+import johnny.dsa.common.HashNode;
 
 /*
  * Implementing HashMap with Separate Chaining.
- * Integer Version
+ * Generic Version.
  */
-public class HashMapInt {
+public class HashMap<K, V> {
     // bucketArray is used to store array of chains
-    private ArrayList<HashNodeInt> bucketList;
+    private ArrayList<HashNode<K, V>> bucketList;
     // Current capacity of array list
     private int numBuckets;
     // Current size of array list
     private int size;
     
     // Constructor (Initializes capacity, size and empty chains.
-    public HashMapInt() {
+    public HashMap() {
         bucketList = new ArrayList<>();
         numBuckets = 10;
         size = 0;
@@ -36,32 +37,32 @@ public class HashMapInt {
     }
     
     // Returns value for a key
-    public int get(int key) {
+    public V get(K key) {
         // Find head of chain for given key
         int bucketIndex = hashFunc(key);
-        HashNodeInt head = bucketList.get(bucketIndex);
+        HashNode<K, V> head = bucketList.get(bucketIndex);
  
         // Search key in chain
         while (head != null) {
-            if (head.key == key) {
+            if (head.key.equals(key)) {
                 return head.val;
             }
             head = head.next;
         }
  
         // If key not found
-        return Integer.MIN_VALUE;
+        return null;
     }
     
     // Adds a key value pair to hash
-    public void add(int key, int value) {
+    public void add(K key, V value) {
         // Find head of chain for given key
         int bucketIndex = hashFunc(key);
-        HashNodeInt head = bucketList.get(bucketIndex);
+        HashNode<K, V> head = bucketList.get(bucketIndex);
  
         // Check if key is already present
         while (head != null) {
-            if (head.key == key) {
+            if (head.key.equals(key)) {
                 head.val = value;
                 return;
             }
@@ -71,13 +72,13 @@ public class HashMapInt {
         // Insert key in chain
         size++;
         head = bucketList.get(bucketIndex);
-        HashNodeInt newNode = new HashNodeInt(key, value);
+        HashNode<K, V> newNode = new HashNode<K, V>(key, value);
         newNode.next = head; // add to header
         bucketList.set(bucketIndex, newNode);
         
         // If load factor goes beyond threshold, then double hash table size
         if ((1.0*size)/numBuckets >= 0.7) {
-            ArrayList<HashNodeInt> tempList = bucketList;
+            ArrayList<HashNode<K, V>> tempList = bucketList;
             bucketList = new ArrayList<>();
             numBuckets = 2 * numBuckets; // double the capacity
             size = 0;
@@ -85,7 +86,7 @@ public class HashMapInt {
                 bucketList.add(null);
             }
  
-            for (HashNodeInt headNode : tempList) { // traverse array
+            for (HashNode<K, V> headNode : tempList) { // traverse array
                 while (headNode != null) { // traverse each linked list
                     add(headNode.key, headNode.val);
                     headNode = headNode.next;
@@ -95,18 +96,18 @@ public class HashMapInt {
     }
     
     // Method to remove a given key
-    public int remove(int key) {
+    public V remove(K key) {
         // Apply hash function to find index for given key
         int bucketIndex = hashFunc(key);
  
         // Get head of chain
-        HashNodeInt head = bucketList.get(bucketIndex);
+        HashNode<K, V> head = bucketList.get(bucketIndex);
  
         // Search for key in its chain
-        HashNodeInt prev = null;
+        HashNode<K, V> prev = null;
         while (head != null) {
             // If Key found
-            if (head.key == key) {
+            if (head.key.equals(key)) {
                 break;
             }
  
@@ -117,7 +118,7 @@ public class HashMapInt {
  
         // If key was not there
         if (head == null) {
-            return Integer.MIN_VALUE;
+            return null;
         }
  
         // Reduce size
@@ -134,8 +135,9 @@ public class HashMapInt {
     }
 
     // hash function 
-    private int hashFunc(int key) {
-        int index = key % numBuckets;
+    private int hashFunc(K key) {
+        int hashCode = key.hashCode();
+        int index = hashCode % numBuckets;
         return index;
     }
 }

@@ -1,4 +1,4 @@
-package johnny.datastructure.common;
+package johnny.dsa.common;
 
 public class HashNode<K, V> {
     public K key;
