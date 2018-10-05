@@ -1,8 +1,8 @@
-package johnny.datastructure.lru;
+package johnny.dsa.lru;
 
 import java.util.HashMap;
 
-import johnny.datastructure.common.Node;
+import johnny.dsa.common.Node;
 
 /*
  * Least Recently Used (LRU) cache

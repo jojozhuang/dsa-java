@@ -1,4 +1,4 @@
-package johnny.datastructure.lru;
+package johnny.dsa.lru;
 
 import java.util.Deque;
 import java.util.HashMap;
