@@ -1,4 +1,4 @@
-package johnny.dsa.algorithm.test;
+package johnny.dsa.binarysearch.test;
 
 import static org.junit.Assert.*;
 
@@ -8,7 +8,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import johnny.dsa.algorithm.BinarySearch;;
+import johnny.dsa.binarysearch.BinarySearch;;
 
 public class BinarySearchTest {
 

@@ -1,4 +1,4 @@
-package johnny.dsa.algorithm;
+package johnny.dsa.binarysearch;
 
 /*
  * Given a sorted (in ascending order) integer array nums of n elements and a target value, 
