@@ -1,4 +1,4 @@
-package johnny.datastructure.heap.test;
+package johnny.dsa.heap.test;
 
 import static org.junit.Assert.*;
 
@@ -8,7 +8,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import johnny.datastructure.heap.MaxHeap;
+import johnny.dsa.heap.MaxHeap;
 
 public class MaxHeapTest {
 

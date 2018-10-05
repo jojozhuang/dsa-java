@@ -1,26 +1,26 @@
-package johnny.datastructure.heap;
+package johnny.dsa.heap;
 
 import java.util.Arrays;
 
 // Reference: https://courses.cs.washington.edu/courses/cse373/11wi/homework/5/BinaryHeap.java
-// Implement generic MaxHeap with array. 
-public class MaxHeapGeneric<T extends Comparable<T>> {
+// Implement generic MinHeap with array. 
+public class MinHeapGeneric<T extends Comparable<T>> {
     private static final int DEFAULT_CAPACITY = 10;
     protected T[] array;
     protected int size;
 
     /**
-     * Constructs a new MaxHeap.
+     * Constructs a new MinHeap.
      */
     @SuppressWarnings("unchecked")
-    public MaxHeapGeneric () {
+    public MinHeapGeneric () {
         // Java doesn't allow construction of arrays of placeholder data types 
         array = (T[])new Comparable[DEFAULT_CAPACITY];
         size = 0;
     }
 
     /**
-     * Adds a value to the max-heap.
+     * Adds a value to the min-heap.
      */
     public void add(T value) {
         // grow array if needed
@@ -51,7 +51,7 @@ public class MaxHeapGeneric<T extends Comparable<T>> {
     }
 
     /**
-     * Returns (but does not remove) the maximum element in the heap.
+     * Returns (but does not remove) the minimum element in the heap.
      */
     public T peek() {
         if (this.isEmpty()) {
@@ -62,10 +62,10 @@ public class MaxHeapGeneric<T extends Comparable<T>> {
     }
 
     /**
-     * Removes and returns the maximum element in the heap.
+     * Removes and returns the minimum element in the heap.
      */
     public T remove() {
-            // get the root, which is the maximum value
+            // get the root, which is the minimum value
             T result = peek();
 
             // get rid of the last leaf/decrement
@@ -81,28 +81,28 @@ public class MaxHeapGeneric<T extends Comparable<T>> {
     /**
      * Performs the "bubble down" operation to place the element that is at the 
      * root of the heap in its correct place so that the heap maintains the 
-     * max-heap order property.
+     * min-heap order property.
      */
     protected void bubbleDown() {
         int index = 0; // root
 
         // bubble down
         while (hasLeftChild(index)) {
-            // which child is bigger?
-            int biggerChild = leftIndex(index);
+            // which child is smaller?
+            int smallerChild = leftIndex(index);
 
             // bubble with the smaller child, if it exists
             if (hasRightChild(index)
-                && array[leftIndex(index)].compareTo(array[rightIndex(index)]) < 0) {
-                biggerChild = rightIndex(index);
+                && array[leftIndex(index)].compareTo(array[rightIndex(index)]) > 0) {
+                smallerChild = rightIndex(index);
             } 
 
-            if (array[index].compareTo(array[biggerChild]) > 0) {
+            if (array[index].compareTo(array[smallerChild]) < 0) {
                 break;
             } else {
-                swap(index, biggerChild);
+                swap(index, smallerChild);
                 // make sure to update loop counter/index of where last el is put
-                index = biggerChild;
+                index = smallerChild;
             }
         }
     }
@@ -110,13 +110,13 @@ public class MaxHeapGeneric<T extends Comparable<T>> {
     /**
      * Performs the "bubble up" operation to place a newly inserted element 
      * (i.e. the element that is at the size index) in its correct place so 
-     * that the heap maintains the max-heap order property.
+     * that the heap maintains the min-heap order property.
      */
     protected void bubbleUp() {
         int index = this.size - 1;  // last/right most
 
         while (hasParent(index)
-                && (parent(index).compareTo(array[index]) < 0)) {
+                && (parent(index).compareTo(array[index]) > 0)) {
             // parent/child are out of order; swap them
             swap(index, parentIndex(index));
             index = parentIndex(index);

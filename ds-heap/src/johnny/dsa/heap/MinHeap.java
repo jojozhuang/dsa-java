@@ -1,4 +1,4 @@
-package johnny.datastructure.heap;
+package johnny.dsa.heap;
 
 import java.util.Arrays;
 
