@@ -1,4 +1,4 @@
-package johnny.datastructure.graph.test;
+package johnny.dsa.graph.test;
 
 import static org.junit.Assert.*;
 
@@ -10,7 +10,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import johnny.datastructure.graph.AdjMatrixGraph;
+import johnny.dsa.graph.AdjMatrixGraph;
 
 public class AdjMatrixGraphTest {
 

@@ -1,4 +1,4 @@
-package johnny.datastructure.graph.test;
+package johnny.dsa.graph.test;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -6,7 +6,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import johnny.datastructure.graph.MinimumSpanningTree;
+import johnny.dsa.graph.MinimumSpanningTree;
 
 public class MinimumSpanningTreeTest {
 

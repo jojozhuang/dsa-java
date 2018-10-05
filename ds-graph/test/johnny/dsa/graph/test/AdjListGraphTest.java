@@ -1,4 +1,4 @@
-package johnny.datastructure.graph.test;
+package johnny.dsa.graph.test;
 
 import static org.junit.Assert.assertArrayEquals;
 
@@ -10,8 +10,8 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import johnny.datastructure.common.Vertex;
-import johnny.datastructure.graph.AdjListGraph;
+import johnny.dsa.common.Vertex;
+import johnny.dsa.graph.AdjListGraph;
 
 public class AdjListGraphTest {
 

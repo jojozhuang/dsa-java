@@ -1,4 +1,4 @@
-package johnny.datastructure.graph.test;
+package johnny.dsa.graph.test;
 
 import static org.junit.Assert.assertArrayEquals;
 
@@ -12,8 +12,8 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import johnny.datastructure.common.Node;
-import johnny.datastructure.graph.NodeGraph;
+import johnny.dsa.common.Node;
+import johnny.dsa.graph.NodeGraph;
 
 public class NodeGraphTest {
 

@@ -1,41 +1,39 @@
-package johnny.datastructure.graph;
+package johnny.dsa.graph;
 
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
 
-import johnny.datastructure.common.Vertex;
+import johnny.dsa.common.Vertex;
 
 /*
- * A graph, implemented using an adjacency matrix.
+ * A graph, implemented using an adjacency list.
  */
-public class AdjMatrixGraph {
-    private int[][] matrix;    // adjacency matrix
-    private Vertex[] vertices; // array of vertices
-    private int size;          // current number of vertices
-
-    public AdjMatrixGraph(int capacity)
+public class AdjListGraph {
+    private LinkedList<Vertex>[] vertexList; // list of adjacency vertex
+    private Vertex[] vertices;               // array of vertices
+    private int size;                        // current number of vertices
+    
+    public AdjListGraph(int capacity)
     {
-        matrix = new int[capacity][capacity];
+        vertexList = new LinkedList[capacity];
         vertices = new Vertex[capacity];
         size = 0;
 
-        // initialize matrix
-        for (int i = 0; i < capacity; i++) {
-            for (int j = 0; j < capacity; j++) {
-                matrix[i][j] = 0;
-            }
+        // initialize array
+        for (int i = 0; i< vertexList.length; i++) {
+            vertexList[i] = new LinkedList<Vertex>();
         }
     }
-
+    
     public void addVertex(String name) {
         int index = size++;
         vertices[index] = new Vertex(index, name);
     }
 
     public void addEdge(int start, int end) {
-        matrix[start][end] = 1;
-        matrix[end][start] = 1; 
+        vertexList[start].add(vertices[end]);
+        vertexList[end].add(vertices[start]);
     }
 
     // dfs
@@ -61,7 +59,6 @@ public class AdjMatrixGraph {
         for (Vertex vertex : vertices) {
             vertex.visited = false;
         }
-        
         return res;
     }
 
@@ -93,9 +90,9 @@ public class AdjMatrixGraph {
     }
 
     private int getUnvisitedVertex(int index) {
-        for (int i = 0; i < size; i++) {
-            if (matrix[index][i] == 1 && vertices[i].visited == false) {
-                return i;
+        for (int i = 0; i < vertexList[index].size(); i++) {
+            if (vertexList[index].get(i).visited == false) {
+                return vertexList[index].get(i).index;
             }
         }
         return -1;
@@ -104,8 +101,8 @@ public class AdjMatrixGraph {
     public Vertex[] getVertices() {
         return vertices;
     }
-
-    public int[][] getAdjMatrix() {
-        return matrix;
+    
+    public LinkedList<Vertex>[] getVertexList() {
+        return vertexList;
     }
 }

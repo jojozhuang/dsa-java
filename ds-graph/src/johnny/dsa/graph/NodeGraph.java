@@ -1,11 +1,11 @@
-package johnny.datastructure.graph;
+package johnny.dsa.graph;
 
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 import java.util.Stack;
 
-import johnny.datastructure.common.Node;
+import johnny.dsa.common.Node;
 
 /*
  * A graph, implemented using a neighbor list.

@@ -1,6 +1,6 @@
-package johnny.datastructure.graph;
+package johnny.dsa.graph;
 
-import johnny.datastructure.common.Vertex;
+import johnny.dsa.common.Vertex;
 
 /*
  * A directed graph, implemented using an adjacency matrix.
