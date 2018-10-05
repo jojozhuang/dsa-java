@@ -1,6 +1,6 @@
-package johnny.datastructure.lfu;
+package johnny.dsa.lfu;
 
-import johnny.datastructure.common.BST;
+import johnny.dsa.common.BST;
 
 /*
  * not possible to use max heap, as you can't get the minimum value within O(log(n))

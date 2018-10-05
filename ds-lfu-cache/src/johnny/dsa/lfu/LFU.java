@@ -1,8 +1,8 @@
-package johnny.datastructure.lfu;
+package johnny.dsa.lfu;
 
 import java.util.HashMap;
 
-import johnny.datastructure.common.Node;
+import johnny.dsa.common.Node;
 
 public class LFU {
     private int capacity;

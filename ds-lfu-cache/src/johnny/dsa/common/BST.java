@@ -1,4 +1,4 @@
-package johnny.datastructure.common;
+package johnny.dsa.common;
 
 import java.util.ArrayList;
 import java.util.HashMap;

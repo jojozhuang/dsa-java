@@ -8,9 +8,9 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import johnny.datastructure.lfu.LFUHeap;
+import johnny.dsa.lfu.LFUBST;
 
-public class LFUHeapTest {
+public class LFUBSTTest {
 
     @BeforeClass
     public static void setUpBeforeClass() throws Exception {
@@ -29,9 +29,9 @@ public class LFUHeapTest {
     }
 
     @Test
-    public void testLFUCache_Heap() {
-        System.out.println("testLFUCache_Heap");
-        LFUHeap lfu = new LFUHeap(5); //capacity = 5
+    public void testLFUCache_BST() {
+        System.out.println("testLFUCache_BST");
+        LFUBST lfu = new LFUBST(5); //capacity = 5
         lfu.add(1,1);
         assertArrayEquals(new int[][]{{1},{0}}, lfu.getAll());
         lfu.add(2,2);

@@ -1,4 +1,4 @@
-package johnny.datastructure.lfu;
+package johnny.dsa.lfu;
 
 import java.util.Collections;
 import java.util.Comparator;
@@ -7,23 +7,27 @@ import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.PriorityQueue;
 
-public class LFUHashMap {
-    HashMap<Integer, Integer> values;               // key, value
-    HashMap<Integer, Integer> counts;               // key, count
-    HashMap<Integer, LinkedHashSet<Integer>> lists; // count, list->keys
-    int cap;
-    int min = -1;
-    public LFUHashMap(int capacity) {
-        cap = capacity;
+public class LFUHeap {
+    private HashMap<Integer, Integer> values;               // key, value
+    private HashMap<Integer, Integer> counts;               // key, count
+    private PriorityQueue<Integer> heap;                    // sorted count, ascending
+    private HashMap<Integer, LinkedHashSet<Integer>> lists; // count, list->keys
+
+    private int capacity;
+    public LFUHeap(int capacity) {
+        this.capacity = capacity;
         values = new HashMap<>();
         counts = new HashMap<>();
+        heap = new PriorityQueue<>();
         lists = new HashMap<>();
-        lists.put(0, new LinkedHashSet<>());
+        lists.put(0, new LinkedHashSet<>()); // always keep a minimum, as 0 is the smallest.
+        heap.offer(0);
     }
     
     public void add(int key, int value) {
-        if (cap <= 0) {
+        if (capacity <= 0) {
             return;
         }
         if (values.containsKey(key)) {
@@ -31,15 +35,19 @@ public class LFUHashMap {
             get(key); // trigger the reorder
             return;
         } 
-        if (values.size() >= cap) {
+        if (values.size() >= capacity) {
+            int min = heap.peek();
             int evict = lists.get(min).iterator().next();
             lists.get(min).remove(evict);
             values.remove(evict);
             counts.remove(evict);
+            if (lists.get(min).size() == 0) {
+                //lists.remove(min);
+                heap.poll();
+            }
         }
         values.put(key, value);
         counts.put(key, 0);
-        min = 0;
         lists.get(0).add(key);
     }
     
@@ -50,11 +58,14 @@ public class LFUHashMap {
         int count = counts.get(key);
         counts.put(key, count + 1);
         lists.get(count).remove(key);
-        if (count == min && lists.get(count).size() == 0) {
-            min++;
+        if (lists.get(count).size() == 0) {
+            //lists.remove(count);
+            heap.remove(count);
         }
+        
         if (!lists.containsKey(count+1)) {
             lists.put(count + 1, new LinkedHashSet<>());
+            heap.offer(count + 1);
         }
         lists.get(count + 1).add(key);
         return values.get(key);

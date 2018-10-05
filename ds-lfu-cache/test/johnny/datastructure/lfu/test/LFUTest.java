@@ -8,7 +8,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import johnny.datastructure.lfu.LFU;
+import johnny.dsa.lfu.LFU;
 
 public class LFUTest {
 
