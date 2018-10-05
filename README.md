@@ -1,5 +1,5 @@
 # Data Structure and Algorithm
-Simplified implementation for common data structures and classic algorithms, both are written in Java.
+Simplified implementation of common data structures and classic algorithms. All samples are written in Java.
 ## Data Structures
 * Linked List
 * Stack
