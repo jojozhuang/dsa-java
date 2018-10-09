@@ -17,7 +17,7 @@ public class QuickSort {
         int pivot = partition(nums, start, end);
         quickHelper(nums, start, pivot - 1);
         quickHelper(nums, pivot + 1, end);
-    }   
+    }
     
     // one way
     private int partition(int[] nums, int start, int end) {

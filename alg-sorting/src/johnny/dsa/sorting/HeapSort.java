@@ -10,7 +10,7 @@ public class HeapSort {
         for (int i = nums.length / 2 - 1; i >= 0; i--) {
             heapify(nums, nums.length, i);
         }
- 
+        
         // One by one extract an element from heap
         for (int i = nums.length - 1; i >= 0; i--) {
             int temp = nums[0];
@@ -21,17 +21,22 @@ public class HeapSort {
         }
     }
  
+    /*
+     * n is the size of heap, i is the index of node in array
+     */
     private void heapify(int nums[], int n, int i) {
-        int largest = i;  // Initialize largest as root
-        int l = 2*i + 1;  // left child
-        int r = 2*i + 2;  // right child
+        int largest = i;     // Initialize largest as root
+        int left = 2*i + 1;  // left child
+        int right = 2*i + 2; // right child
  
-        if (l < n && nums[l] > nums[largest]) {
-            largest = l;
+        // If left child is larger than root 
+        if (left < n && nums[left] > nums[largest]) {
+            largest = left;
         }
  
-        if (r < n && nums[r] > nums[largest]) {
-            largest = r;
+        // If right child is larger than largest so far 
+        if (right < n && nums[right] > nums[largest]) {
+            largest = right;
         }
  
         // If largest is not root
