@@ -85,4 +85,66 @@ public class BinarySearch {
         
         return -1;
     }
+    
+    // search the first occurrence
+    public int searchFirst(int[] nums, int target) {
+        if (nums == null || nums.length == 0) {
+            return -1;
+        }
+        int start = 0;
+        int end = nums.length - 1;
+    
+        while (start + 1 < end) {
+            int mid = start + (end - start) / 2;
+            if (nums[mid] == target) {
+                end = mid; // don't return, instead, exclude the right part
+            } else if (nums[mid] < target) {
+                start = mid;
+            } else {
+                end = mid;
+            }
+        }
+        
+        // check start first
+        if (nums[start] == target) {
+            return start;
+        }
+        
+        if (nums[end] == target) {
+            return end;
+        }
+        
+        return -1;
+    }
+    
+    // search the last occurrence
+    public int searchLast(int[] nums, int target) {
+        if (nums == null || nums.length == 0) {
+            return -1;
+        }
+        int start = 0;
+        int end = nums.length - 1;
+    
+        while (start + 1 < end) {
+            int mid = start + (end - start) / 2;
+            if (nums[mid] == target) {
+                start = mid; // don't return, instead, exclude the left part
+            } else if (nums[mid] < target) {
+                start = mid;
+            } else {
+                end = mid;
+            }
+        }
+        
+        // check end first
+        if (nums[end] == target) {
+            return end;
+        }
+        
+        if (nums[start] == target) {
+            return start;
+        }
+        
+        return -1;
+    }
 }

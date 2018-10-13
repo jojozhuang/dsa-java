@@ -54,4 +54,24 @@ public class BinarySearchTest {
         assertEquals(4, instance.search(new int[] {-1,0,3,5,9,12}, 9));
         assertEquals(-1, instance.search(new int[] {-1,0,3,5,9,12}, 2));
     }
+
+    @Test
+    public void testSearchFirst() {
+        System.out.println("testSearchFirst");
+        BinarySearch instance = new BinarySearch();
+
+        assertEquals(4, instance.searchFirst(new int[] {-1,0,3,5,9,12}, 9));
+        assertEquals(-1, instance.searchFirst(new int[] {-1,0,3,5,9,12}, 2));
+        assertEquals(3, instance.searchFirst(new int[] {1,5,8,10,10,10,13,16,27}, 10));
+    }
+
+    @Test
+    public void testSearchLast() {
+        System.out.println("testSearchFirst");
+        BinarySearch instance = new BinarySearch();
+
+        assertEquals(4, instance.searchLast(new int[] {-1,0,3,5,9,12}, 9));
+        assertEquals(-1, instance.searchLast(new int[] {-1,0,3,5,9,12}, 2));
+        assertEquals(5, instance.searchLast(new int[] {1,5,8,10,10,10,13,16,27}, 10));
+    }
 }
