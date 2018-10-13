@@ -25,7 +25,6 @@ public class BinaryTreeDivideConquer {
         return res;
     }
     
-
     // in-order, Divide Conquer
     public List<Integer> inorderDivideConquer(TreeNode root) {
         List<Integer> res = new ArrayList<Integer>();
