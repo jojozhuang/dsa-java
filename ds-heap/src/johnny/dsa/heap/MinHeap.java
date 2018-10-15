@@ -7,12 +7,12 @@ public class MinHeap {
     protected Integer[] array;
     protected int size;
 
-    public MinHeap () {
+    public MinHeap(){
         array = new Integer[capacity];
         size = 0;
     }
     
-    public MinHeap (int capacity) {
+    public MinHeap(int capacity) {
         this.capacity = capacity;
         array = new Integer[capacity];
         size = 0;

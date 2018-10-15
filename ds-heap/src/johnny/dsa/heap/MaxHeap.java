@@ -7,12 +7,12 @@ public class MaxHeap {
     protected Integer[] array;
     protected int size;
 
-    public MaxHeap () {
+    public MaxHeap() {
         array = new Integer[capacity];
         size = 0;
     }
     
-    public MaxHeap (int capacity) {
+    public MaxHeap(int capacity) {
         this.capacity = capacity;
         array = new Integer[capacity];
         size = 0;

@@ -13,7 +13,7 @@ public class MaxHeapGeneric<T extends Comparable<T>> {
      * Constructs a new MaxHeap.
      */
     @SuppressWarnings("unchecked")
-    public MaxHeapGeneric () {
+    public MaxHeapGeneric() {
         // Java doesn't allow construction of arrays of placeholder data types 
         array = (T[])new Comparable[DEFAULT_CAPACITY];
         size = 0;
