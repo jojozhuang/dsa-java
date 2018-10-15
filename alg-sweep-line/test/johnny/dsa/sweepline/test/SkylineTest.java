@@ -1,4 +1,4 @@
-package johnny.dsa.scanline.test;
+package johnny.dsa.sweepline.test;
 
 import static org.junit.Assert.*;
 
@@ -12,7 +12,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import johnny.dsa.common.ListUtil;
-import johnny.dsa.scanline.Skyline;;
+import johnny.dsa.sweepline.Skyline;;
 
 public class SkylineTest {
 

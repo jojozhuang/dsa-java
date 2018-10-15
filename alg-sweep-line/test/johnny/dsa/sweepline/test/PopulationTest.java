@@ -1,4 +1,4 @@
-package johnny.dsa.scanline.test;
+package johnny.dsa.sweepline.test;
 
 import static org.junit.Assert.*;
 
@@ -8,7 +8,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import johnny.dsa.scanline.Population;;
+import johnny.dsa.sweepline.Population;;
 
 public class PopulationTest {
 

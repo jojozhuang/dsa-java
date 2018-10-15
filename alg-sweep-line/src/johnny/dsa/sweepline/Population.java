@@ -1,4 +1,4 @@
-package johnny.dsa.scanline;
+package johnny.dsa.sweepline;
 
 import java.util.Arrays;
 
