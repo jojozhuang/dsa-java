@@ -2,7 +2,7 @@ package johnny.dsa.twopointers;
 
 /*
  * Given a sorted (in ascending order) integer array nums of n elements and a target value, 
- * find if there exists any pair of elements (nums[i], nums[j]) such that their sum is equal to target.
+ * find if there exists any pair of elements (nums[i], nums[j], i!=j) such that their sum is equal to target.
  */
 
 public class PairSum {
@@ -13,7 +13,7 @@ public class PairSum {
         }
         
         for (int i = 0; i < nums.length; i++) { 
-            for (int j = 0; j <  nums.length; j++) { 
+            for (int j = i + 1; j <  nums.length; j++) { 
                 if (nums[i] + nums[j] == target) {
                     return true; // pair exists 
                 }
@@ -35,7 +35,7 @@ public class PairSum {
         int start = 0;
         int end = nums.length - 1;
     
-        while (start <= end) {
+        while (start < end) {
             int sum = nums[start] + nums[end];
             if (sum == target) {
                 return true; // pair exists 
