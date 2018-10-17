@@ -38,6 +38,11 @@ public class ArrayStackTest {
         stack.push(2);
         stack.push(3);
 
+        // random access
+        assertEquals(1, stack.get(0));
+        assertEquals(2, stack.get(1));
+        assertEquals(3, stack.get(2));
+        
         assertEquals(false, stack.isEmpty());
         assertEquals(3, stack.pop());
         assertEquals(2, stack.pop());

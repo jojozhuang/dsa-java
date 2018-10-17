@@ -31,6 +31,15 @@ public class ArrayStack {
         }
         return arr[top];
     }
+    
+    // Get value by index, index should be in the range of 0~top
+    public int get(int index) throws Exception {
+        if (index < 0 || index > top) {
+            throw new Exception();
+        }
+        
+        return arr[index];
+    }
 
     // Return whether the stack is empty
     public boolean isEmpty() {
