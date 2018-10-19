@@ -1,24 +1,24 @@
-package johnny.dsa.sd;
+package johnny.dsa.sqrtdecomposition;
 
 /*
- * Square root decomposition allows us to answer queries in sqrt(N) time. As the implementation of these structures
- * is usually simpler than a segment tree.
+ * Square root decomposition allows us to answer queries in sqrt(N) time. 
  */
 //https://github.com/gkcs/Competitive-Programming/blob/master/src/main/java/main/java/videos/SqrtDecomposition.java
-public class SqrtDecomposition {
+public class RangeSearchSum {
     private int[] nums;
     private long[] sumBlocks;
     private int sqrt;
-    public SqrtDecomposition(int[] inputs) {
-        if (inputs != null && inputs.length > 0) {
-            build(inputs);
+    
+    public RangeSearchSum(int[] arr) {
+        if (arr != null && arr.length > 0) {
+            build(arr);
         }
     }
     
-    private void build(int[] inputs) {
-        this.sqrt = (int) Math.ceil(Math.sqrt(inputs.length));
+    private void build(int[] arr) {
+        this.sqrt = (int) Math.ceil(Math.sqrt(arr.length));
         this.nums = new int[sqrt * sqrt];
-        System.arraycopy(inputs, 0, nums, 0, inputs.length); // the tail items may be zero.
+        System.arraycopy(arr, 0, nums, 0, arr.length); // the tail items in nums may be zero
         this.sumBlocks = new long[sqrt];
         for (int i = 0; i < sumBlocks.length; i++) {
             int startIndex = i * sqrt;
@@ -38,32 +38,30 @@ public class SqrtDecomposition {
     // query with left and right indexes
     public long query(int left, int right) {
         int startBlockIndex = left / sqrt;
-        int endIBlockIndex = right / sqrt;
+        int endBlockIndex = right / sqrt;
         long sum = 0;
-        // overlap
-        for (int i = startBlockIndex + 1; i < endIBlockIndex; i++) {
-            sum += sumBlocks[i];
-        }
-        // left non-overlap
-        if (startBlockIndex == endIBlockIndex) {
-            int startIndex = left % sqrt;
-            int endIndex = right % sqrt;
-            for (int i = startIndex; i <= endIndex; i++) {
-                sum += nums[startBlockIndex * sqrt + i];
+        
+        if (startBlockIndex == endBlockIndex) { // in the same block
+            for (int i = left; i <= right; i++) {
+                sum += nums[i];
             }
-        } else {
+        } else { // in the different blocks
+            // overlap
+            for (int i = startBlockIndex + 1; i < endBlockIndex; i++) {
+                sum += sumBlocks[i];
+            }
+            // left non-overlap
             int startIndex = left % sqrt;
             for (int i = startIndex; i < sqrt; i++) {
                 sum += nums[startBlockIndex * sqrt + i];
             }
-        }
-        // right non-overlap
-        if (startBlockIndex != endIBlockIndex) {
+            // right non-overlap
             int endIndex = right % sqrt;
             for (int i = 0; i <= endIndex; i++) {
-                sum += nums[endIBlockIndex * sqrt + i];
+                sum += nums[endBlockIndex * sqrt + i];
             }
         }
+        
         return sum;
     }
 

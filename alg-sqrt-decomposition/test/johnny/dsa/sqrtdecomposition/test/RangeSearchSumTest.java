@@ -1,4 +1,4 @@
-package johnny.dsa.sd.test;
+package johnny.dsa.sqrtdecomposition.test;
 
 import static org.junit.Assert.*;
 
@@ -8,9 +8,9 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import johnny.dsa.sd.SqrtDecomposition;;
+import johnny.dsa.sqrtdecomposition.RangeSearchSum;;
 
-public class SqrtDecompositionTest {
+public class RangeSearchSumTest {
 
     @BeforeClass
     public static void setUpBeforeClass() throws Exception {
@@ -31,8 +31,7 @@ public class SqrtDecompositionTest {
     @Test
     public void testPerfectSquare() {
         System.out.println("testPerfectSquare");
-        int[] inputs = new int[] {3,2,1,5,6,10,3,9,8};
-        SqrtDecomposition sd = new SqrtDecomposition(inputs);
+        RangeSearchSum sd = new RangeSearchSum(new int[] {3,2,1,5,6,10,3,9,8});
         // {3,2,1,5,6,10,3,9,8}, length = 9
         assertEquals(5, sd.query(0, 1));
         assertEquals(6, sd.query(0, 2));
@@ -54,8 +53,7 @@ public class SqrtDecompositionTest {
     @Test
     public void testNonPerfectSquare() {
         System.out.println("testNonSqrtDecomposition");
-        int[] inputs = new int[] {3,2,1,5,6,10,3,9,8,4,2};
-        SqrtDecomposition sd = new SqrtDecomposition(inputs);
+        RangeSearchSum sd = new RangeSearchSum(new int[] {3,2,1,5,6,10,3,9,8,4,2});
         //{3,2,1,5,6,10,3,9,8,4,2,0,0,0,0,0}, length = 16
         assertEquals(5, sd.query(0, 1));
         assertEquals(6, sd.query(0, 2));
