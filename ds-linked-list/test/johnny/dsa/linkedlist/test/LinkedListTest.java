@@ -1,36 +1,15 @@
 package johnny.dsa.linkedlist.test;
 
-import static org.junit.Assert.*;
-
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-
 import johnny.dsa.common.ListNode;
 import johnny.dsa.linkedlist.LinkedList;
+import org.junit.jupiter.api.Test;
 
-public class LinkedListTest {
+import static org.junit.jupiter.api.Assertions.*;
 
-    @BeforeClass
-    public static void setUpBeforeClass() throws Exception {
-    }
-
-    @AfterClass
-    public static void tearDownAfterClass() throws Exception {
-    }
-
-    @Before
-    public void setUp() throws Exception {
-    }
-
-    @After
-    public void tearDown() throws Exception {
-    }
+class LinkedListTest {
 
     @Test
-    public void testReverse() {
+    void reverse() {
         System.out.println("reverseList");
         LinkedList llobj = new LinkedList();
 
@@ -53,7 +32,7 @@ public class LinkedListTest {
     }
 
     @Test
-    public void testFindMiddle() {
+    void findMiddle() {
         System.out.println("findMiddle");
         LinkedList llobj = new LinkedList();
 
@@ -77,7 +56,7 @@ public class LinkedListTest {
     }
 
     @Test
-    public void testHasCycle() {
+    void hasCycle() {
         System.out.println("hasCycle");
         LinkedList llobj = new LinkedList();
 
@@ -92,7 +71,7 @@ public class LinkedListTest {
     }
 
     @Test
-    public void testDetectCycle() {
+    void detectCycle() {
         System.out.println("detectCycle");
         LinkedList llobj = new LinkedList();
 
@@ -105,5 +84,4 @@ public class LinkedListTest {
         head3.next.next.next = head3;
         assertEquals(head3, llobj.detectCycle(head3));
     }
-
 }

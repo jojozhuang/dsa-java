@@ -1,32 +1,13 @@
 package johnny.dsa.deque.test;
 
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 import johnny.dsa.deque.CircularArrayDeque;
 
 public class CircularArrayDequeTest {
-
-    @BeforeClass
-    public static void setUpBeforeClass() throws Exception {
-    }
-
-    @AfterClass
-    public static void tearDownAfterClass() throws Exception {
-    }
-
-    @Before
-    public void setUp() throws Exception {
-    }
-
-    @After
-    public void tearDown() throws Exception {
-    }
 
     @Test
     public void testCircularArrayDeque() throws Exception {
@@ -78,7 +59,7 @@ public class CircularArrayDequeTest {
         assertEquals(true, deque.isEmpty());
     }
     
-    @Test(expected = Exception.class)
+    @Test
     public void testCircularArrayDequeCapacity() throws Exception {
         System.out.println("testCircularArrayDequeCapacity");
         CircularArrayDeque deque = new CircularArrayDeque(5);
@@ -109,8 +90,12 @@ public class CircularArrayDequeTest {
         assertEquals(8, deque.removeLast());
         assertEquals(7, deque.removeLast());
         assertEquals(true, deque.isEmpty());
-        deque.removeFirst(); // exception
-        deque.removeLast(); // exception
+        Assertions.assertThrows(Exception.class, () -> {
+            deque.removeFirst(); // exception
+        });
+        Assertions.assertThrows(Exception.class, () -> {
+            deque.removeLast(); // exception
+        });
         assertEquals(true, deque.isEmpty());
     }
 

@@ -1,32 +1,13 @@
 package johnny.dsa.queue.test;
 
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 import johnny.dsa.queue.ArrayQueue;
 
 public class ArrayQueueTest {
-
-    @BeforeClass
-    public static void setUpBeforeClass() throws Exception {
-    }
-
-    @AfterClass
-    public static void tearDownAfterClass() throws Exception {
-    }
-
-    @Before
-    public void setUp() throws Exception {
-    }
-
-    @After
-    public void tearDown() throws Exception {
-    }
 
     @Test
     public void testArrayQueue() throws Exception {
@@ -51,7 +32,7 @@ public class ArrayQueueTest {
         assertEquals(true, queue.isEmpty());
     }
     
-    @Test(expected = Exception.class)
+    @Test
     public void testArrayQueueCapacity() throws Exception {
         System.out.println("testArrayQueueCapacity");
         ArrayQueue queue = new ArrayQueue(5);
@@ -77,7 +58,10 @@ public class ArrayQueueTest {
         assertEquals(4, queue.dequeue());
         assertEquals(5, queue.dequeue());
         assertEquals(true, queue.isEmpty());
-        queue.dequeue(); // exception
+        Assertions.assertThrows(Exception.class, () -> {
+            queue.dequeue(); // exception
+        });
+
         assertEquals(true, queue.isEmpty());
     }
 

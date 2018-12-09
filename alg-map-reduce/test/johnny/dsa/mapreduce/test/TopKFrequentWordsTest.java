@@ -5,45 +5,23 @@
  */
 package johnny.dsa.mapreduce.test;
 
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
 
 import johnny.dsa.common.Document;
 import johnny.dsa.common.OutputCollector;
 import johnny.dsa.mapreduce.TopKFrequentWords;
-
-import static org.junit.Assert.*;
 
 /**
  *
  * @author Johnny
  */
 public class TopKFrequentWordsTest {
-    
-    public TopKFrequentWordsTest() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
 
     @Test
     public void testSomeMethod() {
