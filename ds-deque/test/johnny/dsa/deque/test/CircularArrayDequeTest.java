@@ -30,8 +30,8 @@ public class CircularArrayDequeTest {
 
     @Test
     public void testCircularArrayDeque() throws Exception {
-    	System.out.println("testCircularArrayDeque");
-    	CircularArrayDeque deque = new CircularArrayDeque(100);
+        System.out.println("testCircularArrayDeque");
+        CircularArrayDeque deque = new CircularArrayDeque(100);
         assertEquals(true, deque.isEmpty());
         deque.addLast(1);
         deque.addLast(2);
@@ -48,6 +48,31 @@ public class CircularArrayDequeTest {
         assertEquals(4, deque.peekFirst());
         assertEquals(2, deque.peekLast());
         assertEquals(2, deque.removeLast());
+        assertEquals(false, deque.isEmpty());
+        assertEquals(4, deque.removeLast());
+        assertEquals(true, deque.isEmpty());
+    }
+    
+    @Test
+    public void testCircularArrayDeque2() throws Exception {
+        System.out.println("testCircularArrayDeque2");
+        CircularArrayDeque deque = new CircularArrayDeque(8);
+        assertEquals(true, deque.isEmpty());
+        deque.addFirst(1);
+        deque.addFirst(2);
+        deque.addLast(3); // [2,1,3]
+        
+        assertEquals(false, deque.isEmpty());
+        assertEquals(2, deque.removeFirst());
+        assertEquals(3, deque.removeLast());
+        assertEquals(false, deque.isEmpty());
+        assertEquals(1, deque.peekFirst());
+        assertEquals(1, deque.peekLast());
+        assertEquals(false, deque.isEmpty());
+        deque.addFirst(4); //[4,1]
+        assertEquals(4, deque.peekFirst());
+        assertEquals(1, deque.peekLast());
+        assertEquals(1, deque.removeLast()); //[4]
         assertEquals(false, deque.isEmpty());
         assertEquals(4, deque.removeLast());
         assertEquals(true, deque.isEmpty());
