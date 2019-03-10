@@ -57,11 +57,12 @@ public class NodeGraphTest {
         E: A->B->D
         */
         NodeGraph ng = createNodeGraph();
-        String[] result = ng.dfs(ng.nodes[0]);
+        List<String> result = ng.dfs(ng.nodes[0]);
+        String[] arr = result.toArray(new String[0]);
         // print Visits: [A, B, C, D, E]
         System.out.print("Visits: ");
-        System.out.println(Arrays.toString(result));
-        assertArrayEquals(new String[] {"A","B","C","D","E"}, result);
+        System.out.println(Arrays.toString(arr));
+        assertArrayEquals(new String[] {"A","B","C","D","E"}, arr);
     }
     
     @Test
@@ -77,10 +78,11 @@ public class NodeGraphTest {
         NodeGraph ng = createNodeGraph();
         List<String> result = new ArrayList<String>();
         ng.dfs2(ng.nodes[0], result);
+        String[] arr = result.toArray(new String[0]);
         // print Visits: [A, B, C, D, E]
         System.out.print("Visits: ");
         System.out.println(result);
-       // assertArrayEquals(new String[] {"A","B","C","D","E"}, result);
+        assertArrayEquals(new String[] {"A","B","C","D","E"}, arr);
     }
     
     @Test
@@ -94,11 +96,12 @@ public class NodeGraphTest {
         E: A->B->D
         */
         NodeGraph ng = createNodeGraph();
-        String[] result = ng.bfs(ng.nodes[0]);
+        List<String> result = ng.bfs(ng.nodes[0]);
+        String[] arr = result.toArray(new String[0]);
         // print Visits: [A, B, E, C, D]
         System.out.print("Visits: ");
-        System.out.println(Arrays.toString(result));
-        assertArrayEquals(new String[] {"A","B","E","C","D"}, result);
+        System.out.println(Arrays.toString(arr));
+        assertArrayEquals(new String[] {"A","B","E","C","D"}, arr);
     }
     
     private NodeGraph createNodeGraph() {

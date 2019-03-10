@@ -1,9 +1,6 @@
 package johnny.dsa.graph;
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.*;
 
 import johnny.dsa.common.Node;
 
@@ -23,15 +20,14 @@ public class NodeGraph {
     }
 
     // dfs, stack
-    private Stack<Node> stack = new Stack<Node>();
-    public String[] dfs(Node root) {
-        String[] res = new String[nodes.length];
+    public List<String> dfs(Node root) {
+        List<String> ans = new ArrayList<>();
         if (root == null) {
-            return res;
+            return ans;
         }
+        Stack<Node> stack = new Stack<Node>();
         root.visited = true;
-        int idx = 0;
-        res[idx++] = root.name;
+        ans.add(root.name);
         stack.push(root);
         while (!stack.isEmpty()) {
             Node node = stack.peek();
@@ -40,12 +36,12 @@ public class NodeGraph {
                 stack.pop();
             } else {
                 neighbor.visited = true;
-                res[idx++] = neighbor.name;
+                ans.add(neighbor.name);
                 stack.push(neighbor);
             }
         }
 
-        return res;
+        return ans;
     }
     private Node getUnvisitedNeighbor(Node node) {
         for (int i = 0; i < node.neighbors.length; i++) {
@@ -71,27 +67,26 @@ public class NodeGraph {
     }
 
     // bfs
-    private Queue<Node> queue = new LinkedList<Node>();
-    public String[] bfs(Node root) {
-        String[] res = new String[nodes.length];
+    public List<String> bfs(Node root) {
+        List<String> ans = new ArrayList<>();
         if (root == null) {
-            return res;
+            return ans;
         }
+        Queue<Node> queue = new LinkedList<Node>();
         root.visited = true;
-        int idx = 0;
-        res[idx++] = root.name;
+        ans.add(root.name);
         queue.offer(root);
         while (!queue.isEmpty()) {
             Node node = queue.poll();
             for (Node neighbor : node.neighbors) {
                 if (neighbor.visited == false) {
                     neighbor.visited = true;
-                    res[idx++] = neighbor.name;
+                    ans.add(neighbor.name);
                     queue.offer(neighbor);
                 }
             }
         }
         
-        return res;
+        return ans;
     }
 }
