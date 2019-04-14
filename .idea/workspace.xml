@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f93bba5-8985-44cc-b46d-4108adb7a917" name="Default Changelist" comment="" />
+    <list default="true" id="1f93bba5-8985-44cc-b46d-4108adb7a917" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-trie/src/johnny/dsa/trie/Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/ds-trie/src/johnny/dsa/trie/Trie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-trie/test/johnny/dsa/trie/test/TrieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ds-trie/test/johnny/dsa/trie/test/TrieTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,14 +17,21 @@
     <session id="1864983552">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.closed" value="17" />
+          <entry key="project.open.time.0" value="6" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.2" value="3" />
+          <entry key="project.open.time.4" value="6" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="LICENSE" value="1" />
+          <entry key="gitignore" value="1" />
           <entry key="iml" value="5" />
-          <entry key="java" value="78" />
+          <entry key="java" value="105" />
+          <entry key="md" value="1" />
           <entry key="project" value="1" />
         </counts>
       </usages-collector>
@@ -28,52 +39,49 @@
         <counts>
           <entry key="Eclipse" value="1" />
           <entry key="IDEA_MODULE" value="5" />
-          <entry key="JAVA" value="78" />
+          <entry key="JAVA" value="105" />
+          <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="30" />
+          <entry key="dummy" value="21" />
+          <entry key="java" value="1298" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="30" />
+          <entry key="JAVA" value="1298" />
+          <entry key="PLAIN_TEXT" value="21" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-binary-search-tree/test/johnny/dsa/bst/test/BalancedBSTest.java">
+        <entry file="file://$PROJECT_DIR$/alg-union-find/src/johnny/dsa/unionfind/DSURank.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="4" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="810">
+              <caret line="54" column="1" selection-start-line="2" selection-end-line="54" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-binary-search-tree/test/johnny/dsa/bst/test/BinarySearchTreeTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-binary-search-tree/test/johnny/dsa/bst/test/BSTIteratorTest.java">
+        <entry file="file://$PROJECT_DIR$/ds-trie/src/johnny/dsa/common/TrieNode.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+              <caret line="9" column="23" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ds-trie/src/johnny/dsa/trie/Trie.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,46 +90,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-queue/test/johnny/dsa/queue/test/ArrayQueueTest.java">
+        <entry file="file://$PROJECT_DIR$/ds-trie/test/johnny/dsa/trie/test/TrieTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="62" column="11" lean-forward="true" selection-start-line="60" selection-start-column="8" selection-end-line="62" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-queue/test/johnny/dsa/queue/test/CircularArrayQueueTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="654">
-              <caret line="67" selection-start-line="67" selection-end-line="67" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-queue/test/johnny/dsa/queue/test/LinkedListQueueTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="930">
+              <caret line="69" column="56" selection-start-line="69" selection-start-column="56" selection-end-line="69" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ds-deque/test/johnny/dsa/deque/test/CircularArrayDequeTest.java">
+        <entry file="file://$PROJECT_DIR$/alg-binary-search/src/johnny/dsa/binarysearch/BinarySearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+            <state relative-caret-position="15">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/alg-union-find/src/johnny/dsa/unionfind/DSU.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="27" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/alg-union-find/test/johnny/dsa/unionfind/test/DSUTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="33" column="9" selection-start-line="15" selection-start-column="8" selection-end-line="33" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,10 +129,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-binary-search-tree/ds-binary-search-tree.iml">
+        <entry file="file://$PROJECT_DIR$/ds-graph/test/johnny/dsa/graph/test/NodeGraphTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+            <state relative-caret-position="1080">
+              <caret line="81" selection-start-line="81" selection-end-line="81" />
             </state>
           </provider>
         </entry>
@@ -165,26 +164,20 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>subset</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/alg-sorting/test/johnny/dsa/sorting/test/InsertionSortTest.java" />
-        <option value="$PROJECT_DIR$/alg-sorting/test/johnny/dsa/sorting/test/MergeSortTest.java" />
-        <option value="$PROJECT_DIR$/alg-sorting/test/johnny/dsa/sorting/test/QuickSortTest.java" />
-        <option value="$PROJECT_DIR$/alg-sorting/test/johnny/dsa/sorting/test/SelectionSortTest.java" />
-        <option value="$PROJECT_DIR$/alg-sorting/test/johnny/dsa/sorting/test/ShellSortTest.java" />
-        <option value="$PROJECT_DIR$/alg-sqrt-decomposition/test/johnny/dsa/sqrtdecomposition/test/RangeSearchSumTest.java" />
-        <option value="$PROJECT_DIR$/alg-sqrt-decomposition/test/johnny/dsa/sqrtdecomposition/test/SegmentTreeSumTest.java" />
-        <option value="$PROJECT_DIR$/alg-sweep-line/test/johnny/dsa/sweepline/test/PopulationTest.java" />
-        <option value="$PROJECT_DIR$/alg-sweep-line/test/johnny/dsa/sweepline/test/SkylineTest.java" />
-        <option value="$PROJECT_DIR$/alg-two-pointers/test/johnny/dsa/twopointers/test/PairSumTest.java" />
-        <option value="$PROJECT_DIR$/ds-deque/test/johnny/dsa/deque/test/LinkedListDequeTest.java" />
-        <option value="$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/FenwickTreeTest.java" />
-        <option value="$PROJECT_DIR$/ds-graph/test/johnny/dsa/graph/test/AdjListGraphTest.java" />
         <option value="$PROJECT_DIR$/ds-graph/test/johnny/dsa/graph/test/AdjMatrixGraphTest.java" />
         <option value="$PROJECT_DIR$/ds-graph/test/johnny/dsa/graph/test/DirectedGraphTest.java" />
         <option value="$PROJECT_DIR$/ds-graph/test/johnny/dsa/graph/test/MinimumSpanningTreeTest.java" />
-        <option value="$PROJECT_DIR$/ds-graph/test/johnny/dsa/graph/test/NodeGraphTest.java" />
         <option value="$PROJECT_DIR$/ds-hashmap/test/johnny/dsa/hashmap/test/HashMapIntTest.java" />
         <option value="$PROJECT_DIR$/ds-hashmap/test/johnny/dsa/hashmap/test/HashMapTest.java" />
         <option value="$PROJECT_DIR$/ds-heap/test/johnny/dsa/heap/test/MaxHeapGenericTest.java" />
@@ -209,16 +202,30 @@
         <option value="$PROJECT_DIR$/ds-tree/test/johnny/dsa/tree/test/BinaryTreeTemplateTest.java" />
         <option value="$PROJECT_DIR$/ds-tree/test/johnny/dsa/tree/test/BinaryTreeTraversalTest.java" />
         <option value="$PROJECT_DIR$/ds-trie/test/johnny/dsa/trie/test/TrieArrayTest.java" />
-        <option value="$PROJECT_DIR$/ds-trie/test/johnny/dsa/trie/test/TrieTest.java" />
         <option value="$PROJECT_DIR$/ds-binary-search-tree/test/johnny/dsa/bst/test/BalancedBSTest.java" />
         <option value="$PROJECT_DIR$/alg-union-find/test/johnny/dsa/unionfind/test/DisjointSetTest.java" />
-        <option value="$PROJECT_DIR$/alg-union-find/test/johnny/dsa/unionfind/test/DisjointSetOptimizedTest.java" />
         <option value="$PROJECT_DIR$/ds-binary-search-tree/ds-binary-search-tree.iml" />
         <option value="$PROJECT_DIR$/ds-binary-search-tree/test/johnny/dsa/bst/test/BinarySearchTreeTest.java" />
         <option value="$PROJECT_DIR$/ds-binary-search-tree/test/johnny/dsa/bst/test/BSTIteratorTest.java" />
         <option value="$PROJECT_DIR$/ds-queue/test/johnny/dsa/queue/test/ArrayQueueTest.java" />
         <option value="$PROJECT_DIR$/ds-queue/test/johnny/dsa/queue/test/CircularArrayQueueTest.java" />
         <option value="$PROJECT_DIR$/ds-deque/test/johnny/dsa/deque/test/CircularArrayDequeTest.java" />
+        <option value="$PROJECT_DIR$/ds-graph/src/johnny/dsa/graph/NodeGraph.java" />
+        <option value="$PROJECT_DIR$/ds-graph/test/johnny/dsa/graph/test/NodeGraphTest.java" />
+        <option value="$PROJECT_DIR$/alg-dp/test/johnny/dsa/dp/test/BackpackTest.java" />
+        <option value="$PROJECT_DIR$/alg-dp/test/johnny/dsa/dp/test/Backpack2Test.java" />
+        <option value="$PROJECT_DIR$/alg-dp/src/johnny/dsa/dp/Backpack.java" />
+        <option value="$PROJECT_DIR$/alg-dp/src/johnny/dsa/dp/Backpack2.java" />
+        <option value="$PROJECT_DIR$/alg-union-find/src/johnny/dsa/unionfind/DisjointSet.java" />
+        <option value="$PROJECT_DIR$/alg-union-find/test/johnny/dsa/unionfind/test/DisjointSetOptimizedTest.java" />
+        <option value="$PROJECT_DIR$/alg-union-find/src/johnny/dsa/unionfind/DSUOptimized.java" />
+        <option value="$PROJECT_DIR$/alg-union-find/test/johnny/dsa/unionfind/test/DSUOptimizedTest.java" />
+        <option value="$PROJECT_DIR$/alg-union-find/test/johnny/dsa/unionfind/test/DSUTest.java" />
+        <option value="$PROJECT_DIR$/alg-union-find/test/johnny/dsa/unionfind/test/DSURankTest.java" />
+        <option value="$PROJECT_DIR$/alg-union-find/src/johnny/dsa/unionfind/DSU.java" />
+        <option value="$PROJECT_DIR$/alg-union-find/src/johnny/dsa/unionfind/DSURank.java" />
+        <option value="$PROJECT_DIR$/ds-trie/src/johnny/dsa/trie/Trie.java" />
+        <option value="$PROJECT_DIR$/ds-trie/test/johnny/dsa/trie/test/TrieTest.java" />
       </list>
     </option>
   </component>
@@ -233,24 +240,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ds-deque" type="462c0819:PsiDirectoryNode" />
+              <item name="ds-trie" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ds-deque" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ds-deque" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="ds-trie" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -263,7 +264,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544392218424" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553656542727" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -273,6 +274,10 @@
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="johnny.dsa.linkedlist" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="johnny.dsa.dp.test" />
+      <recent name="johnny.dsa.dp" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -290,86 +295,91 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CircularArrayDequeTest and 1 more">
-    <configuration name="ArrayQueueTest and 4 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ds-queue" />
-      <option name="TEST_OBJECT" value="pattern" />
-      <patterns>
-        <pattern testClass="johnny.dsa.queue.test.ArrayQueueTest" />
-        <pattern testClass="johnny.dsa.queue.test.CircularArrayQueueTest" />
-        <pattern testClass="johnny.dsa.queue.test.LinkedListQueueTest" />
-        <pattern testClass="johnny.dsa.queue.test.QueueMergeSortTest" />
-        <pattern testClass="johnny.dsa.queue.test.StackQueueTest" />
-      </patterns>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ArrayQueueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ds-queue" />
+  <component name="RunManager" selected="JUnit.TrieTest">
+    <configuration name="Backpack2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="alg-dp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="johnny.dsa.queue.test.*" />
+          <option name="PATTERN" value="johnny.dsa.dp.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="johnny.dsa.queue.test" />
-      <option name="MAIN_CLASS_NAME" value="johnny.dsa.queue.test.ArrayQueueTest" />
+      <option name="PACKAGE_NAME" value="johnny.dsa.dp.test" />
+      <option name="MAIN_CLASS_NAME" value="johnny.dsa.dp.test.Backpack2Test" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BalancedBSTest and 2 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ds-binary-search-tree" />
-      <option name="TEST_OBJECT" value="pattern" />
-      <patterns>
-        <pattern testClass="johnny.dsa.bst.test.BalancedBSTest" />
-        <pattern testClass="johnny.dsa.bst.test.BinarySearchTreeTest" />
-        <pattern testClass="johnny.dsa.bst.test.BSTIteratorTest" />
-      </patterns>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CircularArrayDequeTest and 1 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ds-deque" />
-      <option name="TEST_OBJECT" value="pattern" />
-      <patterns>
-        <pattern testClass="johnny.dsa.deque.test.CircularArrayDequeTest" />
-        <pattern testClass="johnny.dsa.deque.test.LinkedListDequeTest" />
-      </patterns>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CircularArrayQueueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ds-queue" />
+    <configuration name="BackpackTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="alg-dp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="johnny.dsa.queue.test.*" />
+          <option name="PATTERN" value="johnny.dsa.dp.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="johnny.dsa.queue.test" />
-      <option name="MAIN_CLASS_NAME" value="johnny.dsa.queue.test.CircularArrayQueueTest" />
+      <option name="PACKAGE_NAME" value="johnny.dsa.dp.test" />
+      <option name="MAIN_CLASS_NAME" value="johnny.dsa.dp.test.BackpackTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DSURankTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="alg-union-find" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="johnny.dsa.unionfind.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="johnny.dsa.unionfind.test" />
+      <option name="MAIN_CLASS_NAME" value="johnny.dsa.unionfind.test.DSURankTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DSUTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="alg-union-find" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="johnny.dsa.unionfind.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="johnny.dsa.unionfind.test" />
+      <option name="MAIN_CLASS_NAME" value="johnny.dsa.unionfind.test.DSUTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrieTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ds-trie" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="johnny.dsa.trie.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="johnny.dsa.trie.test" />
+      <option name="MAIN_CLASS_NAME" value="johnny.dsa.trie.test.TrieTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.BalancedBSTest and 2 more" />
-      <item itemvalue="JUnit.ArrayQueueTest" />
-      <item itemvalue="JUnit.CircularArrayQueueTest" />
-      <item itemvalue="JUnit.ArrayQueueTest and 4 more" />
-      <item itemvalue="JUnit.CircularArrayDequeTest and 1 more" />
+      <item itemvalue="JUnit.BackpackTest" />
+      <item itemvalue="JUnit.Backpack2Test" />
+      <item itemvalue="JUnit.DSUTest" />
+      <item itemvalue="JUnit.DSURankTest" />
+      <item itemvalue="JUnit.TrieTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CircularArrayDequeTest and 1 more" />
-        <item itemvalue="JUnit.ArrayQueueTest and 4 more" />
-        <item itemvalue="JUnit.CircularArrayQueueTest" />
-        <item itemvalue="JUnit.ArrayQueueTest" />
-        <item itemvalue="JUnit.BalancedBSTest and 2 more" />
+        <item itemvalue="JUnit.TrieTest" />
+        <item itemvalue="JUnit.DSURankTest" />
+        <item itemvalue="JUnit.DSUTest" />
+        <item itemvalue="JUnit.Backpack2Test" />
+        <item itemvalue="JUnit.BackpackTest" />
       </list>
     </recent_temporary>
   </component>
@@ -387,344 +397,88 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LFUBSTTest_and_3_more - 2018.12.09 at 13h 30m 20s.xml">
-      <configuration name="LFUBSTTest and 3 more" configurationId="JUnit" />
+    <history-entry file="DSUTest - 2019.03.18 at 14h 13m 41s.xml">
+      <configuration name="DSUTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LRUTest_and_1_more - 2018.12.09 at 13h 30m 51s.xml">
-      <configuration name="LRUTest and 1 more" configurationId="JUnit" />
+    <history-entry file="DSURankTest - 2019.03.18 at 14h 14m 39s.xml">
+      <configuration name="DSURankTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SegmentTreeTest - 2018.12.09 at 13h 39m 05s.xml">
-      <configuration name="SegmentTreeTest" configurationId="JUnit" />
+    <history-entry file="DSURankTest - 2019.03.18 at 14h 17m 36s.xml">
+      <configuration name="DSURankTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BinaryTreeDivideConquerTest_and_4_more - 2018.12.09 at 13h 40m 47s.xml">
-      <configuration name="BinaryTreeDivideConquerTest and 4 more" configurationId="JUnit" />
+    <history-entry file="DSURankTest - 2019.03.18 at 14h 19m 54s.xml">
+      <configuration name="DSURankTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TrieTest_and_1_more - 2018.12.09 at 13h 41m 18s.xml">
-      <configuration name="TrieTest and 1 more" configurationId="JUnit" />
+    <history-entry file="TrieTest - 2019.03.24 at 21h 59m 35s.xml">
+      <configuration name="TrieTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DisjointSetTest_and_1_more - 2018.12.09 at 13h 44m 32s.xml">
-      <configuration name="DisjointSetTest and 1 more" configurationId="JUnit" />
+    <history-entry file="TrieTest - 2019.03.24 at 22h 00m 26s.xml">
+      <configuration name="TrieTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BalancedBSTest_and_2_more - 2018.12.09 at 13h 46m 26s.xml">
-      <configuration name="BalancedBSTest and 2 more" configurationId="JUnit" />
+    <history-entry file="TrieTest - 2019.03.24 at 22h 00m 42s.xml">
+      <configuration name="TrieTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArrayQueueTest - 2018.12.09 at 13h 48m 50s.xml">
-      <configuration name="ArrayQueueTest" configurationId="JUnit" />
+    <history-entry file="TrieTest - 2019.03.24 at 22h 00m 54s.xml">
+      <configuration name="TrieTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CircularArrayQueueTest - 2018.12.09 at 13h 49m 06s.xml">
-      <configuration name="CircularArrayQueueTest" configurationId="JUnit" />
+    <history-entry file="TrieTest - 2019.03.24 at 22h 01m 01s.xml">
+      <configuration name="TrieTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArrayQueueTest_and_4_more - 2018.12.09 at 13h 49m 30s.xml">
-      <configuration name="ArrayQueueTest and 4 more" configurationId="JUnit" />
+    <history-entry file="TrieTest - 2019.03.24 at 22h 01m 10s.xml">
+      <configuration name="TrieTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="816" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="822" extended-state="6" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30615166" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.3281027" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33095577" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32577905" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ds-trie/src/johnny/dsa/trie/Trie.java</url>
+          <line>40</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/alg-sorting/test/johnny/dsa/sorting/test/QuickSortTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alg-sorting/test/johnny/dsa/sorting/test/SelectionSortTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alg-sorting/test/johnny/dsa/sorting/test/ShellSortTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alg-sqrt-decomposition/test/johnny/dsa/sqrtdecomposition/test/RangeSearchSumTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alg-sqrt-decomposition/test/johnny/dsa/sqrtdecomposition/test/SegmentTreeSumTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alg-sweep-line/test/johnny/dsa/sweepline/test/PopulationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alg-sweep-line/test/johnny/dsa/sweepline/test/SkylineTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-583">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alg-two-pointers/test/johnny/dsa/twopointers/test/PairSumTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-88">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-deque/test/johnny/dsa/deque/test/LinkedListDequeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/FenwickTreeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-graph/test/johnny/dsa/graph/test/AdjListGraphTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-958">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-graph/test/johnny/dsa/graph/test/AdjMatrixGraphTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-673">
-          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-graph/test/johnny/dsa/graph/test/DirectedGraphTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-graph/test/johnny/dsa/graph/test/MinimumSpanningTreeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-223">
-          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-graph/test/johnny/dsa/graph/test/NodeGraphTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1095">
-          <caret line="73" column="18" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-hashmap/test/johnny/dsa/hashmap/test/HashMapIntTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-223">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-hashmap/test/johnny/dsa/hashmap/test/HashMapTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-283">
-          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-heap/test/johnny/dsa/heap/test/MaxHeapGenericTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-heap/test/johnny/dsa/heap/test/MaxHeapTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-heap/test/johnny/dsa/heap/test/MinHeapGenericTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-heap/test/johnny/dsa/heap/test/MinHeapTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-heap/test/johnny/dsa/heap/test/PriorityQueueMaxTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-heap/test/johnny/dsa/heap/test/PriorityQueueMinTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-lfu-cache/test/johnny/datastructure/lfu/test/LFUBSTTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-lfu-cache/test/johnny/datastructure/lfu/test/LFUHashMapTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-lfu-cache/test/johnny/datastructure/lfu/test/LFUHeapTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-lfu-cache/test/johnny/datastructure/lfu/test/LFUTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ds-lru-cache/test/johnny/dsa/lru/test/LRUDequeTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -732,9 +486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -742,9 +493,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-268">
           <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -752,9 +500,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -762,9 +507,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -772,9 +514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -782,9 +521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-163">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -792,9 +528,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -802,9 +535,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -812,9 +542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-823">
           <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -822,46 +549,92 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ds-trie/test/johnny/dsa/trie/test/TrieTest.java">
+    <entry file="file://$PROJECT_DIR$/ds-binary-search-tree/test/johnny/dsa/bst/test/BalancedBSTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="4" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/alg-union-find/test/johnny/dsa/unionfind/test/DisjointSetTest.java">
+    <entry file="file://$PROJECT_DIR$/ds-binary-search-tree/test/johnny/dsa/bst/test/BinarySearchTreeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-binary-search-tree/test/johnny/dsa/bst/test/BSTIteratorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/alg-union-find/test/johnny/dsa/unionfind/test/DisjointSetOptimizedTest.java">
+    <entry file="file://$PROJECT_DIR$/ds-queue/test/johnny/dsa/queue/test/ArrayQueueTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="69" column="29" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="855">
+          <caret line="62" column="11" selection-start-line="60" selection-start-column="8" selection-end-line="62" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/alg-union-find/alg-union-find.iml">
+    <entry file="file://$PROJECT_DIR$/ds-queue/test/johnny/dsa/queue/test/CircularArrayQueueTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="9" selection-end-line="24" />
+        <state relative-caret-position="930">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-queue/test/johnny/dsa/queue/test/LinkedListQueueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-deque/test/johnny/dsa/deque/test/CircularArrayDequeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-graph/test/johnny/dsa/graph/test/AdjListGraphTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-graph/test/johnny/dsa/graph/test/AdjMatrixGraphTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-graph/test/johnny/dsa/graph/test/DirectedGraphTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-graph/test/johnny/dsa/graph/test/MinimumSpanningTreeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -872,6 +645,154 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ds-graph/src/johnny/dsa/graph/DirectedGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="79" column="34" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-graph/src/johnny/dsa/common/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-graph/src/johnny/dsa/graph/NodeGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="90" column="5" selection-start-line="69" selection-start-column="4" selection-end-line="90" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alg-dp/test/johnny/dsa/dp/test/FibonacciTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alg-dp/src/johnny/dsa/dp/Fibonacci.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alg-dp/src/johnny/dsa/dp/UniquePath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alg-dp/src/johnny/dsa/dp/Backpack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="42" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alg-dp/test/johnny/dsa/dp/test/Backpack2Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alg-dp/test/johnny/dsa/dp/test/UniquePathTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alg-dp/test/johnny/dsa/dp/test/BackpackTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alg-union-find/src/johnny/dsa/common/Vertex.java" />
+    <entry file="file://$PROJECT_DIR$/alg-union-find/src/johnny/dsa/common/Node.java" />
+    <entry file="file://$PROJECT_DIR$/alg-dp/src/johnny/dsa/dp/Backpack2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alg-union-find/test/johnny/dsa/unionfind/test/DSURankTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alg-union-find/src/johnny/dsa/unionfind/DSURank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="54" column="1" selection-start-line="2" selection-end-line="54" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-trie/src/johnny/dsa/common/TrieNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-trie/src/johnny/dsa/trie/Trie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-trie/test/johnny/dsa/trie/test/TrieTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="69" column="56" selection-start-line="69" selection-start-column="56" selection-end-line="69" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alg-union-find/src/johnny/dsa/unionfind/DSU.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alg-union-find/test/johnny/dsa/unionfind/test/DSUTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="33" column="9" selection-start-line="15" selection-start-column="8" selection-end-line="33" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-graph/test/johnny/dsa/graph/test/NodeGraphTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ds-binary-search-tree/src/johnny/dsa/bst/BalancedBST.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -879,73 +800,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ds-binary-search-tree/test/johnny/dsa/bst/test/BalancedBSTest.java">
+    <entry file="file://$PROJECT_DIR$/alg-union-find/alg-union-find.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="4" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="345">
+          <caret line="23" column="9" selection-end-line="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ds-binary-search-tree/test/johnny/dsa/bst/test/BinarySearchTreeTest.java">
+    <entry file="file://$PROJECT_DIR$/alg-binary-search/src/johnny/dsa/binarysearch/BinarySearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-binary-search-tree/test/johnny/dsa/bst/test/BSTIteratorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-queue/test/johnny/dsa/queue/test/ArrayQueueTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="62" column="11" lean-forward="true" selection-start-line="60" selection-start-column="8" selection-end-line="62" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-queue/test/johnny/dsa/queue/test/CircularArrayQueueTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="654">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-queue/test/johnny/dsa/queue/test/LinkedListQueueTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-deque/test/johnny/dsa/deque/test/CircularArrayDequeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>

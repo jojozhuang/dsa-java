@@ -6,6 +6,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import johnny.dsa.trie.Trie;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class TrieTest {
     
     @Test
@@ -50,6 +53,23 @@ public class TrieTest {
         assertEquals(true, instance.startsWith("f"));
         assertEquals(false, instance.startsWith("ac"));
         assertEquals(false, instance.startsWith("apq"));
+    }
+
+    @Test
+    public void testSearchWords() {
+        System.out.println("testSearchWords");
+        Trie instance = new Trie();
+        instance.insert("happy");
+        instance.insert("hello");
+        instance.insert("hey");
+        instance.insert("apple");
+        instance.insert("hell");
+        List<String> expect = new ArrayList<>();
+        expect.add("hell");
+        expect.add("hello");
+        List<String> result = instance.searchWords("hell");
+        System.out.println(result);
+        assertEquals(expect, result);
     }
 
     @Test

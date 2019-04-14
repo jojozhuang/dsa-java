@@ -2,6 +2,10 @@ package johnny.dsa.trie;
 
 import johnny.dsa.common.TrieNode;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
 public class Trie {
     private TrieNode root;
     
@@ -29,6 +33,36 @@ public class Trie {
             return false;
         } else {
             return true;
+        }
+    }
+
+    // Return true if there is any word in trie that starts with the given prefix
+    public List<String> searchWords(String prefix) {
+        TrieNode current = root;
+        StringBuilder sb = new StringBuilder();
+        List<String> list = new ArrayList<>();
+
+        for (int i = 0; i < prefix.length(); i++) {
+            char ch = prefix.charAt(i);
+            if (!current.children.containsKey(ch)) {
+                return null;
+            } else {
+                sb.append(ch);
+                current = current.children.get(ch);
+            }
+        }
+
+        dfs(current, sb.toString(), list);
+
+        return list;
+    }
+
+    private void dfs(TrieNode node, String prefix, List<String> list) {
+        if (node.leaf) {
+            list.add(prefix);
+        }
+        for (Map.Entry<Character, TrieNode> entry : node.children.entrySet()) {
+            dfs(entry.getValue(), prefix + entry.getKey(), list);
         }
     }
 
