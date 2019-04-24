@@ -12,30 +12,30 @@ public class LRUTest {
     public void testLRUCache() {
         System.out.println("testLRUCache");
         LRU lru = new LRU(5); //capacity = 5
-        lru.add(1,1);
-        assertArrayEquals(new int[]{1}, lru.getAll());
-        lru.add(2,2);
-        assertArrayEquals(new int[]{2,1}, lru.getAll());
-        lru.add(3,3);
-        assertArrayEquals(new int[]{3,2,1}, lru.getAll());
-        assertEquals(1, lru.get(1));
-        assertArrayEquals(new int[]{1,3,2}, lru.getAll());
-        assertEquals(3, lru.get(3));
-        assertArrayEquals(new int[]{3,1,2}, lru.getAll());
-        assertEquals(3, lru.get(3));
-        assertArrayEquals(new int[]{3,1,2}, lru.getAll());
-        lru.add(4,4);
-        assertArrayEquals(new int[]{4,3,1,2}, lru.getAll());
-        lru.add(5,5);
-        assertArrayEquals(new int[]{5,4,3,1,2}, lru.getAll());
-        lru.add(6,6);
-        assertArrayEquals(new int[]{6,5,4,3,1}, lru.getAll());
-        assertEquals(4, lru.get(4));
-        assertArrayEquals(new int[]{4,6,5,3,1}, lru.getAll());
-        lru.add(7,7);
-        assertArrayEquals(new int[]{7,4,6,5,3}, lru.getAll());
-        lru.add(8,8);
-        assertArrayEquals(new int[]{8,7,4,6,5}, lru.getAll());
+        lru.add(1,10);
+        assertArrayEquals(new int[]{10}, lru.getAll());
+        lru.add(2,20);
+        assertArrayEquals(new int[]{20,10}, lru.getAll());
+        lru.add(3,30);
+        assertArrayEquals(new int[]{30,20,10}, lru.getAll());
+        assertEquals(10, lru.get(1));
+        assertArrayEquals(new int[]{10,30,20}, lru.getAll());
+        assertEquals(30, lru.get(3));
+        assertArrayEquals(new int[]{30,10,20}, lru.getAll());
+        assertEquals(30, lru.get(3));
+        assertArrayEquals(new int[]{30,10,20}, lru.getAll());
+        lru.add(4,40);
+        assertArrayEquals(new int[]{40,30,10,20}, lru.getAll());
+        lru.add(5,50);
+        assertArrayEquals(new int[]{50,40,30,10,20}, lru.getAll());
+        lru.add(6,60);
+        assertArrayEquals(new int[]{60,50,40,30,10}, lru.getAll());
+        assertEquals(40, lru.get(4));
+        assertArrayEquals(new int[]{40,60,50,30,10}, lru.getAll());
+        lru.add(7,70);
+        assertArrayEquals(new int[]{70,40,60,50,30}, lru.getAll());
+        lru.add(8,80);
+        assertArrayEquals(new int[]{80,70,40,60,50}, lru.getAll());
     }
     
     @Test

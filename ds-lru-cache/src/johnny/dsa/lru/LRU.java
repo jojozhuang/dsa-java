@@ -17,7 +17,7 @@ public class LRU {
     
     public LRU(int capacity) {
         this.capacity = capacity;
-        this.map = new HashMap<Integer, Node>();
+        this.map = new HashMap<>();
         this.head = new Node(this.MAX, this.MAX);
         this.tail = new Node(this.MIN, this.MIN);
         head.next = tail;
@@ -30,7 +30,7 @@ public class LRU {
         }
 
         if (map.size() == capacity) {
-            map.remove(tail.prev.value);
+            map.remove(tail.prev.key);
             tail.prev = tail.prev.prev;
             tail.prev.next = tail;
         }
