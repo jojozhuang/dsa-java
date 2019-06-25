@@ -36,11 +36,10 @@ public class Trie {
         }
     }
 
-    // Return true if there is any word in trie that starts with the given prefix
+    // Return all words which start with the given prefix
     public List<String> searchWords(String prefix) {
         TrieNode current = root;
         StringBuilder sb = new StringBuilder();
-        List<String> list = new ArrayList<>();
 
         for (int i = 0; i < prefix.length(); i++) {
             char ch = prefix.charAt(i);
@@ -52,6 +51,7 @@ public class Trie {
             }
         }
 
+        List<String> list = new ArrayList<>();
         dfs(current, sb.toString(), list);
 
         return list;

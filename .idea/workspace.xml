@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1f93bba5-8985-44cc-b46d-4108adb7a917" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ds-lru-cache/src/johnny/dsa/lru/LRU.java" beforeDir="false" afterPath="$PROJECT_DIR$/ds-lru-cache/src/johnny/dsa/lru/LRU.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ds-lru-cache/test/johnny/dsa/lru/test/LRUTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ds-lru-cache/test/johnny/dsa/lru/test/LRUTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-lfu-cache/src/johnny/dsa/common/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/ds-lfu-cache/src/johnny/dsa/common/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-lfu-cache/src/johnny/dsa/lfu/LFU.java" beforeDir="false" afterPath="$PROJECT_DIR$/ds-lfu-cache/src/johnny/dsa/lfu/LFU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-lfu-cache/test/johnny/datastructure/lfu/test/LFUTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ds-lfu-cache/test/johnny/datastructure/lfu/test/LFUTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-trie/src/johnny/dsa/trie/Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/ds-trie/src/johnny/dsa/trie/Trie.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,12 +19,12 @@
     <session id="1864983552">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
-          <entry key="project.open.time.0" value="7" />
+          <entry key="project.closed" value="21" />
+          <entry key="project.open.time.0" value="9" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.2" value="3" />
-          <entry key="project.open.time.4" value="6" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.open.time.4" value="7" />
+          <entry key="project.opened" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -30,7 +32,7 @@
           <entry key="LICENSE" value="1" />
           <entry key="gitignore" value="1" />
           <entry key="iml" value="5" />
-          <entry key="java" value="107" />
+          <entry key="java" value="115" />
           <entry key="md" value="1" />
           <entry key="project" value="1" />
         </counts>
@@ -39,19 +41,19 @@
         <counts>
           <entry key="Eclipse" value="1" />
           <entry key="IDEA_MODULE" value="5" />
-          <entry key="JAVA" value="107" />
+          <entry key="JAVA" value="115" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="21" />
-          <entry key="java" value="1376" />
+          <entry key="java" value="1616" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1376" />
+          <entry key="JAVA" value="1616" />
           <entry key="PLAIN_TEXT" value="21" />
         </counts>
       </usages-collector>
@@ -60,31 +62,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-trie/src/johnny/dsa/trie/Trie.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ds-trie/test/johnny/dsa/trie/test/TrieTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="930">
-              <caret line="69" column="56" selection-start-line="69" selection-start-column="56" selection-end-line="69" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/alg-binary-search/src/johnny/dsa/binarysearch/BinarySearch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="390">
+              <caret line="33" column="32" selection-start-line="29" selection-start-column="8" selection-end-line="33" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -92,35 +73,53 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ds-lru-cache/src/johnny/dsa/lru/LRU.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+            <state relative-caret-position="270">
+              <caret line="20" column="39" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ds-lru-cache/src/johnny/dsa/common/Node.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="3" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ds-lfu-cache/src/johnny/dsa/common/BST.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3859">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ds-lfu-cache/src/johnny/dsa/common/Deque.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-994">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ds-lfu-cache/src/johnny/dsa/common/Node.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="16" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ds-lru-cache/test/johnny/dsa/lru/test/LRUTest.java">
+        <entry file="file://$PROJECT_DIR$/ds-lfu-cache/src/johnny/dsa/lfu/LFU.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/alg-union-find/src/johnny/dsa/unionfind/DSU.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="27" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/alg-union-find/test/johnny/dsa/unionfind/test/DSUTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="33" column="9" selection-start-line="15" selection-start-column="8" selection-end-line="33" selection-end-column="9" />
+            <state relative-caret-position="191">
+              <caret line="33" column="37" lean-forward="true" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -129,28 +128,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-graph/test/johnny/dsa/graph/test/NodeGraphTest.java">
+        <entry file="file://$PROJECT_DIR$/ds-lfu-cache/test/johnny/datastructure/lfu/test/LFUTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
-              <caret line="81" selection-start-line="81" selection-end-line="81" />
+            <state relative-caret-position="144">
+              <caret line="53" column="38" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-binary-search-tree/src/johnny/dsa/bst/BalancedBST.java">
+        <entry file="file://$PROJECT_DIR$/ds-lfu-cache/src/johnny/dsa/lfu/LFUHashMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+            <state relative-caret-position="60">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/alg-union-find/alg-union-find.iml">
+        <entry file="file://$PROJECT_DIR$/ds-lfu-cache/src/johnny/dsa/lfu/LFUHeap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="9" selection-end-line="24" />
+            <state relative-caret-position="-915">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -167,6 +166,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>subset</find>
+      <find>.value</find>
+      <find>capacity</find>
+      <find>MIN_VALUE</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -175,9 +177,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ds-graph/test/johnny/dsa/graph/test/DirectedGraphTest.java" />
-        <option value="$PROJECT_DIR$/ds-graph/test/johnny/dsa/graph/test/MinimumSpanningTreeTest.java" />
-        <option value="$PROJECT_DIR$/ds-hashmap/test/johnny/dsa/hashmap/test/HashMapIntTest.java" />
         <option value="$PROJECT_DIR$/ds-hashmap/test/johnny/dsa/hashmap/test/HashMapTest.java" />
         <option value="$PROJECT_DIR$/ds-heap/test/johnny/dsa/heap/test/MaxHeapGenericTest.java" />
         <option value="$PROJECT_DIR$/ds-heap/test/johnny/dsa/heap/test/MaxHeapTest.java" />
@@ -188,7 +187,6 @@
         <option value="$PROJECT_DIR$/ds-lfu-cache/test/johnny/datastructure/lfu/test/LFUBSTTest.java" />
         <option value="$PROJECT_DIR$/ds-lfu-cache/test/johnny/datastructure/lfu/test/LFUHashMapTest.java" />
         <option value="$PROJECT_DIR$/ds-lfu-cache/test/johnny/datastructure/lfu/test/LFUHeapTest.java" />
-        <option value="$PROJECT_DIR$/ds-lfu-cache/test/johnny/datastructure/lfu/test/LFUTest.java" />
         <option value="$PROJECT_DIR$/ds-lru-cache/test/johnny/dsa/lru/test/LRUDequeTest.java" />
         <option value="$PROJECT_DIR$/ds-queue/test/johnny/dsa/queue/test/LinkedListQueueTest.java" />
         <option value="$PROJECT_DIR$/ds-queue/test/johnny/dsa/queue/test/QueueMergeSortTest.java" />
@@ -222,10 +220,14 @@
         <option value="$PROJECT_DIR$/alg-union-find/test/johnny/dsa/unionfind/test/DSURankTest.java" />
         <option value="$PROJECT_DIR$/alg-union-find/src/johnny/dsa/unionfind/DSU.java" />
         <option value="$PROJECT_DIR$/alg-union-find/src/johnny/dsa/unionfind/DSURank.java" />
-        <option value="$PROJECT_DIR$/ds-trie/src/johnny/dsa/trie/Trie.java" />
         <option value="$PROJECT_DIR$/ds-trie/test/johnny/dsa/trie/test/TrieTest.java" />
-        <option value="$PROJECT_DIR$/ds-lru-cache/src/johnny/dsa/lru/LRU.java" />
         <option value="$PROJECT_DIR$/ds-lru-cache/test/johnny/dsa/lru/test/LRUTest.java" />
+        <option value="$PROJECT_DIR$/ds-trie/src/johnny/dsa/trie/Trie.java" />
+        <option value="$PROJECT_DIR$/ds-lru-cache/src/johnny/dsa/lru/LRU.java" />
+        <option value="$PROJECT_DIR$/ds-lru-cache/src/johnny/dsa/common/Node.java" />
+        <option value="$PROJECT_DIR$/ds-lfu-cache/src/johnny/dsa/common/Node.java" />
+        <option value="$PROJECT_DIR$/ds-lfu-cache/src/johnny/dsa/lfu/LFU.java" />
+        <option value="$PROJECT_DIR$/ds-lfu-cache/test/johnny/datastructure/lfu/test/LFUTest.java" />
       </list>
     </option>
   </component>
@@ -240,11 +242,49 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
+            <path>
+              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ds-lfu-cache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ds-lfu-cache" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ds-lfu-cache" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dsa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ds-lfu-cache" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dsa" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ds-lfu-cache" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dsa" type="462c0819:PsiDirectoryNode" />
+              <item name="lfu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ds-lfu-cache" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ds-lfu-cache" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
             <path>
               <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
               <item name="ds-lru-cache" type="462c0819:PsiDirectoryNode" />
@@ -285,26 +325,19 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ds-trie" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ds-trie" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556076853335" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561441113536" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -335,45 +368,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LRUTest">
-    <configuration name="Backpack2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="alg-dp" />
+  <component name="RunManager" selected="JUnit.LFUTest">
+    <configuration name="LFUTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ds-lfu-cache" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="johnny.dsa.dp.test.*" />
+          <option name="PATTERN" value="johnny.datastructure.lfu.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="johnny.dsa.dp.test" />
-      <option name="MAIN_CLASS_NAME" value="johnny.dsa.dp.test.Backpack2Test" />
+      <option name="PACKAGE_NAME" value="johnny.datastructure.lfu.test" />
+      <option name="MAIN_CLASS_NAME" value="johnny.datastructure.lfu.test.LFUTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DSURankTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="alg-union-find" />
+    <configuration name="LFUTest.testLFUCache2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ds-lfu-cache" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="johnny.dsa.unionfind.test.*" />
+          <option name="PATTERN" value="johnny.datastructure.lfu.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="johnny.dsa.unionfind.test" />
-      <option name="MAIN_CLASS_NAME" value="johnny.dsa.unionfind.test.DSURankTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DSUTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="alg-union-find" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="johnny.dsa.unionfind.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="johnny.dsa.unionfind.test" />
-      <option name="MAIN_CLASS_NAME" value="johnny.dsa.unionfind.test.DSUTest" />
+      <option name="PACKAGE_NAME" value="johnny.datastructure.lfu.test" />
+      <option name="MAIN_CLASS_NAME" value="johnny.datastructure.lfu.test.LFUTest" />
+      <option name="METHOD_NAME" value="testLFUCache2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -406,20 +427,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="[engine:junit-jupiter]/[class:johnny.datastructure.lfu.test.LFUTest]" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ds-lfu-cache" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="johnny.datastructure.lfu.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="johnny.datastructure.lfu.test" />
+      <option name="MAIN_CLASS_NAME" value="johnny.datastructure.lfu.test.LFUTest" />
+      <option name="TEST_OBJECT" value="uniqueId" />
+      <uniqueIds>
+        <uniqueId value="[engine:junit-jupiter]/[class:johnny.datastructure.lfu.test.LFUTest]" />
+      </uniqueIds>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.Backpack2Test" />
-      <item itemvalue="JUnit.DSUTest" />
-      <item itemvalue="JUnit.DSURankTest" />
       <item itemvalue="JUnit.TrieTest" />
       <item itemvalue="JUnit.LRUTest" />
+      <item itemvalue="JUnit.LFUTest" />
+      <item itemvalue="JUnit.[engine:junit-jupiter]/[class:johnny.datastructure.lfu.test.LFUTest]" />
+      <item itemvalue="JUnit.LFUTest.testLFUCache2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LFUTest" />
+        <item itemvalue="JUnit.LFUTest.testLFUCache2" />
+        <item itemvalue="JUnit.[engine:junit-jupiter]/[class:johnny.datastructure.lfu.test.LFUTest]" />
         <item itemvalue="JUnit.LRUTest" />
         <item itemvalue="JUnit.TrieTest" />
-        <item itemvalue="JUnit.DSURankTest" />
-        <item itemvalue="JUnit.DSUTest" />
-        <item itemvalue="JUnit.Backpack2Test" />
       </list>
     </recent_temporary>
   </component>
@@ -437,42 +476,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LRUTest - 2019.04.23 at 20h 29m 43s.xml">
-      <configuration name="LRUTest" configurationId="JUnit" />
+    <history-entry file="LFUTest_testLFUCache2 - 2019.06.24 at 07h 57m 15s.xml">
+      <configuration name="LFUTest.testLFUCache2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LRUTest - 2019.04.23 at 20h 30m 08s.xml">
-      <configuration name="LRUTest" configurationId="JUnit" />
+    <history-entry file="LFUTest_testLFUCache2 - 2019.06.24 at 07h 57m 27s.xml">
+      <configuration name="LFUTest.testLFUCache2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LRUTest - 2019.04.23 at 20h 30m 39s.xml">
-      <configuration name="LRUTest" configurationId="JUnit" />
+    <history-entry file="LFUTest_testLFUCache2 - 2019.06.24 at 07h 58m 15s.xml">
+      <configuration name="LFUTest.testLFUCache2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LRUTest - 2019.04.23 at 20h 30m 58s.xml">
-      <configuration name="LRUTest" configurationId="JUnit" />
+    <history-entry file="LFUTest_testLFUCache2 - 2019.06.24 at 07h 58m 38s.xml">
+      <configuration name="LFUTest.testLFUCache2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LRUTest - 2019.04.23 at 20h 31m 22s.xml">
-      <configuration name="LRUTest" configurationId="JUnit" />
+    <history-entry file="LFUTest_testLFUCache2 - 2019.06.24 at 07h 58m 45s.xml">
+      <configuration name="LFUTest.testLFUCache2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LRUTest - 2019.04.23 at 20h 31m 32s.xml">
-      <configuration name="LRUTest" configurationId="JUnit" />
+    <history-entry file="LFUTest_testLFUCache2 - 2019.06.24 at 07h 58m 52s.xml">
+      <configuration name="LFUTest.testLFUCache2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LRUTest - 2019.04.23 at 20h 32m 28s.xml">
-      <configuration name="LRUTest" configurationId="JUnit" />
+    <history-entry file="LFUTest_testLFUCache2 - 2019.06.24 at 07h 59m 03s.xml">
+      <configuration name="LFUTest.testLFUCache2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LRUTest - 2019.04.23 at 20h 33m 43s.xml">
-      <configuration name="LRUTest" configurationId="JUnit" />
+    <history-entry file="LFUTest - 2019.06.24 at 08h 01m 47s.xml">
+      <configuration name="LFUTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LRUTest - 2019.04.23 at 20h 33m 56s.xml">
-      <configuration name="LRUTest" configurationId="JUnit" />
+    <history-entry file="LFUTest - 2019.06.24 at 08h 02m 00s.xml">
+      <configuration name="LFUTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LRUTest - 2019.04.23 at 20h 34m 02s.xml">
-      <configuration name="LRUTest" configurationId="JUnit" />
+    <history-entry file="LFUTest - 2019.06.24 at 08h 02m 35s.xml">
+      <configuration name="LFUTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="821" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="826" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3104435" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32331902" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -481,8 +520,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32630098" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39803094" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -512,66 +551,16 @@
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ds-lfu-cache/test/johnny/datastructure/lfu/test/LFUTest.java</url>
+          <line>62</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ds-queue/test/johnny/dsa/queue/test/QueueMergeSortTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-268">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-queue/test/johnny/dsa/queue/test/StackQueueTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-segment-tree/test/johnny/dsa/segmenttree/test/SegmentTreeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-tree/test/johnny/dsa/tree/test/BinaryTreeDivideConquerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-tree/test/johnny/dsa/tree/test/BinaryTreeLevelOrderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-163">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-tree/test/johnny/dsa/tree/test/BinaryTreeRecursionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-tree/test/johnny/dsa/tree/test/BinaryTreeTemplateTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-tree/test/johnny/dsa/tree/test/BinaryTreeTraversalTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-823">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ds-trie/test/johnny/dsa/trie/test/TrieArrayTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -781,18 +770,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ds-trie/src/johnny/dsa/trie/Trie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
+        <state relative-caret-position="450">
+          <caret line="38" column="57" selection-start-line="38" selection-end-line="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ds-trie/test/johnny/dsa/trie/test/TrieTest.java">
+    <entry file="file://$PROJECT_DIR$/alg-binary-search/src/johnny/dsa/binarysearch/BinarySearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="69" column="56" selection-start-line="69" selection-start-column="56" selection-end-line="69" selection-end-column="56" />
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-lru-cache/test/johnny/dsa/lru/test/LRUTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -834,24 +830,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/alg-binary-search/src/johnny/dsa/binarysearch/BinarySearch.java">
+    <entry file="file://$PROJECT_DIR$/ds-trie/test/johnny/dsa/trie/test/TrieTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="390">
+          <caret line="33" column="32" selection-start-line="29" selection-start-column="8" selection-end-line="33" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-lru-cache/src/johnny/dsa/common/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="3" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-lfu-cache/src/johnny/dsa/common/BST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3859">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ds-lru-cache/src/johnny/dsa/lru/LRU.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+        <state relative-caret-position="270">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ds-lru-cache/test/johnny/dsa/lru/test/LRUTest.java">
+    <entry file="file://$PROJECT_DIR$/ds-lfu-cache/src/johnny/dsa/lfu/LFUHashMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+        <state relative-caret-position="60">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-lfu-cache/src/johnny/dsa/common/Deque.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-994">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-lfu-cache/src/johnny/dsa/lfu/LFUHeap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-915">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-lfu-cache/src/johnny/dsa/common/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-lfu-cache/test/johnny/datastructure/lfu/test/LFUTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="53" column="38" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-lfu-cache/src/johnny/dsa/lfu/LFU.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="33" column="37" lean-forward="true" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

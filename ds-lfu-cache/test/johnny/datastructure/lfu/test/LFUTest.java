@@ -45,6 +45,23 @@ public class LFUTest {
         lfu.add(8,8);
         assertArrayEquals(new int[][]{{6,3,7,4,8},{3,2,1,1,0}}, lfu.getAll());
     }
+
+    @Test
+    public void testLFUCache2() {
+        System.out.println("testLFUCache2");
+        LFU lfu = new LFU(0); //capacity = 0
+        lfu.add(0,0);
+        assertEquals(Integer.MIN_VALUE, lfu.get(0));
+        //assertArrayEquals(new int[][]{{-1},{0}}, lfu.getAll());
+
+        LFU lfu2 = new LFU(2); //capacity = 0
+        lfu2.add(3,1);
+        lfu2.add(2,1);
+        lfu2.add(2,2);
+        lfu2.add(4,4);
+        assertEquals(2, lfu2.get(2));
+        assertArrayEquals(new int[][]{{2,4},{1,0}}, lfu2.getAll());
+    }
     
     @Test
     public void testLRUCache_For_Blog() {

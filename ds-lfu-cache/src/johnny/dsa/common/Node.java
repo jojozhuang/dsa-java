@@ -1,12 +1,14 @@
 package johnny.dsa.common;
 
 public class Node {
+    public int key;
     public int value;
     public int count;
     public Node prev;
     public Node next;
 
-    public Node(int value, int count) {
+    public Node(int key, int value, int count) {
+        this.key = key;
         this.value = value;
         this.count = count;
         this.prev = null;

@@ -14,25 +14,30 @@ public class LFU {
     
     public LFU(int capacity) {
         this.capacity = capacity;
-        this.map = new HashMap<Integer, Node>();
-        this.head = new Node(this.MAX, this.MAX);
-        this.tail = new Node(this.MIN, this.MIN);
+        this.map = new HashMap<>();
+        this.head = new Node(this.MAX, this.MAX, this.MAX);
+        this.tail = new Node(this.MIN, this.MIN, this.MIN);
         head.next = tail;
         tail.prev = head;
     }
     
     public void add(int key, int value) {
         if (map.containsKey(key)) {
+            map.get(key).value = value;
+            return;
+        }
+
+        if (capacity == 0) {
             return;
         }
 
         if (map.size() == capacity) {
-            map.remove(tail.prev.value);
+            map.remove(tail.prev.key);
             tail.prev = tail.prev.prev;
             tail.prev.next = tail;
         }
 
-        Node newNode = new Node(key, 0);
+        Node newNode = new Node(key, value, 0);
         map.put(key, newNode);
         
         // move new node to proper position
