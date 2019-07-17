@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/alg-binary-search/alg-binary-search.iml" filepath="$PROJECT_DIR$/alg-binary-search/alg-binary-search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alg-bloom-filter/alg-bloom-filter.iml" filepath="$PROJECT_DIR$/alg-bloom-filter/alg-bloom-filter.iml" />
       <module fileurl="file://$PROJECT_DIR$/alg-dp/alg-dp.iml" filepath="$PROJECT_DIR$/alg-dp/alg-dp.iml" />
       <module fileurl="file://$PROJECT_DIR$/alg-map-reduce/alg-map-reduce.iml" filepath="$PROJECT_DIR$/alg-map-reduce/alg-map-reduce.iml" />
       <module fileurl="file://$PROJECT_DIR$/alg-sorting/alg-sorting.iml" filepath="$PROJECT_DIR$/alg-sorting/alg-sorting.iml" />
@@ -20,6 +21,7 @@
       <module fileurl="file://$PROJECT_DIR$/ds-linked-list/ds-linked-list.iml" filepath="$PROJECT_DIR$/ds-linked-list/ds-linked-list.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds-lru-cache/ds-lru-cache.iml" filepath="$PROJECT_DIR$/ds-lru-cache/ds-lru-cache.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds-queue/ds-queue.iml" filepath="$PROJECT_DIR$/ds-queue/ds-queue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ds-red-black-tree/ds-red-black-tree.iml" filepath="$PROJECT_DIR$/ds-red-black-tree/ds-red-black-tree.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds-segment-tree/ds-segment-tree.iml" filepath="$PROJECT_DIR$/ds-segment-tree/ds-segment-tree.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds-stack/ds-stack.iml" filepath="$PROJECT_DIR$/ds-stack/ds-stack.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds-tree/ds-tree.iml" filepath="$PROJECT_DIR$/ds-tree/ds-tree.iml" />
