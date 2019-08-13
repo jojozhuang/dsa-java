@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/alg-binary-search/alg-binary-search.iml" filepath="$PROJECT_DIR$/alg-binary-search/alg-binary-search.iml" />
-      <module fileurl="file://$PROJECT_DIR$/alg-bloom-filter/alg-bloom-filter.iml" filepath="$PROJECT_DIR$/alg-bloom-filter/alg-bloom-filter.iml" />
       <module fileurl="file://$PROJECT_DIR$/alg-dp/alg-dp.iml" filepath="$PROJECT_DIR$/alg-dp/alg-dp.iml" />
       <module fileurl="file://$PROJECT_DIR$/alg-map-reduce/alg-map-reduce.iml" filepath="$PROJECT_DIR$/alg-map-reduce/alg-map-reduce.iml" />
       <module fileurl="file://$PROJECT_DIR$/alg-sorting/alg-sorting.iml" filepath="$PROJECT_DIR$/alg-sorting/alg-sorting.iml" />
@@ -12,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/alg-two-pointers/alg-two-pointers.iml" filepath="$PROJECT_DIR$/alg-two-pointers/alg-two-pointers.iml" />
       <module fileurl="file://$PROJECT_DIR$/alg-union-find/alg-union-find.iml" filepath="$PROJECT_DIR$/alg-union-find/alg-union-find.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds-binary-search-tree/ds-binary-search-tree.iml" filepath="$PROJECT_DIR$/ds-binary-search-tree/ds-binary-search-tree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ds-bloom-filter/ds-bloom-filter.iml" filepath="$PROJECT_DIR$/ds-bloom-filter/ds-bloom-filter.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds-deque/ds-deque.iml" filepath="$PROJECT_DIR$/ds-deque/ds-deque.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds-fenwick-tree/ds-fenwick-tree.iml" filepath="$PROJECT_DIR$/ds-fenwick-tree/ds-fenwick-tree.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds-graph/ds-graph.iml" filepath="$PROJECT_DIR$/ds-graph/ds-graph.iml" />

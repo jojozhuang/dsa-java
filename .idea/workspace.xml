@@ -305,7 +305,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565714668135" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565714796892" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="project.structure.last.edited" value="Problems" />
@@ -367,7 +367,7 @@
       </method>
     </configuration>
     <configuration name="BloomFilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="alg-bloom-filter" />
+      <module name="ds-bloom-filter" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="johnny.dsa.bloomfilter.test.*" />
@@ -395,7 +395,7 @@
       </method>
     </configuration>
     <configuration name="HashSetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="alg-bloom-filter" />
+      <module name="ds-bloom-filter" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="johnny.dsa.bloomfilter.test.*" />
