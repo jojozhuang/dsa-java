@@ -8,18 +8,19 @@ import static org.junit.jupiter.api.Assertions.*;
 class BloomFilterTest {
     @Test
     public void testBloomFilter() {
-        int size = 1000000;
+        int capacity = 100000000;
+        int count = capacity / 10;
         long start = System.currentTimeMillis();
-        BloomFilter bloomFilter = new BloomFilter(size);
-        for (int i = 0; i < size; i++) {
+        BloomFilter bloomFilter = new BloomFilter(capacity);
+        for (int i = 0; i < count; i++) {
             bloomFilter.add(i + "");
         }
         assertTrue(bloomFilter.contains(1 + ""));
         assertTrue(bloomFilter.contains(2 + ""));
         assertTrue(bloomFilter.contains(3 + ""));
         assertTrue(bloomFilter.contains(999999 + ""));
+        assertFalse(bloomFilter.contains(10000001 + ""));
         assertFalse(bloomFilter.contains(400230340 + ""));
-        //assertFalse(bloomFilter.contains(10000001 + ""));
 
         long end = System.currentTimeMillis();
         System.out.println("Executed Time: " + (end - start));
