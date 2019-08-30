@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f93bba5-8985-44cc-b46d-4108adb7a917" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ds-monotonic-queue/ds-monotonic-queue.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ds-monotonic-queue/src/johnny/dsa/monotonicqueue/FirstSmallerMonotonicQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ds-monotonic-queue/src/johnny/dsa/monotonicqueue/FirstSmallerNaive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ds-monotonic-queue/test/johnny/dsa/monotonicqueue/test/FirstSmallerMonotonicQueueTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ds-monotonic-queue/test/johnny/dsa/monotonicqueue/test/FirstSmallerNaiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ds-monotonic-queue/src/johnny/dsa/monotonicqueue/FirstSmallerStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ds-monotonic-queue/test/johnny/dsa/monotonicqueue/test/FirstSmallerStackTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-monotonic-queue/src/johnny/dsa/monotonicqueue/FirstSmallerMonotonicQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/ds-monotonic-queue/src/johnny/dsa/monotonicqueue/FirstSmallerMonotonicQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-monotonic-queue/test/johnny/dsa/monotonicqueue/test/FirstSmallerMonotonicQueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ds-monotonic-queue/test/johnny/dsa/monotonicqueue/test/FirstSmallerMonotonicQueueTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,14 +19,14 @@
     <session id="1864983552">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="34" />
-          <entry key="project.open.time.0" value="14" />
+          <entry key="project.closed" value="35" />
+          <entry key="project.open.time.0" value="15" />
           <entry key="project.open.time.1" value="6" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.2" value="4" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="9" />
-          <entry key="project.opened" value="35" />
+          <entry key="project.opened" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -37,7 +35,7 @@
           <entry key="classpath" value="1" />
           <entry key="gitignore" value="2" />
           <entry key="iml" value="15" />
-          <entry key="java" value="175" />
+          <entry key="java" value="178" />
           <entry key="md" value="1" />
           <entry key="project" value="1" />
         </counts>
@@ -46,19 +44,19 @@
         <counts>
           <entry key="Eclipse" value="2" />
           <entry key="IDEA_MODULE" value="15" />
-          <entry key="JAVA" value="175" />
+          <entry key="JAVA" value="178" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="34" />
-          <entry key="java" value="3335" />
+          <entry key="java" value="3685" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3335" />
+          <entry key="JAVA" value="3685" />
           <entry key="PLAIN_TEXT" value="34" />
         </counts>
       </usages-collector>
@@ -69,31 +67,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ds-monotonic-queue/src/johnny/dsa/monotonicqueue/FirstSmallerNaive.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
+            <state relative-caret-position="450">
               <caret line="30" column="73" selection-start-line="30" selection-start-column="73" selection-end-line="30" selection-end-column="73" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ds-monotonic-queue/src/johnny/dsa/monotonicqueue/FirstSmallerMonotonicQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+            <state relative-caret-position="435">
+              <caret line="29" selection-start-line="29" selection-end-line="49" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-linked-list/ds-linked-list.iml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-hashmap/ds-hashmap.iml">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ds-monotonic-queue/src/johnny/dsa/monotonicqueue/FirstSmallerStack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" selection-end-line="24" />
+            <state relative-caret-position="75">
+              <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="45" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -122,8 +118,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ds-monotonic-queue/test/johnny/dsa/monotonicqueue/test/FirstSmallerMonotonicQueueTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="399">
+              <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ds-monotonic-queue/test/johnny/dsa/monotonicqueue/test/FirstSmallerStackTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -199,8 +207,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ds-binary-search-tree/test/johnny/dsa/bst/test/BSTIteratorTest.java" />
-        <option value="$PROJECT_DIR$/ds-queue/test/johnny/dsa/queue/test/ArrayQueueTest.java" />
         <option value="$PROJECT_DIR$/ds-queue/test/johnny/dsa/queue/test/CircularArrayQueueTest.java" />
         <option value="$PROJECT_DIR$/ds-deque/test/johnny/dsa/deque/test/CircularArrayDequeTest.java" />
         <option value="$PROJECT_DIR$/ds-graph/src/johnny/dsa/graph/NodeGraph.java" />
@@ -247,9 +253,11 @@
         <option value="$PROJECT_DIR$/ds-monotonic-queue/ds-monotonic-queue.iml" />
         <option value="$PROJECT_DIR$/ds-monotonic-queue/src/johnny/dsa/monotonicqueue/FirstLargerAtRightNaive.java" />
         <option value="$PROJECT_DIR$/ds-monotonic-queue/test/johnny/dsa/monotonicqueue/test/FirstSmallerNaiveTest.java" />
-        <option value="$PROJECT_DIR$/ds-monotonic-queue/test/johnny/dsa/monotonicqueue/test/FirstSmallerMonotonicQueueTest.java" />
         <option value="$PROJECT_DIR$/ds-monotonic-queue/src/johnny/dsa/monotonicqueue/FirstSmallerNaive.java" />
+        <option value="$PROJECT_DIR$/ds-monotonic-queue/test/johnny/dsa/monotonicqueue/test/FirstSmallerStackTest.java" />
         <option value="$PROJECT_DIR$/ds-monotonic-queue/src/johnny/dsa/monotonicqueue/FirstSmallerMonotonicQueue.java" />
+        <option value="$PROJECT_DIR$/ds-monotonic-queue/test/johnny/dsa/monotonicqueue/test/FirstSmallerMonotonicQueueTest.java" />
+        <option value="$PROJECT_DIR$/ds-monotonic-queue/src/johnny/dsa/monotonicqueue/FirstSmallerStack.java" />
       </list>
     </option>
   </component>
@@ -267,21 +275,6 @@
       <pane id="ProjectPane">
         <subPane>
           <expand>
-            <path>
-              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alg-two-pointers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alg-two-pointers" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alg-two-pointers" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
             <path>
               <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
               <item name="ds-monotonic-queue" type="462c0819:PsiDirectoryNode" />
@@ -316,15 +309,15 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567184780588" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567201379478" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="project.structure.last.edited" value="Problems" />
@@ -336,15 +329,15 @@
       <recent name="johnny.dsa.bloomfilter" />
       <recent name="johnny.dsa.linkedlist" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="johnny.dsa.monotonicqueue.test" />
       <recent name="johnny.dsa.monotonicqueue" />
       <recent name="johnny.dsa.rbt.test" />
       <recent name="johnny.dsa.rbt" />
       <recent name="johnny.dsa.dp.test" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -359,7 +352,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FirstSmallerMonotonicQueueTest">
+  <component name="RunManager" selected="JUnit.FirstSmallerStackTest">
     <configuration name="BloomFilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ds-bloom-filter" />
       <extension name="coverage">
@@ -402,6 +395,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FirstSmallerStackTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ds-monotonic-queue" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="johnny.dsa.monotonicqueue.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="johnny.dsa.monotonicqueue.test" />
+      <option name="MAIN_CLASS_NAME" value="johnny.dsa.monotonicqueue.test.FirstSmallerStackTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HashSetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ds-bloom-filter" />
       <extension name="coverage">
@@ -416,34 +423,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TopKFrequentWordsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="alg-map-reduce" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="johnny.dsa.mapreduce.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="johnny.dsa.mapreduce.test" />
-      <option name="MAIN_CLASS_NAME" value="johnny.dsa.mapreduce.test.TopKFrequentWordsTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="JUnit.HashSetTest" />
       <item itemvalue="JUnit.BloomFilterTest" />
-      <item itemvalue="JUnit.TopKFrequentWordsTest" />
       <item itemvalue="JUnit.FirstSmallerNaiveTest" />
       <item itemvalue="JUnit.FirstSmallerMonotonicQueueTest" />
+      <item itemvalue="JUnit.FirstSmallerStackTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FirstSmallerStackTest" />
         <item itemvalue="JUnit.FirstSmallerMonotonicQueueTest" />
         <item itemvalue="JUnit.FirstSmallerNaiveTest" />
         <item itemvalue="JUnit.BloomFilterTest" />
         <item itemvalue="JUnit.HashSetTest" />
-        <item itemvalue="JUnit.TopKFrequentWordsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -461,42 +454,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstSmallerNaiveTest - 2019.08.29 at 20h 53m 31s.xml">
-      <configuration name="FirstSmallerNaiveTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstSmallerMonotonicQueueTest - 2019.08.29 at 21h 11m 43s.xml">
+    <history-entry file="FirstSmallerMonotonicQueueTest - 2019.08.30 at 10h 47m 02s.xml">
       <configuration name="FirstSmallerMonotonicQueueTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstSmallerMonotonicQueueTest - 2019.08.29 at 21h 14m 40s.xml">
+    <history-entry file="FirstSmallerStackTest - 2019.08.30 at 10h 47m 32s.xml">
+      <configuration name="FirstSmallerStackTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstSmallerMonotonicQueueTest - 2019.08.30 at 10h 50m 01s.xml">
       <configuration name="FirstSmallerMonotonicQueueTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstSmallerMonotonicQueueTest - 2019.08.29 at 21h 15m 34s.xml">
+    <history-entry file="FirstSmallerMonotonicQueueTest - 2019.08.30 at 10h 57m 16s.xml">
       <configuration name="FirstSmallerMonotonicQueueTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstSmallerMonotonicQueueTest - 2019.08.29 at 21h 16m 12s.xml">
+    <history-entry file="FirstSmallerMonotonicQueueTest - 2019.08.30 at 11h 00m 01s.xml">
       <configuration name="FirstSmallerMonotonicQueueTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstSmallerMonotonicQueueTest - 2019.08.29 at 21h 17m 52s.xml">
+    <history-entry file="FirstSmallerMonotonicQueueTest - 2019.08.30 at 14h 25m 47s.xml">
       <configuration name="FirstSmallerMonotonicQueueTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstSmallerNaiveTest - 2019.08.30 at 09h 35m 17s.xml">
-      <configuration name="FirstSmallerNaiveTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstSmallerNaiveTest - 2019.08.30 at 09h 36m 52s.xml">
-      <configuration name="FirstSmallerNaiveTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstSmallerNaiveTest - 2019.08.30 at 09h 37m 24s.xml">
-      <configuration name="FirstSmallerNaiveTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstSmallerMonotonicQueueTest - 2019.08.30 at 09h 37m 44s.xml">
+    <history-entry file="FirstSmallerMonotonicQueueTest - 2019.08.30 at 14h 25m 55s.xml">
       <configuration name="FirstSmallerMonotonicQueueTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstSmallerMonotonicQueueTest - 2019.08.30 at 14h 26m 00s.xml">
+      <configuration name="FirstSmallerMonotonicQueueTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstSmallerStackTest - 2019.08.30 at 14h 28m 19s.xml">
+      <configuration name="FirstSmallerStackTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstSmallerStackTest - 2019.08.30 at 14h 29m 23s.xml">
+      <configuration name="FirstSmallerStackTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.39270386" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.39842632" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -558,20 +551,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/alg-binary-search/test/johnny/dsa/binarysearch/test/BinarySearchTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-red-black-tree/src/johnny/dsa/rbt/RedBlackTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="26" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/alg-binary-search/src/johnny/dsa/binarysearch/BinarySearch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -837,10 +816,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ds-hashmap/test/johnny/dsa/hashmap/test/HashMapIntTest.java">
+    <entry file="file://$PROJECT_DIR$/ds-monotonic-queue/ds-monotonic-queue.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="360">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
@@ -858,20 +837,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ds-monotonic-queue/ds-monotonic-queue.iml">
+    <entry file="file://$PROJECT_DIR$/ds-hashmap/test/johnny/dsa/hashmap/test/HashMapIntTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-monotonic-queue/test/johnny/dsa/monotonicqueue/test/FirstSmallerMonotonicQueueTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -885,17 +854,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ds-monotonic-queue/src/johnny/dsa/monotonicqueue/FirstSmallerNaive.java">
+    <entry file="file://$PROJECT_DIR$/ds-monotonic-queue/test/johnny/dsa/monotonicqueue/test/FirstSmallerStackTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="30" column="73" selection-start-line="30" selection-start-column="73" selection-end-line="30" selection-end-column="73" />
+        <state relative-caret-position="270">
+          <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-monotonic-queue/test/johnny/dsa/monotonicqueue/test/FirstSmallerMonotonicQueueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ds-monotonic-queue/src/johnny/dsa/monotonicqueue/FirstSmallerMonotonicQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+        <state relative-caret-position="435">
+          <caret line="29" selection-start-line="29" selection-end-line="49" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-monotonic-queue/src/johnny/dsa/monotonicqueue/FirstSmallerNaive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="73" selection-start-line="30" selection-start-column="73" selection-end-line="30" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-monotonic-queue/src/johnny/dsa/monotonicqueue/FirstSmallerStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="45" selection-end-column="5" />
         </state>
       </provider>
     </entry>
