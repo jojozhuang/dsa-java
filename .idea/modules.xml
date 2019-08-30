@@ -20,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/ds-lfu-cache/ds-lfu-cache.iml" filepath="$PROJECT_DIR$/ds-lfu-cache/ds-lfu-cache.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds-linked-list/ds-linked-list.iml" filepath="$PROJECT_DIR$/ds-linked-list/ds-linked-list.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds-lru-cache/ds-lru-cache.iml" filepath="$PROJECT_DIR$/ds-lru-cache/ds-lru-cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ds-monotonic-queue/ds-monotonic-queue.iml" filepath="$PROJECT_DIR$/ds-monotonic-queue/ds-monotonic-queue.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds-queue/ds-queue.iml" filepath="$PROJECT_DIR$/ds-queue/ds-queue.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds-red-black-tree/ds-red-black-tree.iml" filepath="$PROJECT_DIR$/ds-red-black-tree/ds-red-black-tree.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds-segment-tree/ds-segment-tree.iml" filepath="$PROJECT_DIR$/ds-segment-tree/ds-segment-tree.iml" />
