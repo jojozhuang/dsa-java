@@ -1,18 +1,18 @@
 package johnny.dsa.fenwicktree.test;
 
+import johnny.dsa.fenwicktree.PrefixSumNaive;
+import johnny.dsa.fenwicktree.SegmentTree;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import johnny.dsa.fenwicktree.FenwickTree;
-
-public class FenwickTreeTest {
+public class SegmentTreeTest {
 
     @Test
-    public void testFenwickTree() {
-        System.out.println("testFenwickTree");
+    public void testSegmentTree() {
+        System.out.println("testSegmentTree");
         int[] nums = new int[]{2, -1, 6, 1, 5, -3, 4, 1, -2, 7};
-        FenwickTree instance = new FenwickTree(nums);
+        SegmentTree instance = new SegmentTree(nums);
         assertEquals(2, instance.prefixSum(0));
         assertEquals(1, instance.prefixSum(1));
         assertEquals(7, instance.prefixSum(2));

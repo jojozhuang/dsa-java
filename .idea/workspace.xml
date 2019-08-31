@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f93bba5-8985-44cc-b46d-4108adb7a917" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ds-monotonic-queue/src/johnny/dsa/monotonicqueue/FirstSmallerStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ds-monotonic-queue/test/johnny/dsa/monotonicqueue/test/FirstSmallerStackTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/PrefixSumImproved.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/PrefixSumNaive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/SegmentTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/PrefixSumImprovedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/PrefixSumNaiveTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/SegmentTreeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ds-monotonic-queue/src/johnny/dsa/monotonicqueue/FirstSmallerMonotonicQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/ds-monotonic-queue/src/johnny/dsa/monotonicqueue/FirstSmallerMonotonicQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ds-monotonic-queue/test/johnny/dsa/monotonicqueue/test/FirstSmallerMonotonicQueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ds-monotonic-queue/test/johnny/dsa/monotonicqueue/test/FirstSmallerMonotonicQueueTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/FenwickTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/FenwickTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/FenwickTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/FenwickTreeTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,7 +39,7 @@
           <entry key="classpath" value="1" />
           <entry key="gitignore" value="2" />
           <entry key="iml" value="15" />
-          <entry key="java" value="178" />
+          <entry key="java" value="190" />
           <entry key="md" value="1" />
           <entry key="project" value="1" />
         </counts>
@@ -44,19 +48,19 @@
         <counts>
           <entry key="Eclipse" value="2" />
           <entry key="IDEA_MODULE" value="15" />
-          <entry key="JAVA" value="178" />
+          <entry key="JAVA" value="190" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="34" />
-          <entry key="java" value="3685" />
+          <entry key="java" value="4469" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3685" />
+          <entry key="JAVA" value="4469" />
           <entry key="PLAIN_TEXT" value="34" />
         </counts>
       </usages-collector>
@@ -65,103 +69,118 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-monotonic-queue/src/johnny/dsa/monotonicqueue/FirstSmallerNaive.java">
+        <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/FenwickTreeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="73" selection-start-line="30" selection-start-column="73" selection-end-line="30" selection-end-column="73" />
+            <state relative-caret-position="353">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-monotonic-queue/src/johnny/dsa/monotonicqueue/FirstSmallerMonotonicQueue.java">
+        <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/PrefixSumNaiveTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" selection-start-line="29" selection-end-line="49" selection-end-column="5" />
+            <state relative-caret-position="630">
+              <caret line="42" column="50" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="42" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/SegmentTreeTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/PrefixSumNaive.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="25" />
+              <folding>
+                <element signature="e#108#109#0" expanded="true" />
+                <element signature="e#139#140#0" expanded="true" />
+                <element signature="e#234#235#0" expanded="true" />
+                <element signature="e#261#262#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/PrefixSumImproved.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="34" selection-end-column="1" />
+              <folding>
+                <element signature="e#619#620#0" expanded="true" />
+                <element signature="e#648#649#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/PrefixSumImprovedTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="59">
+              <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ds-segment-tree/test/johnny/dsa/segmenttree/test/SegmentTreeTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ds-monotonic-queue/src/johnny/dsa/monotonicqueue/FirstSmallerStack.java">
+        <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/SegmentTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="45" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-monotonic-queue/ds-monotonic-queue.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-monotonic-queue/test/johnny/dsa/monotonicqueue/test/FirstSmallerNaiveTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="97" selection-start-line="13" selection-start-column="88" selection-end-line="13" selection-end-column="97" />
+            <state relative-caret-position="330">
+              <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#176#177#0" expanded="true" />
+                <element signature="e#214#215#0" expanded="true" />
+                <element signature="e#1335#1336#0" expanded="true" />
+                <element signature="e#1389#1390#0" expanded="true" />
+                <element signature="e#1335#1336#0" expanded="true" />
+                <element signature="e#1389#1390#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-monotonic-queue/test/johnny/dsa/monotonicqueue/test/FirstSmallerMonotonicQueueTest.java">
+        <entry file="file://$PROJECT_DIR$/ds-segment-tree/src/johnny/dsa/common/SegmentTreeNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="13" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-monotonic-queue/test/johnny/dsa/monotonicqueue/test/FirstSmallerStackTest.java">
+        <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/FenwickTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-linked-list/test/johnny/dsa/linkedlist/test/LinkedListTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/alg-two-pointers/test/johnny/dsa/twopointers/test/PairSumTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="28" column="77" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="77" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-hashmap/test/johnny/dsa/hashmap/test/HashMapIntTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="-522">
+              <caret line="3" column="16" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -196,7 +215,12 @@
       <find>nodeToUpdate</find>
       <find>negativeInfinity</find>
       <find>10000000</find>
+      <find>query</find>
+      <find>getSum</find>
     </findStrings>
+    <replaceStrings>
+      <replace>prefixSum</replace>
+    </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/ds-hashmap</dir>
     </dirStrings>
@@ -207,14 +231,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ds-queue/test/johnny/dsa/queue/test/CircularArrayQueueTest.java" />
-        <option value="$PROJECT_DIR$/ds-deque/test/johnny/dsa/deque/test/CircularArrayDequeTest.java" />
-        <option value="$PROJECT_DIR$/ds-graph/src/johnny/dsa/graph/NodeGraph.java" />
-        <option value="$PROJECT_DIR$/ds-graph/test/johnny/dsa/graph/test/NodeGraphTest.java" />
-        <option value="$PROJECT_DIR$/alg-dp/test/johnny/dsa/dp/test/BackpackTest.java" />
-        <option value="$PROJECT_DIR$/alg-dp/test/johnny/dsa/dp/test/Backpack2Test.java" />
-        <option value="$PROJECT_DIR$/alg-dp/src/johnny/dsa/dp/Backpack.java" />
-        <option value="$PROJECT_DIR$/alg-dp/src/johnny/dsa/dp/Backpack2.java" />
         <option value="$PROJECT_DIR$/alg-union-find/src/johnny/dsa/unionfind/DisjointSet.java" />
         <option value="$PROJECT_DIR$/alg-union-find/test/johnny/dsa/unionfind/test/DisjointSetOptimizedTest.java" />
         <option value="$PROJECT_DIR$/alg-union-find/src/johnny/dsa/unionfind/DSUOptimized.java" />
@@ -258,6 +274,14 @@
         <option value="$PROJECT_DIR$/ds-monotonic-queue/src/johnny/dsa/monotonicqueue/FirstSmallerMonotonicQueue.java" />
         <option value="$PROJECT_DIR$/ds-monotonic-queue/test/johnny/dsa/monotonicqueue/test/FirstSmallerMonotonicQueueTest.java" />
         <option value="$PROJECT_DIR$/ds-monotonic-queue/src/johnny/dsa/monotonicqueue/FirstSmallerStack.java" />
+        <option value="$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/FenwickTree.java" />
+        <option value="$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/PrefixSumNaiveTest.java" />
+        <option value="$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/SegmentTreeTest.java" />
+        <option value="$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/FenwickTreeTest.java" />
+        <option value="$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/PrefixSumNaive.java" />
+        <option value="$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/PrefixSumImprovedTest.java" />
+        <option value="$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/PrefixSumImproved.java" />
+        <option value="$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/SegmentTree.java" />
       </list>
     </option>
   </component>
@@ -277,33 +301,69 @@
           <expand>
             <path>
               <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ds-monotonic-queue" type="462c0819:PsiDirectoryNode" />
+              <item name="ds-fenwick-tree" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ds-monotonic-queue" type="462c0819:PsiDirectoryNode" />
+              <item name="ds-fenwick-tree" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ds-monotonic-queue" type="462c0819:PsiDirectoryNode" />
+              <item name="ds-fenwick-tree" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="monotonicqueue" type="462c0819:PsiDirectoryNode" />
+              <item name="fenwicktree" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ds-monotonic-queue" type="462c0819:PsiDirectoryNode" />
+              <item name="ds-fenwick-tree" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ds-monotonic-queue" type="462c0819:PsiDirectoryNode" />
+              <item name="ds-fenwick-tree" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ds-trie" type="462c0819:PsiDirectoryNode" />
+              <item name="ds-segment-tree" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ds-segment-tree" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ds-segment-tree" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dsa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ds-segment-tree" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dsa" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ds-segment-tree" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dsa" type="462c0819:PsiDirectoryNode" />
+              <item name="segmenttree" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ds-segment-tree" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ds-segment-tree" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -317,10 +377,10 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567201379478" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567224668327" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -330,11 +390,11 @@
       <recent name="johnny.dsa.linkedlist" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="johnny.dsa.fenwicktree.test" />
+      <recent name="johnny.dsa.fenwicktree" />
       <recent name="johnny.dsa.monotonicqueue.test" />
       <recent name="johnny.dsa.monotonicqueue" />
       <recent name="johnny.dsa.rbt.test" />
-      <recent name="johnny.dsa.rbt" />
-      <recent name="johnny.dsa.dp.test" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -352,45 +412,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FirstSmallerStackTest">
-    <configuration name="BloomFilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ds-bloom-filter" />
+  <component name="RunManager" selected="JUnit.SegmentTreeTest">
+    <configuration name="FenwickTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ds-fenwick-tree" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="johnny.dsa.bloomfilter.test.*" />
+          <option name="PATTERN" value="johnny.dsa.fenwicktree.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="johnny.dsa.bloomfilter.test" />
-      <option name="MAIN_CLASS_NAME" value="johnny.dsa.bloomfilter.test.BloomFilterTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FirstSmallerMonotonicQueueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ds-monotonic-queue" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="johnny.dsa.monotonicqueue.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="johnny.dsa.monotonicqueue.test" />
-      <option name="MAIN_CLASS_NAME" value="johnny.dsa.monotonicqueue.test.FirstSmallerMonotonicQueueTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FirstSmallerNaiveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ds-monotonic-queue" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="johnny.dsa.monotonicqueue.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="johnny.dsa.monotonicqueue.test" />
-      <option name="MAIN_CLASS_NAME" value="johnny.dsa.monotonicqueue.test.FirstSmallerNaiveTest" />
+      <option name="PACKAGE_NAME" value="johnny.dsa.fenwicktree.test" />
+      <option name="MAIN_CLASS_NAME" value="johnny.dsa.fenwicktree.test.FenwickTreeTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -409,34 +441,62 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HashSetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ds-bloom-filter" />
+    <configuration name="PrefixSumImprovedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ds-fenwick-tree" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="johnny.dsa.bloomfilter.test.*" />
+          <option name="PATTERN" value="johnny.dsa.fenwicktree.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="johnny.dsa.bloomfilter.test" />
-      <option name="MAIN_CLASS_NAME" value="johnny.dsa.bloomfilter.test.HashSetTest" />
+      <option name="PACKAGE_NAME" value="johnny.dsa.fenwicktree.test" />
+      <option name="MAIN_CLASS_NAME" value="johnny.dsa.fenwicktree.test.PrefixSumImprovedTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrefixSumNaiveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ds-fenwick-tree" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="johnny.dsa.fenwicktree.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="johnny.dsa.fenwicktree.test" />
+      <option name="MAIN_CLASS_NAME" value="johnny.dsa.fenwicktree.test.PrefixSumNaiveTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SegmentTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ds-fenwick-tree" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="johnny.dsa.fenwicktree.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="johnny.dsa.fenwicktree.test" />
+      <option name="MAIN_CLASS_NAME" value="johnny.dsa.fenwicktree.test.SegmentTreeTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.HashSetTest" />
-      <item itemvalue="JUnit.BloomFilterTest" />
-      <item itemvalue="JUnit.FirstSmallerNaiveTest" />
-      <item itemvalue="JUnit.FirstSmallerMonotonicQueueTest" />
       <item itemvalue="JUnit.FirstSmallerStackTest" />
+      <item itemvalue="JUnit.FenwickTreeTest" />
+      <item itemvalue="JUnit.PrefixSumNaiveTest" />
+      <item itemvalue="JUnit.SegmentTreeTest" />
+      <item itemvalue="JUnit.PrefixSumImprovedTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SegmentTreeTest" />
+        <item itemvalue="JUnit.PrefixSumImprovedTest" />
+        <item itemvalue="JUnit.FenwickTreeTest" />
+        <item itemvalue="JUnit.PrefixSumNaiveTest" />
         <item itemvalue="JUnit.FirstSmallerStackTest" />
-        <item itemvalue="JUnit.FirstSmallerMonotonicQueueTest" />
-        <item itemvalue="JUnit.FirstSmallerNaiveTest" />
-        <item itemvalue="JUnit.BloomFilterTest" />
-        <item itemvalue="JUnit.HashSetTest" />
       </list>
     </recent_temporary>
   </component>
@@ -454,42 +514,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstSmallerMonotonicQueueTest - 2019.08.30 at 10h 47m 02s.xml">
-      <configuration name="FirstSmallerMonotonicQueueTest" configurationId="JUnit" />
+    <history-entry file="PrefixSumNaiveTest - 2019.08.30 at 20h 40m 59s.xml">
+      <configuration name="PrefixSumNaiveTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstSmallerStackTest - 2019.08.30 at 10h 47m 32s.xml">
-      <configuration name="FirstSmallerStackTest" configurationId="JUnit" />
+    <history-entry file="SegmentTreeTest - 2019.08.30 at 20h 41m 30s.xml">
+      <configuration name="SegmentTreeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstSmallerMonotonicQueueTest - 2019.08.30 at 10h 50m 01s.xml">
-      <configuration name="FirstSmallerMonotonicQueueTest" configurationId="JUnit" />
+    <history-entry file="FenwickTreeTest - 2019.08.30 at 20h 42m 39s.xml">
+      <configuration name="FenwickTreeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstSmallerMonotonicQueueTest - 2019.08.30 at 10h 57m 16s.xml">
-      <configuration name="FirstSmallerMonotonicQueueTest" configurationId="JUnit" />
+    <history-entry file="PrefixSumImprovedTest - 2019.08.30 at 20h 57m 05s.xml">
+      <configuration name="PrefixSumImprovedTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstSmallerMonotonicQueueTest - 2019.08.30 at 11h 00m 01s.xml">
-      <configuration name="FirstSmallerMonotonicQueueTest" configurationId="JUnit" />
+    <history-entry file="PrefixSumImprovedTest - 2019.08.30 at 20h 57m 40s.xml">
+      <configuration name="PrefixSumImprovedTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstSmallerMonotonicQueueTest - 2019.08.30 at 14h 25m 47s.xml">
-      <configuration name="FirstSmallerMonotonicQueueTest" configurationId="JUnit" />
+    <history-entry file="PrefixSumImprovedTest - 2019.08.30 at 20h 58m 43s.xml">
+      <configuration name="PrefixSumImprovedTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstSmallerMonotonicQueueTest - 2019.08.30 at 14h 25m 55s.xml">
-      <configuration name="FirstSmallerMonotonicQueueTest" configurationId="JUnit" />
+    <history-entry file="PrefixSumImprovedTest - 2019.08.30 at 20h 59m 07s.xml">
+      <configuration name="PrefixSumImprovedTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstSmallerMonotonicQueueTest - 2019.08.30 at 14h 26m 00s.xml">
-      <configuration name="FirstSmallerMonotonicQueueTest" configurationId="JUnit" />
+    <history-entry file="PrefixSumImprovedTest - 2019.08.30 at 20h 59m 43s.xml">
+      <configuration name="PrefixSumImprovedTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstSmallerStackTest - 2019.08.30 at 14h 28m 19s.xml">
-      <configuration name="FirstSmallerStackTest" configurationId="JUnit" />
+    <history-entry file="SegmentTreeTest - 2019.08.30 at 21h 09m 40s.xml">
+      <configuration name="SegmentTreeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstSmallerStackTest - 2019.08.30 at 14h 29m 23s.xml">
-      <configuration name="FirstSmallerStackTest" configurationId="JUnit" />
+    <history-entry file="SegmentTreeTest - 2019.08.30 at 21h 10m 40s.xml">
+      <configuration name="SegmentTreeTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.39842632" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.39842632" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -498,7 +558,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28004956" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28004956" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39660057" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -506,7 +566,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32957748" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32485875" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32465923" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -551,85 +611,10 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/alg-binary-search/src/johnny/dsa/binarysearch/BinarySearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="5" selection-start-line="8" selection-start-column="4" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alg-binary-search/alg-binary-search.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="16" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-red-black-tree/src/johnny/dsa/rbt/RedBlackNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/FenwickTreeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-bloom-filter/ds-bloom-filter.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-hashmap/src/johnny/dsa/hashmap/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-985">
-          <caret line="41" column="30" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-hashmap/src/johnny/dsa/hashmap/HashMapInt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1347">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-hashmap/.classpath" />
-    <entry file="file://$PROJECT_DIR$/ds-hashmap/.gitignore" />
-    <entry file="file://$PROJECT_DIR$/ds-hashmap/test/johnny/dsa/hashmap/test/HashMapTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-trie/src/johnny/dsa/trie/Trie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/Map.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7995">
           <caret line="559" column="8" selection-start-line="559" selection-start-column="8" selection-end-line="559" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-segment-tree/src/johnny/dsa/segmenttree/SegmentTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -898,6 +883,117 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ds-segment-tree/src/johnny/dsa/segmenttree/SegmentTreeMin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1191">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-segment-tree/src/johnny/dsa/segmenttree/SegmentTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-segment-tree/test/johnny/dsa/segmenttree/test/SegmentTreeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-segment-tree/src/johnny/dsa/common/SegmentTreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/SegmentTreeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/FenwickTreeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/FenwickTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-522">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/PrefixSumNaiveTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="50" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="42" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/PrefixSumImprovedTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/PrefixSumImproved.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="34" selection-end-column="1" />
+          <folding>
+            <element signature="e#619#620#0" expanded="true" />
+            <element signature="e#648#649#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/PrefixSumNaive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="25" />
+          <folding>
+            <element signature="e#108#109#0" expanded="true" />
+            <element signature="e#139#140#0" expanded="true" />
+            <element signature="e#234#235#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/SegmentTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+          <folding>
+            <element signature="e#176#177#0" expanded="true" />
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#1335#1336#0" expanded="true" />
+            <element signature="e#1389#1390#0" expanded="true" />
+            <element signature="e#1335#1336#0" expanded="true" />
+            <element signature="e#1389#1390#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
@@ -950,7 +1046,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>alg-bloom-filter</last-edited>
+          <last-edited>alg-binary-search</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

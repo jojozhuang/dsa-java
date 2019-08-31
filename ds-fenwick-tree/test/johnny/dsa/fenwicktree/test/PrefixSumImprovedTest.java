@@ -1,18 +1,17 @@
 package johnny.dsa.fenwicktree.test;
 
+import johnny.dsa.fenwicktree.PrefixSumImproved;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import johnny.dsa.fenwicktree.FenwickTree;
-
-public class FenwickTreeTest {
+public class PrefixSumImprovedTest {
 
     @Test
-    public void testFenwickTree() {
-        System.out.println("testFenwickTree");
+    public void testPrefixSumImproved() {
+        System.out.println("testPrefixSumImproved");
         int[] nums = new int[]{2, -1, 6, 1, 5, -3, 4, 1, -2, 7};
-        FenwickTree instance = new FenwickTree(nums);
+        PrefixSumImproved instance = new PrefixSumImproved(nums);
         assertEquals(2, instance.prefixSum(0));
         assertEquals(1, instance.prefixSum(1));
         assertEquals(7, instance.prefixSum(2));
