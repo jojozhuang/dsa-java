@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f93bba5-8985-44cc-b46d-4108adb7a917" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/FenwickTreeSimplified.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/FenwickTreeSimplifiedTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/FenwickTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/FenwickTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/FenwickTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/FenwickTreeTest.java" afterDir="false" />
@@ -33,7 +35,7 @@
           <entry key="classpath" value="1" />
           <entry key="gitignore" value="2" />
           <entry key="iml" value="15" />
-          <entry key="java" value="194" />
+          <entry key="java" value="196" />
           <entry key="md" value="1" />
           <entry key="project" value="1" />
         </counts>
@@ -42,19 +44,19 @@
         <counts>
           <entry key="Eclipse" value="2" />
           <entry key="IDEA_MODULE" value="15" />
-          <entry key="JAVA" value="194" />
+          <entry key="JAVA" value="196" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="34" />
-          <entry key="java" value="4793" />
+          <entry key="java" value="4835" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4793" />
+          <entry key="JAVA" value="4835" />
           <entry key="PLAIN_TEXT" value="34" />
         </counts>
       </usages-collector>
@@ -62,11 +64,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/FenwickTreeTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="307">
-              <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+              <caret line="31" column="71" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -140,11 +142,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-trie/src/johnny/dsa/trie/Trie.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/FenwickTreeSimplified.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="133" column="1" lean-forward="true" selection-start-line="8" selection-end-line="133" selection-end-column="1" />
+            <state relative-caret-position="136">
+              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/FenwickTreeSimplifiedTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="13" column="51" lean-forward="true" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -166,15 +177,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="159">
               <caret line="19" column="31" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="19" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-trie/src/johnny/dsa/trie/TrieArray.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -225,8 +227,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/alg-union-find/src/johnny/dsa/unionfind/DisjointSet.java" />
-        <option value="$PROJECT_DIR$/alg-union-find/test/johnny/dsa/unionfind/test/DisjointSetOptimizedTest.java" />
         <option value="$PROJECT_DIR$/alg-union-find/src/johnny/dsa/unionfind/DSUOptimized.java" />
         <option value="$PROJECT_DIR$/alg-union-find/test/johnny/dsa/unionfind/test/DSUOptimizedTest.java" />
         <option value="$PROJECT_DIR$/alg-union-find/test/johnny/dsa/unionfind/test/DSUTest.java" />
@@ -276,6 +276,8 @@
         <option value="$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/SegmentTree.java" />
         <option value="$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/FenwickTree.java" />
         <option value="$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/FenwickTreeTest.java" />
+        <option value="$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/FenwickTreeSimplifiedTest.java" />
+        <option value="$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/FenwickTreeSimplified.java" />
       </list>
     </option>
   </component>
@@ -331,7 +333,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567368611455" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567368870605" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="project.structure.last.edited" value="Project" />
@@ -366,7 +368,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FenwickTreeTest">
+  <component name="RunManager" selected="JUnit.FenwickTreeSimplifiedTest">
+    <configuration name="FenwickTreeSimplifiedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ds-fenwick-tree" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="johnny.dsa.fenwicktree.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="johnny.dsa.fenwicktree.test" />
+      <option name="MAIN_CLASS_NAME" value="johnny.dsa.fenwicktree.test.FenwickTreeSimplifiedTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FenwickTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ds-fenwick-tree" />
       <extension name="coverage">
@@ -377,20 +393,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="johnny.dsa.fenwicktree.test" />
       <option name="MAIN_CLASS_NAME" value="johnny.dsa.fenwicktree.test.FenwickTreeTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FirstSmallerStackTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ds-monotonic-queue" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="johnny.dsa.monotonicqueue.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="johnny.dsa.monotonicqueue.test" />
-      <option name="MAIN_CLASS_NAME" value="johnny.dsa.monotonicqueue.test.FirstSmallerStackTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -438,19 +440,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.FirstSmallerStackTest" />
       <item itemvalue="JUnit.FenwickTreeTest" />
       <item itemvalue="JUnit.PrefixSumNaiveTest" />
       <item itemvalue="JUnit.SegmentTreeTest" />
       <item itemvalue="JUnit.PrefixSumImprovedTest" />
+      <item itemvalue="JUnit.FenwickTreeSimplifiedTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FenwickTreeSimplifiedTest" />
         <item itemvalue="JUnit.FenwickTreeTest" />
         <item itemvalue="JUnit.SegmentTreeTest" />
         <item itemvalue="JUnit.PrefixSumImprovedTest" />
         <item itemvalue="JUnit.PrefixSumNaiveTest" />
-        <item itemvalue="JUnit.FirstSmallerStackTest" />
       </list>
     </recent_temporary>
   </component>
@@ -468,15 +470,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FenwickTreeTest - 2019.09.01 at 11h 56m 19s.xml">
-      <configuration name="FenwickTreeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FenwickTreeTest - 2019.09.01 at 11h 58m 08s.xml">
-      <configuration name="FenwickTreeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FenwickTreeTest - 2019.09.01 at 11h 58m 36s.xml">
-      <configuration name="FenwickTreeTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FenwickTreeTest - 2019.09.01 at 11h 58m 41s.xml">
       <configuration name="FenwickTreeTest" configurationId="JUnit" />
     </history-entry>
@@ -498,12 +491,21 @@
     <history-entry file="FenwickTreeTest - 2019.09.01 at 13h 00m 56s.xml">
       <configuration name="FenwickTreeTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="FenwickTreeSimplifiedTest - 2019.09.01 at 13h 13m 22s.xml">
+      <configuration name="FenwickTreeSimplifiedTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FenwickTreeSimplifiedTest - 2019.09.01 at 13h 13m 36s.xml">
+      <configuration name="FenwickTreeSimplifiedTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FenwickTreeSimplifiedTest - 2019.09.01 at 13h 14m 02s.xml">
+      <configuration name="FenwickTreeSimplifiedTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.39842632" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.39842632" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -512,8 +514,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28004956" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39653036" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28004956" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39653036" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -573,6 +575,24 @@
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/FenwickTreeSimplifiedTest.java</url>
+          <line>13</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/FenwickTreeSimplifiedTest.java</url>
+          <line>15</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/FenwickTreeSimplified.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -603,20 +623,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/Objects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="97" column="33" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="99" column="22" selection-start-line="99" selection-start-column="22" selection-end-line="99" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ds-linked-list/src/johnny/dsa/common/ListNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -962,13 +968,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/FenwickTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="57" column="1" lean-forward="true" selection-start-line="2" selection-end-line="57" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/PrefixSumImprovedTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="604">
@@ -982,10 +981,34 @@
     <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/FenwickTreeTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
-          <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+          <caret line="31" column="71" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/FenwickTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="57" column="1" lean-forward="true" selection-start-line="2" selection-end-line="57" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/FenwickTreeSimplifiedTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="13" column="51" lean-forward="true" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/FenwickTreeSimplified.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
         </state>
       </provider>
     </entry>
