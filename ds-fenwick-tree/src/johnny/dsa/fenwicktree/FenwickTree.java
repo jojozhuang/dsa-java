@@ -1,46 +1,36 @@
 package johnny.dsa.fenwicktree;
 
 public class FenwickTree {
-    int[] BITree;
-    int n = 0;
+    int[] BIT;
 
     public FenwickTree(int arr[]) {
-        if (arr != null) {
-            n = arr.length;
-        }
-        
-        BITree = new int[n + 1];
-        // Create and initialize BITree[] as 0
-        for (int i = 1; i <= n; i++) {
-            BITree[i] = 0;
-        }
+        BIT = new int[arr.length + 1]; // index starts from 1 not 0.
 
-        // Store the actual values in BITree[] using update()
-        for (int i = 0; i < n; i++) {
+        // store the actual values in BIT[] using update()
+        for (int i = 0; i < arr.length; i++) {
             update(i, arr[i]);
         }
     }
 
-    // Returns sum of arr[0..index]. This function assumes
-    // that the array is preprocessed and partial sums of
-    // array elements are stored in BITree[].
+    // return sum of arr[0..index].
     public int prefixSum(int index) {
-        int sum = 0; // Iniialize result
+        int sum = 0;
 
-        // index in BITree[] is 1 more than the index in arr[]
+        // index in BIT[] starts from 1
         index = index + 1;
 
-        // Traverse ancestors of BITree[index]
+        // traverse ancestors of BIT[index]
         while (index > 0) {
-            // Add current element of BITree to sum
-            sum += BITree[index];
+            // add current element of BIT to sum
+            sum += BIT[index];
 
-            // Move index to parent node in getSum View
+            // move index to parent node in Sum View
             index -= index & (-index);
         }
         return sum;
     }
-    
+
+    // return sum of the given range
     public int rangeSum(int from, int to) {
         if (from >= 0 && to >= 0 && to >= from) {
             return prefixSum(to) - prefixSum(from - 1);
@@ -49,19 +39,19 @@ public class FenwickTree {
         }
     }
 
-    // Updates a node in Binary Index Tree (BITree) at given index
-    // in BITree.  The given value 'val' is added to BITree[i] and 
-    // all of its ancestors in tree.
+    // update a node in Binary Index Tree at given index, the given value is the 'delta' value
+    // compared with the original array arr[], not array BIT[]. This delta value is added to BIT[i] and
+    // all of its ancestors.
     public void update(int index, int val) {
-        // index in BITree[] is 1 more than the index in arr[]
+        // index in BIT[] starts from 1
         index = index + 1;
 
-        // Traverse all ancestors and add 'val'
-        while (index <= n) {
-           // Add 'val' to current node of BI Tree
-           BITree[index] += val;
+        // traverse all ancestors and add 'val'
+        while (index <= BIT.length) {
+           // add 'val' to current node of BI Tree
+            BIT[index] += val;
 
-           // Update index to that of parent in update View
+           // update index to that of parent in Update View
            index += index & (-index);
         }
     }

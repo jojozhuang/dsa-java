@@ -29,7 +29,7 @@ public class FenwickTreeTest {
         assertEquals(5, instance.rangeSum(4, 4));
         assertEquals(-1, instance.rangeSum(7, 8));
         assertEquals(20, instance.rangeSum(0, 9));
-        instance.update(1, 2);
+        instance.update(1, 3); // change -1 to 2,the changed value is 3
         assertEquals(2, instance.prefixSum(0));
         assertEquals(4, instance.prefixSum(1));
         assertEquals(10, instance.prefixSum(2));
