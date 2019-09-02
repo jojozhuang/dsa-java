@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f93bba5-8985-44cc-b46d-4108adb7a917" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ds-btree/ds-btree.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ds-btree/src/johnny/dsa/btree/BTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ds-bplus-tree/ds-bplus-tree.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ds-bplus-tree/src/johnny/dsa/bplustree/BPTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ds-bplus-tree/src/johnny/dsa/bplustree/BTreeInnerNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ds-bplus-tree/src/johnny/dsa/bplustree/BTreeLeafNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ds-bplus-tree/src/johnny/dsa/bplustree/BTreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ds-bplus-tree/src/johnny/dsa/bplustree/TreeNodeType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -34,7 +38,7 @@
           <entry key="classpath" value="1" />
           <entry key="gitignore" value="2" />
           <entry key="iml" value="15" />
-          <entry key="java" value="198" />
+          <entry key="java" value="204" />
           <entry key="md" value="1" />
           <entry key="project" value="1" />
         </counts>
@@ -43,19 +47,19 @@
         <counts>
           <entry key="Eclipse" value="2" />
           <entry key="IDEA_MODULE" value="15" />
-          <entry key="JAVA" value="198" />
+          <entry key="JAVA" value="204" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="34" />
-          <entry key="java" value="4844" />
+          <entry key="java" value="4874" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4844" />
+          <entry key="JAVA" value="4874" />
           <entry key="PLAIN_TEXT" value="34" />
         </counts>
       </usages-collector>
@@ -63,45 +67,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/PrefixSumImproved.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="34" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/PrefixSumImprovedTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/SegmentTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/FenwickTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="57" column="1" selection-start-line="2" selection-end-line="57" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/FenwickTreeSimplified.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -120,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ds-btree/src/johnny/dsa/btree/BTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="245" column="1" lean-forward="true" selection-start-line="2" selection-end-line="245" selection-end-column="1" />
+            <state relative-caret-position="415">
+              <caret line="191" column="5" lean-forward="true" selection-start-line="166" selection-start-column="4" selection-end-line="191" selection-end-column="5" />
               <folding>
                 <element signature="e#675#676#0" expanded="true" />
                 <element signature="e#704#705#0" expanded="true" />
@@ -148,14 +113,96 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/FenwickTreeSimplifiedTest.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ds-bplus-tree/src/johnny/dsa/bplustree/BPTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+            <state relative-caret-position="30">
+              <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#145#146#0" expanded="true" />
+                <element signature="e#206#207#0" expanded="true" />
+                <element signature="e#1402#1432#0" expanded="true" />
+                <element signature="e#1974#1990#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ds-bplus-tree/src/johnny/dsa/bplustree/BTreeInnerNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+              <folding>
+                <element signature="e#331#361#0" expanded="true" />
+                <element signature="e#416#417#0" expanded="true" />
+                <element signature="e#476#477#0" expanded="true" />
+                <element signature="e#699#700#0" expanded="true" />
+                <element signature="e#744#745#0" expanded="true" />
+                <element signature="e#2039#2045#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ds-bplus-tree/src/johnny/dsa/bplustree/BTreeLeafNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="415">
+              <caret line="154" column="1" selection-start-line="154" selection-start-column="1" selection-end-line="154" selection-end-column="1" />
+              <folding>
+                <element signature="e#335#365#0" expanded="true" />
+                <element signature="e#404#405#0" expanded="true" />
+                <element signature="e#453#454#0" expanded="true" />
+                <element signature="e#506#507#0" expanded="true" />
+                <element signature="e#548#549#0" expanded="true" />
+                <element signature="e#603#604#0" expanded="true" />
+                <element signature="e#647#648#0" expanded="true" />
+                <element signature="e#1975#1989#0" expanded="true" />
+                <element signature="e#3602#3632#0" expanded="true" />
+                <element signature="e#4271#4301#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ds-bplus-tree/src/johnny/dsa/bplustree/BTreeNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+              <folding>
+                <element signature="e#525#526#0" expanded="true" />
+                <element signature="e#561#562#0" expanded="true" />
+                <element signature="e#568#598#0" expanded="true" />
+                <element signature="e#633#634#0" expanded="true" />
+                <element signature="e#678#679#0" expanded="true" />
+                <element signature="e#725#726#0" expanded="true" />
+                <element signature="e#763#764#0" expanded="true" />
+                <element signature="e#805#806#0" expanded="true" />
+                <element signature="e#843#844#0" expanded="true" />
+                <element signature="e#896#897#0" expanded="true" />
+                <element signature="e#936#937#0" expanded="true" />
+                <element signature="e#1359#1360#0" expanded="true" />
+                <element signature="e#1420#1421#0" expanded="true" />
+                <element signature="e#2433#2434#0" expanded="true" />
+                <element signature="e#2499#2500#0" expanded="true" />
+                <element signature="e#2535#2536#0" expanded="true" />
+                <element signature="e#2601#2602#0" expanded="true" />
+                <element signature="e#2861#2862#0" expanded="true" />
+                <element signature="e#2903#2904#0" expanded="true" />
+                <element signature="e#3169#3170#0" expanded="true" />
+                <element signature="e#3213#3214#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ds-bplus-tree/src/johnny/dsa/bplustree/TreeNodeType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="5" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -210,10 +257,13 @@
       <find>10000000</find>
       <find>query</find>
       <find>getSum</find>
+      <find>StdOut</find>
+      <find>st.put</find>
     </findStrings>
     <replaceStrings>
       <replace>prefixSum</replace>
       <replace>System.out</replace>
+      <replace>st.insert</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/ds-hashmap</dir>
@@ -225,11 +275,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/alg-union-find/test/johnny/dsa/unionfind/test/DSUOptimizedTest.java" />
-        <option value="$PROJECT_DIR$/alg-union-find/test/johnny/dsa/unionfind/test/DSUTest.java" />
-        <option value="$PROJECT_DIR$/alg-union-find/test/johnny/dsa/unionfind/test/DSURankTest.java" />
-        <option value="$PROJECT_DIR$/alg-union-find/src/johnny/dsa/unionfind/DSU.java" />
-        <option value="$PROJECT_DIR$/alg-union-find/src/johnny/dsa/unionfind/DSURank.java" />
         <option value="$PROJECT_DIR$/ds-trie/test/johnny/dsa/trie/test/TrieTest.java" />
         <option value="$PROJECT_DIR$/ds-lru-cache/test/johnny/dsa/lru/test/LRUTest.java" />
         <option value="$PROJECT_DIR$/ds-lru-cache/src/johnny/dsa/lru/LRU.java" />
@@ -276,6 +321,11 @@
         <option value="$PROJECT_DIR$/ds-fenwick-tree/test/johnny/dsa/fenwicktree/test/FenwickTreeSimplifiedTest.java" />
         <option value="$PROJECT_DIR$/ds-fenwick-tree/src/johnny/dsa/fenwicktree/FenwickTreeSimplified.java" />
         <option value="$PROJECT_DIR$/ds-btree/src/johnny/dsa/btree/BTree.java" />
+        <option value="$PROJECT_DIR$/ds-bplus-tree/src/johnny/dsa/bplustree/BTreeInnerNode.java" />
+        <option value="$PROJECT_DIR$/ds-bplus-tree/src/johnny/dsa/bplustree/BTreeLeafNode.java" />
+        <option value="$PROJECT_DIR$/ds-bplus-tree/src/johnny/dsa/bplustree/TreeNodeType.java" />
+        <option value="$PROJECT_DIR$/ds-bplus-tree/src/johnny/dsa/bplustree/BTreeNode.java" />
+        <option value="$PROJECT_DIR$/ds-bplus-tree/src/johnny/dsa/bplustree/BPTree.java" />
       </list>
     </option>
   </component>
@@ -297,6 +347,21 @@
           <expand>
             <path>
               <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ds-bplus-tree" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ds-bplus-tree" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ds-bplus-tree" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="bplustree" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
               <item name="ds-btree" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -310,35 +375,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="btree" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ds-deque" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ds-deque" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ds-deque" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dsa" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ds-deque" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dsa" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ds-deque" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dsa" type="462c0819:PsiDirectoryNode" />
-              <item name="deque" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -349,7 +385,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567392589856" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567394429847" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="project.structure.last.edited" value="Project" />
@@ -384,7 +420,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BTree">
+  <component name="RunManager" selected="Application.BPTree">
+    <configuration name="BPTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="johnny.dsa.bplustree.BPTree" />
+      <module name="ds-bplus-tree" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="johnny.dsa.bplustree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="johnny.dsa.btree.BTree" />
       <module name="ds-btree" />
@@ -426,20 +475,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrefixSumImprovedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ds-fenwick-tree" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="johnny.dsa.fenwicktree.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="johnny.dsa.fenwicktree.test" />
-      <option name="MAIN_CLASS_NAME" value="johnny.dsa.fenwicktree.test.PrefixSumImprovedTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SegmentTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ds-fenwick-tree" />
       <extension name="coverage">
@@ -457,17 +492,17 @@
     <list>
       <item itemvalue="JUnit.FenwickTreeTest" />
       <item itemvalue="JUnit.SegmentTreeTest" />
-      <item itemvalue="JUnit.PrefixSumImprovedTest" />
       <item itemvalue="JUnit.FenwickTreeSimplifiedTest" />
       <item itemvalue="Application.BTree" />
+      <item itemvalue="Application.BPTree" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BPTree" />
         <item itemvalue="Application.BTree" />
         <item itemvalue="JUnit.FenwickTreeSimplifiedTest" />
         <item itemvalue="JUnit.FenwickTreeTest" />
         <item itemvalue="JUnit.SegmentTreeTest" />
-        <item itemvalue="JUnit.PrefixSumImprovedTest" />
       </list>
     </recent_temporary>
   </component>
@@ -520,7 +555,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.4041488" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4041488" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -529,7 +564,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28004956" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28004956" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39653036" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -638,40 +673,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ds-skiplist/src/johnny/dsa/skiplist/SkipList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="168" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3619#3620#0" expanded="true" />
-            <element signature="e#3662#3663#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-skiplist/src/johnny/dsa/skiplist/SkipListExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="26" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alg-bloom-filter/src/johnny/dsa/bloomfilter/HashMapExample.java" />
-    <entry file="file://$PROJECT_DIR$/alg-map-reduce/src/johnny/dsa/common/Document.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alg-map-reduce/src/johnny/dsa/mapreduce/TopKFrequentWords.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/alg-map-reduce/test/johnny/dsa/mapreduce/test/TopKFrequentWordsTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -987,10 +988,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ds-bplus-tree/src/johnny/dsa/bplustree/TreeNodeType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-bplus-tree/src/johnny/dsa/bplustree/BTreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+          <folding>
+            <element signature="e#525#526#0" expanded="true" />
+            <element signature="e#561#562#0" expanded="true" />
+            <element signature="e#568#598#0" expanded="true" />
+            <element signature="e#633#634#0" expanded="true" />
+            <element signature="e#678#679#0" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
+            <element signature="e#805#806#0" expanded="true" />
+            <element signature="e#843#844#0" expanded="true" />
+            <element signature="e#896#897#0" expanded="true" />
+            <element signature="e#936#937#0" expanded="true" />
+            <element signature="e#1359#1360#0" expanded="true" />
+            <element signature="e#1420#1421#0" expanded="true" />
+            <element signature="e#2433#2434#0" expanded="true" />
+            <element signature="e#2499#2500#0" expanded="true" />
+            <element signature="e#2535#2536#0" expanded="true" />
+            <element signature="e#2601#2602#0" expanded="true" />
+            <element signature="e#2861#2862#0" expanded="true" />
+            <element signature="e#2903#2904#0" expanded="true" />
+            <element signature="e#3169#3170#0" expanded="true" />
+            <element signature="e#3213#3214#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-bplus-tree/src/johnny/dsa/bplustree/BTreeLeafNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="154" column="1" selection-start-line="154" selection-start-column="1" selection-end-line="154" selection-end-column="1" />
+          <folding>
+            <element signature="e#335#365#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#506#507#0" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#1975#1989#0" expanded="true" />
+            <element signature="e#3602#3632#0" expanded="true" />
+            <element signature="e#4271#4301#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-bplus-tree/src/johnny/dsa/bplustree/BTreeInnerNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding>
+            <element signature="e#331#361#0" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#476#477#0" expanded="true" />
+            <element signature="e#699#700#0" expanded="true" />
+            <element signature="e#744#745#0" expanded="true" />
+            <element signature="e#2039#2045#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ds-btree/src/johnny/dsa/btree/BTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="245" column="1" lean-forward="true" selection-start-line="2" selection-end-line="245" selection-end-column="1" />
+        <state relative-caret-position="415">
+          <caret line="191" column="5" lean-forward="true" selection-start-line="166" selection-start-column="4" selection-end-line="191" selection-end-column="5" />
           <folding>
             <element signature="e#675#676#0" expanded="true" />
             <element signature="e#704#705#0" expanded="true" />
@@ -1009,6 +1081,19 @@
             <element signature="e#5970#5971#0" expanded="true" />
             <element signature="e#6014#6015#0" expanded="true" />
             <element signature="e#6223#6239#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-bplus-tree/src/johnny/dsa/bplustree/BPTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+          <folding>
+            <element signature="e#145#146#0" expanded="true" />
+            <element signature="e#206#207#0" expanded="true" />
+            <element signature="e#1402#1432#0" expanded="true" />
+            <element signature="e#1974#1990#0" expanded="true" />
           </folding>
         </state>
       </provider>
