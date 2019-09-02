@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/alg-union-find/alg-union-find.iml" filepath="$PROJECT_DIR$/alg-union-find/alg-union-find.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds-binary-search-tree/ds-binary-search-tree.iml" filepath="$PROJECT_DIR$/ds-binary-search-tree/ds-binary-search-tree.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds-bloom-filter/ds-bloom-filter.iml" filepath="$PROJECT_DIR$/ds-bloom-filter/ds-bloom-filter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ds-btree/ds-btree.iml" filepath="$PROJECT_DIR$/ds-btree/ds-btree.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds-deque/ds-deque.iml" filepath="$PROJECT_DIR$/ds-deque/ds-deque.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds-fenwick-tree/ds-fenwick-tree.iml" filepath="$PROJECT_DIR$/ds-fenwick-tree/ds-fenwick-tree.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds-graph/ds-graph.iml" filepath="$PROJECT_DIR$/ds-graph/ds-graph.iml" />
