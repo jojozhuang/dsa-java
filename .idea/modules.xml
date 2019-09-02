@@ -28,6 +28,7 @@
       <module fileurl="file://$PROJECT_DIR$/ds-red-black-tree/ds-red-black-tree.iml" filepath="$PROJECT_DIR$/ds-red-black-tree/ds-red-black-tree.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds-segment-tree/ds-segment-tree.iml" filepath="$PROJECT_DIR$/ds-segment-tree/ds-segment-tree.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds-skiplist/ds-skiplist.iml" filepath="$PROJECT_DIR$/ds-skiplist/ds-skiplist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ds-spanning-tree/ds-spanning-tree.iml" filepath="$PROJECT_DIR$/ds-spanning-tree/ds-spanning-tree.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds-stack/ds-stack.iml" filepath="$PROJECT_DIR$/ds-stack/ds-stack.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds-tree/ds-tree.iml" filepath="$PROJECT_DIR$/ds-tree/ds-tree.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds-trie/ds-trie.iml" filepath="$PROJECT_DIR$/ds-trie/ds-trie.iml" />

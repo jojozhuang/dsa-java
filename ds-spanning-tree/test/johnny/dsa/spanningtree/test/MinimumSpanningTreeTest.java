@@ -1,10 +1,7 @@
-package johnny.dsa.graph.test;
+package johnny.dsa.spanningtree.test;
 
+import johnny.dsa.spanningtree.MinimumSpanningTree;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
-
-import johnny.dsa.graph.MinimumSpanningTree;
 
 public class MinimumSpanningTreeTest {
 

@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f93bba5-8985-44cc-b46d-4108adb7a917" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ds-directed-graph/ds-directed-graph.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ds-directed-graph/src/johnny/dsa/directedgraph/DirectedGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ds-red-black-tree/src/johnny/dsa/rbt/RedBlackBST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ds-spanning-tree/ds-spanning-tree.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ds-spanning-tree/src/johnny/dsa/spanningtree/MinimumSpanningTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ds-spanning-tree/src/johnny/dsa/spanningtree/Vertex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ds-spanning-tree/test/johnny/dsa/spanningtree/test/MinimumSpanningTreeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,14 +20,14 @@
     <session id="1864983552">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="38" />
-          <entry key="project.open.time.0" value="17" />
+          <entry key="project.closed" value="39" />
+          <entry key="project.open.time.0" value="18" />
           <entry key="project.open.time.1" value="6" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.2" value="4" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="10" />
-          <entry key="project.opened" value="39" />
+          <entry key="project.opened" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -33,8 +35,8 @@
           <entry key="LICENSE" value="1" />
           <entry key="classpath" value="1" />
           <entry key="gitignore" value="2" />
-          <entry key="iml" value="15" />
-          <entry key="java" value="211" />
+          <entry key="iml" value="17" />
+          <entry key="java" value="216" />
           <entry key="md" value="1" />
           <entry key="project" value="1" />
         </counts>
@@ -42,20 +44,20 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Eclipse" value="2" />
-          <entry key="IDEA_MODULE" value="15" />
-          <entry key="JAVA" value="211" />
+          <entry key="IDEA_MODULE" value="17" />
+          <entry key="JAVA" value="216" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="34" />
-          <entry key="java" value="4937" />
+          <entry key="java" value="4939" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4937" />
+          <entry key="JAVA" value="4939" />
           <entry key="PLAIN_TEXT" value="34" />
         </counts>
       </usages-collector>
@@ -64,37 +66,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-red-black-tree/src/johnny/dsa/rbt/RedBlackTree.java">
+        <entry file="file://$PROJECT_DIR$/ds-directed-graph/src/johnny/dsa/directedgraph/DirectedGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-red-black-tree/src/johnny/dsa/rbt/RBTTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-red-black-tree/test/johnny/dsa/rbt/test/RedBlackTreeTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-red-black-tree/src/johnny/dsa/rbt/RedBlackBST.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8040">
-              <caret line="544" column="50" selection-start-line="544" selection-start-column="50" selection-end-line="544" selection-end-column="50" />
+            <state relative-caret-position="716">
+              <caret line="71" column="15" selection-start-line="71" selection-start-column="15" selection-end-line="71" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,65 +78,76 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-graph/test/johnny/dsa/graph/test/AdjListGraphTest.java">
+        <entry file="file://$PROJECT_DIR$/ds-spanning-tree/src/johnny/dsa/spanningtree/MinimumSpanningTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="720">
+              <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+              <folding>
+                <element signature="e#960#961#0" expanded="true" />
+                <element signature="e#993#994#0" expanded="true" />
+                <element signature="e#1030#1031#0" expanded="true" />
+                <element signature="e#1062#1063#0" expanded="true" />
+                <element signature="e#1106#1107#0" expanded="true" />
+                <element signature="e#1162#1163#0" expanded="true" />
+                <element signature="e#1262#1270#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ds-graph/ds-graph.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ds-spanning-tree/ds-spanning-tree.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ds-directed-graph/src/johnny/dsa/directedgraph/DirectedGraph.java">
+        <entry file="file://$PROJECT_DIR$/ds-spanning-tree/test/johnny/dsa/spanningtree/test/MinimumSpanningTreeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1065">
-              <caret line="71" column="15" selection-start-line="71" selection-start-column="15" selection-end-line="71" selection-end-column="15" />
+            <state relative-caret-position="240">
+              <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1951#1952#0" expanded="true" />
-                <element signature="e#1981#1982#0" expanded="true" />
-                <element signature="e#2284#2285#0" expanded="true" />
-                <element signature="e#2312#2313#0" expanded="true" />
-                <element signature="e#2358#2359#0" expanded="true" />
-                <element signature="e#2386#2387#0" expanded="true" />
-                <element signature="e#2469#2494#0" expanded="true" />
-                <element signature="e#2582#2610#0" expanded="true" />
-                <element signature="e#2706#2740#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-bplus-tree/src/johnny/dsa/bplustree/BTreeInnerNode.java">
+        <entry file="file://$PROJECT_DIR$/ds-graph/src/johnny/dsa/graph/MinimumSpanningTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-              <folding>
-                <element signature="e#416#417#0" expanded="true" />
-                <element signature="e#476#477#0" expanded="true" />
-                <element signature="e#699#700#0" expanded="true" />
-                <element signature="e#744#745#0" expanded="true" />
-                <element signature="e#2039#2045#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="105">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds-bplus-tree/src/johnny/dsa/bplustree/BTreeLeafNode.java">
+        <entry file="file://$PROJECT_DIR$/ds-graph/src/johnny/dsa/common/Vertex.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2310">
-              <caret line="154" column="1" selection-start-line="154" selection-start-column="1" selection-end-line="154" selection-end-column="1" />
-              <folding>
-                <element signature="e#404#405#0" expanded="true" />
-                <element signature="e#453#454#0" expanded="true" />
-                <element signature="e#506#507#0" expanded="true" />
-                <element signature="e#548#549#0" expanded="true" />
-                <element signature="e#603#604#0" expanded="true" />
-                <element signature="e#647#648#0" expanded="true" />
-                <element signature="e#1975#1989#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="17" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ds-spanning-tree/src/johnny/dsa/spanningtree/Vertex.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -234,10 +220,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ds-lru-cache/src/johnny/dsa/lru/LRU.java" />
-        <option value="$PROJECT_DIR$/ds-lru-cache/src/johnny/dsa/common/Node.java" />
-        <option value="$PROJECT_DIR$/ds-lfu-cache/src/johnny/dsa/common/Node.java" />
-        <option value="$PROJECT_DIR$/ds-lfu-cache/src/johnny/dsa/lfu/LFU.java" />
         <option value="$PROJECT_DIR$/ds-lfu-cache/test/johnny/datastructure/lfu/test/LFUTest.java" />
         <option value="$PROJECT_DIR$/ds-red-black-tree/src/johnny/dsa/rbt/BSTNode.java" />
         <option value="$PROJECT_DIR$/ds-red-black-tree/src/johnny/dsa/rbt/RBTNode.java" />
@@ -285,6 +267,10 @@
         <option value="$PROJECT_DIR$/ds-bplus-tree/src/johnny/dsa/bplustree/BPTree.java" />
         <option value="$PROJECT_DIR$/ds-red-black-tree/src/johnny/dsa/rbt/RedBlackBST.java" />
         <option value="$PROJECT_DIR$/ds-directed-graph/src/johnny/dsa/directedgraph/DirectedGraph.java" />
+        <option value="$PROJECT_DIR$/ds-spanning-tree/src/johnny/dsa/spanningtree/Vertex.java" />
+        <option value="$PROJECT_DIR$/ds-spanning-tree/src/johnny/dsa/spanningtree/MinimumSpanningTree.java" />
+        <option value="$PROJECT_DIR$/ds-spanning-tree/ds-spanning-tree.iml" />
+        <option value="$PROJECT_DIR$/ds-spanning-tree/test/johnny/dsa/spanningtree/test/MinimumSpanningTreeTest.java" />
       </list>
     </option>
   </component>
@@ -299,25 +285,76 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ds-directed-graph" type="462c0819:PsiDirectoryNode" />
+              <item name="ds-graph" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ds-directed-graph" type="462c0819:PsiDirectoryNode" />
+              <item name="ds-graph" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ds-directed-graph" type="462c0819:PsiDirectoryNode" />
+              <item name="ds-graph" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="directedgraph" type="462c0819:PsiDirectoryNode" />
+              <item name="dsa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ds-graph" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dsa" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ds-graph" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dsa" type="462c0819:PsiDirectoryNode" />
+              <item name="graph" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ds-graph" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ds-graph" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ds-spanning-tree" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ds-spanning-tree" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ds-spanning-tree" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="spanningtree" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ds-spanning-tree" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dsa-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ds-spanning-tree" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -329,7 +366,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567395785520" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567396291275" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="project.structure.last.edited" value="Project" />
@@ -341,15 +378,15 @@
       <recent name="johnny.dsa.bloomfilter" />
       <recent name="johnny.dsa.linkedlist" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="johnny.dsa.spanningtree.test" />
       <recent name="johnny.dsa.fenwicktree.test" />
       <recent name="johnny.dsa.fenwicktree" />
       <recent name="johnny.dsa.monotonicqueue.test" />
       <recent name="johnny.dsa.monotonicqueue" />
-      <recent name="johnny.dsa.rbt.test" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -364,26 +401,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AdjListGraphTest">
+  <component name="RunManager" selected="JUnit.MinimumSpanningTreeTest">
     <configuration name="BPTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="johnny.dsa.bplustree.BPTree" />
       <module name="ds-bplus-tree" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="johnny.dsa.bplustree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="johnny.dsa.btree.BTree" />
-      <module name="ds-btree" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="johnny.dsa.btree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -418,6 +442,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MinimumSpanningTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ds-spanning-tree" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="johnny.dsa.spanningtree.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="johnny.dsa.spanningtree.test" />
+      <option name="MAIN_CLASS_NAME" value="johnny.dsa.spanningtree.test.MinimumSpanningTreeTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RedBlackTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ds-red-black-tree" />
       <extension name="coverage">
@@ -433,19 +471,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.BTree" />
       <item itemvalue="Application.BPTree" />
       <item itemvalue="JUnit.RedBlackTreeTest" />
       <item itemvalue="Application.RedBlackBST" />
       <item itemvalue="JUnit.AdjListGraphTest" />
+      <item itemvalue="JUnit.MinimumSpanningTreeTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MinimumSpanningTreeTest" />
         <item itemvalue="JUnit.AdjListGraphTest" />
         <item itemvalue="Application.RedBlackBST" />
         <item itemvalue="JUnit.RedBlackTreeTest" />
         <item itemvalue="Application.BPTree" />
-        <item itemvalue="Application.BTree" />
       </list>
     </recent_temporary>
   </component>
@@ -496,8 +534,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4155937" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.42131618" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -615,51 +654,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ds-bloom-filter/test/johnny/dsa/bloomfilter/test/HashSetTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" selection-start-line="9" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-heap/ds-heap.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-heap/test/johnny/dsa/heap/test/PriorityQueueMaxTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-heap/src/johnny/dsa/heap/MaxHeapGeneric.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-heap/src/johnny/dsa/heap/MinHeap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-bloom-filter/test/johnny/dsa/bloomfilter/test/BloomFilterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" selection-start-line="7" selection-end-line="28" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds-lru-cache/ds-lru-cache.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ds-linked-list/ds-linked-list.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -886,24 +880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2865">
           <caret line="191" column="5" selection-start-line="166" selection-start-column="4" selection-end-line="191" selection-end-column="5" />
-          <folding>
-            <element signature="e#675#676#0" expanded="true" />
-            <element signature="e#704#705#0" expanded="true" />
-            <element signature="e#1218#1219#0" expanded="true" />
-            <element signature="e#1252#1253#0" expanded="true" />
-            <element signature="e#1434#1435#0" expanded="true" />
-            <element signature="e#1468#1469#0" expanded="true" />
-            <element signature="e#1642#1643#0" expanded="true" />
-            <element signature="e#1666#1667#0" expanded="true" />
-            <element signature="e#1815#1816#0" expanded="true" />
-            <element signature="e#1844#1845#0" expanded="true" />
-            <element signature="e#5084#5085#0" expanded="true" />
-            <element signature="e#5140#5141#0" expanded="true" />
-            <element signature="e#5871#5872#0" expanded="true" />
-            <element signature="e#5914#5915#0" expanded="true" />
-            <element signature="e#5970#5971#0" expanded="true" />
-            <element signature="e#6014#6015#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -952,6 +928,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ds-graph/test/johnny/dsa/graph/test/AdjListGraphTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ds-bplus-tree/src/johnny/dsa/bplustree/BTreeInnerNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -996,28 +979,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ds-graph/test/johnny/dsa/graph/test/AdjListGraphTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ds-directed-graph/src/johnny/dsa/directedgraph/DirectedGraph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1065">
+        <state relative-caret-position="716">
           <caret line="71" column="15" selection-start-line="71" selection-start-column="15" selection-end-line="71" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1951#1952#0" expanded="true" />
-            <element signature="e#1981#1982#0" expanded="true" />
-            <element signature="e#2284#2285#0" expanded="true" />
-            <element signature="e#2312#2313#0" expanded="true" />
-            <element signature="e#2358#2359#0" expanded="true" />
-            <element signature="e#2386#2387#0" expanded="true" />
-            <element signature="e#2469#2494#0" expanded="true" />
-            <element signature="e#2582#2610#0" expanded="true" />
-            <element signature="e#2706#2740#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-graph/src/johnny/dsa/graph/MinimumSpanningTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-graph/src/johnny/dsa/common/Vertex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-spanning-tree/src/johnny/dsa/spanningtree/Vertex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-spanning-tree/src/johnny/dsa/spanningtree/MinimumSpanningTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+          <folding>
+            <element signature="e#960#961#0" expanded="true" />
+            <element signature="e#993#994#0" expanded="true" />
+            <element signature="e#1030#1031#0" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+            <element signature="e#1106#1107#0" expanded="true" />
+            <element signature="e#1162#1163#0" expanded="true" />
+            <element signature="e#1262#1270#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-graph/ds-graph.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-spanning-tree/ds-spanning-tree.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds-spanning-tree/test/johnny/dsa/spanningtree/test/MinimumSpanningTreeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

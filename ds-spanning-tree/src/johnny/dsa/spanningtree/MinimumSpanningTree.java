@@ -1,12 +1,7 @@
-package johnny.dsa.graph;
+package johnny.dsa.spanningtree;
 
 import java.util.Stack;
 
-import johnny.dsa.common.Vertex;
-
-/*
- * A Minimum Spanning Tree, implemented using an adjacency matrix.
- */
 public class MinimumSpanningTree {
     private int MAX_VERTS = 0;
     private Vertex[] vertexList; // array of vertices
@@ -28,14 +23,14 @@ public class MinimumSpanningTree {
         }
     }
 
-    public void addVertex(String name) {
+    public void addVertex(String label) {
         int index = nVerts++;
-        vertexList[index] = new Vertex(index, name);
+        vertexList[index] = new Vertex(index, label);
     }
 
     public void addEdge(int start, int end) {
         adjMatrix[start][end] = 1;
-        adjMatrix[end][start] = 1; 
+        adjMatrix[end][start] = 1;
     }
 
     public Vertex[] getVertices() {
