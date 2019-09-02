@@ -15,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/ds-bplus-tree/ds-bplus-tree.iml" filepath="$PROJECT_DIR$/ds-bplus-tree/ds-bplus-tree.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds-btree/ds-btree.iml" filepath="$PROJECT_DIR$/ds-btree/ds-btree.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds-deque/ds-deque.iml" filepath="$PROJECT_DIR$/ds-deque/ds-deque.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ds-directed-graph/ds-directed-graph.iml" filepath="$PROJECT_DIR$/ds-directed-graph/ds-directed-graph.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds-fenwick-tree/ds-fenwick-tree.iml" filepath="$PROJECT_DIR$/ds-fenwick-tree/ds-fenwick-tree.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds-graph/ds-graph.iml" filepath="$PROJECT_DIR$/ds-graph/ds-graph.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds-hashmap/ds-hashmap.iml" filepath="$PROJECT_DIR$/ds-hashmap/ds-hashmap.iml" />
