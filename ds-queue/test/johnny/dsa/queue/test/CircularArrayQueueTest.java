@@ -30,6 +30,9 @@ public class CircularArrayQueueTest {
         assertEquals(false, queue.isEmpty());
         assertEquals(4, queue.dequeue());
         assertEquals(true, queue.isEmpty());
+        queue.enqueue(5);
+        assertEquals(false, queue.isEmpty());
+        assertEquals(5, queue.dequeue());
     }
     
     @Test
