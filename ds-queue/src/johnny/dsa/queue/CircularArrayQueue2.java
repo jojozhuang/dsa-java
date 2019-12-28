@@ -1,28 +1,37 @@
 package johnny.dsa.queue;
 
-public class CircularArrayQueue {
+/*
+  Use MOD to get the new position.
+ */
+public class CircularArrayQueue2 {
+
     private int head; // the first node in queue, not the first item in array
     private int tail; // the last node in queue, not the first item in array
     private int[] arr;
-    private int size;
 
-    public CircularArrayQueue(int capacity) {
+    public CircularArrayQueue2(int capacity) {
         arr = new int[capacity];
-        head = 0;
-        tail = 0;
-        size = 0;
+        head = -1;
+        tail = -1;
     }
 
     // Add item to the end of the queue
     public void enqueue(int value) {
-        // check if deque is full
-        if (isFull()) {
+        // check if queue is full
+        if (tail == arr.length - 1 && head == 0 || tail == head - 1) {
             System.out.println("queue is full.");
             return;
         }
-        tail = (head + size) % arr.length;
-        arr[tail] = value;
-        size += 1;
+        // reset tail if it reaches to the end
+        if (tail == arr.length - 1 && head != 0) {
+            tail = 0;
+            arr[tail] = value;
+        } else {
+            arr[++tail] = value;
+            if (head == -1) {
+                head = 0;
+            }
+        }
     }
 
     // Remove the first item from the queue and return its value
@@ -32,8 +41,15 @@ public class CircularArrayQueue {
         }
 
         int value = arr[head];
-        head = (head + 1) % arr.length;
-        size -= 1;
+        if (head == tail) {
+            // empty, reset to initial status
+            head = -1;
+            tail = -1;
+        } else if (head == arr.length-1) {
+            head = 0;
+        } else {
+            head++;
+        }
         return value;
     }
 
@@ -45,13 +61,8 @@ public class CircularArrayQueue {
         return arr[head];
     }
 
-    // Return whether the queue is full
-    public boolean isFull() {
-        return size == arr.length;
-    }
-
     // Return whether the queue is empty
     public boolean isEmpty() {
-        return size == 0;
+        return head == -1;
     }
 }

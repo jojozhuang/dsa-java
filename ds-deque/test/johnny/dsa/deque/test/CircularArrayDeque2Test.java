@@ -1,17 +1,18 @@
 package johnny.dsa.deque.test;
 
-import johnny.dsa.deque.CircularArrayDeque;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
-public class CircularArrayDequeTest {
+import johnny.dsa.deque.CircularArrayDeque2;
+
+public class CircularArrayDeque2Test {
 
     @Test
-    public void testCircularArrayDeque() throws Exception {
-        System.out.println("testCircularArrayDeque");
-        CircularArrayDeque deque = new CircularArrayDeque(100);
+    public void testCircularArrayDeque2() throws Exception {
+        System.out.println("testCircularArrayDeque2");
+        CircularArrayDeque2 deque = new CircularArrayDeque2(100);
         assertEquals(true, deque.isEmpty());
         deque.addLast(1);
         deque.addLast(2);
@@ -34,9 +35,9 @@ public class CircularArrayDequeTest {
     }
     
     @Test
-    public void testCircularArrayDeque2() throws Exception {
-        System.out.println("testCircularArrayDeque2");
-        CircularArrayDeque deque = new CircularArrayDeque(8);
+    public void testCircularArrayDeque22() throws Exception {
+        System.out.println("testCircularArrayDeque22");
+        CircularArrayDeque2 deque = new CircularArrayDeque2(8);
         assertEquals(true, deque.isEmpty());
         deque.addFirst(1);
         deque.addFirst(2);
@@ -59,9 +60,9 @@ public class CircularArrayDequeTest {
     }
     
     @Test
-    public void testCircularArrayDequeCapacity() throws Exception {
-        System.out.println("testCircularArrayDequeCapacity");
-        CircularArrayDeque deque = new CircularArrayDeque(5);
+    public void testCircularArrayDeque2Capacity() throws Exception {
+        System.out.println("testCircularArrayDeque2Capacity");
+        CircularArrayDeque2 deque = new CircularArrayDeque2(5);
         assertEquals(true, deque.isEmpty());
         deque.addLast(1);
         deque.addLast(2);

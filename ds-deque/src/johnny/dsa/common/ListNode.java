@@ -2,11 +2,11 @@ package johnny.dsa.common;
 
 public class ListNode {
     public int val;
-    public ListNode previous;
+    public ListNode prev;
     public ListNode next;
     public ListNode(int val) {
         this.val = val;
-        previous = null;
+        this.prev = null;
         this.next = null;
     }
 }

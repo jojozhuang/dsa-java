@@ -1,19 +1,14 @@
 package johnny.dsa.deque;
 
-/*
-  Use MOD to get the new position.
- */
-public class CircularArrayDeque {
+public class CircularArrayDeque2 {
     private int head; // the first node in deque, not the first item in array
     private int tail; // the last node in deque, not the first item in array
     private int[] arr;
-    private int size;
 
-    public CircularArrayDeque(int capacity) {
+    public CircularArrayDeque2(int capacity) {
         arr = new int[capacity];
-        head = 0;
-        tail = 0;
-        size = 0;
+        head = -1;
+        tail = -1;
     }
 
     // Add item to the head of the deque
@@ -22,13 +17,16 @@ public class CircularArrayDeque {
         if (isFull()) {
             return;
         }
-
-        head = head - 1;
-        if (head < 0) {
+        
+        if (head == -1) {
+            head = 0;
+            tail = 0;
+        } else if (head == 0) {
             head = arr.length - 1;
+        } else {
+            head = head - 1;
         }
-        arr[head] = value;
-        size += 1;
+        arr[head] = value; 
     }
 
     // Remove the first item from the deque and return its value
@@ -36,9 +34,17 @@ public class CircularArrayDeque {
         if (isEmpty()) {
             throw new Exception("Circular Array Deque is empty when dequeue!");
         }
+        
         int value = arr[head];
-        head = (head + 1) % arr.length;
-        size -= 1;
+        if (head == tail) {
+            // empty, reset to initial status
+            head = -1;
+            tail = -1;
+        } else if (head == arr.length - 1) {
+            head = 0;
+        } else {
+            head++;
+        }
         return value;
     }
 
@@ -56,9 +62,16 @@ public class CircularArrayDeque {
         if (isFull()) {
             return;
         }
-        tail = (head + size) % arr.length;
-        arr[tail] = value;
-        size += 1;
+        
+        if (head == -1) {
+            head = 0;
+            tail = 0;
+        } else if (tail == arr.length - 1) {
+            tail = 0;
+        } else {
+            tail = tail + 1;
+        }
+        arr[tail] = value; 
     }
 
     // Remove the last item from the deque and return its value
@@ -66,13 +79,17 @@ public class CircularArrayDeque {
         if (isEmpty()) {
             throw new Exception("Circular Array Deque is empty when dequeue!");
         }
-
+        
         int value = arr[tail];
-        tail = tail - 1;
-        if (tail < 0) {
+        if (head == tail) {
+            // empty, reset to initial status
+            head = -1;
+            tail = -1;
+        } else if (tail == 0) {
             tail = arr.length - 1;
+        } else {
+            tail--;
         }
-        size -= 1;
         return value;
     }
 
@@ -86,11 +103,16 @@ public class CircularArrayDeque {
 
     // Return whether the queue is full
     public boolean isFull() {
-        return size == arr.length;
+        if (tail == arr.length - 1 && head == 0 || tail == head - 1) {
+            System.out.println("deque is full.");
+            return true;
+        }
+        
+        return false;
     }
     
     // Return whether the queue is empty
     public boolean isEmpty() {
-        return size == 0;
+        return head == -1;
     }
 }

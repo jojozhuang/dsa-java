@@ -17,9 +17,9 @@ public class LinkedListDeque {
             head = new ListNode(value);
             tail = head;
         } else {
-            head.previous = new ListNode(value);
-            head.previous.next = head;
-            head = head.previous;
+            head.prev = new ListNode(value);
+            head.prev.next = head;
+            head = head.prev;
         }
     }
     
@@ -31,7 +31,7 @@ public class LinkedListDeque {
         int value = head.val;
         head = head.next;
         if (head != null) {
-            head.previous = null;
+            head.prev = null;
         } else {
             tail = null;
         }
@@ -53,7 +53,7 @@ public class LinkedListDeque {
             head = tail;
         } else {
             tail.next = new ListNode(value);
-            tail.next.previous = tail;
+            tail.next.prev = tail;
             tail = tail.next;
         }
     }
@@ -64,7 +64,7 @@ public class LinkedListDeque {
             throw new Exception();
         }
         int value = tail.val;
-        tail = tail.previous;
+        tail = tail.prev;
         if (tail != null) {
             tail.next = null;
         } else {
