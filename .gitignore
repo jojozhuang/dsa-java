@@ -1,4 +1,8 @@
 /.metadata/
 /.recommenders/
 /out/
-/.idea/
+
+.idea/
+*.iml
+*.class
+target/

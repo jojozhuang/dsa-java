@@ -21,5 +21,7 @@ Simplified implementation of common data structures and classic algorithms. All 
 # Setup Locally
 ```bash
 git clone https://github.com/jojozhuang/dsa-java.git
+mvn install
+mvn test
 ```
-Open the project in Eclipse, compile and run the JUnit test cases.
+Open the project in IntelliJ IDEA, compile and run the JUnit test cases.
