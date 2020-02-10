@@ -55,5 +55,10 @@ public class StreamExample {
                                 .mapToInt(i->(i == null ? 0 : i))
                                 .toArray();
         // primitive2 = [1,0,3,4,5];
+
+        // #6. Convert List of String to array of String.
+        List<String> list5 = Arrays.asList("Hello", "Johnny", "Welcome");
+        String[] array = list5.stream().toArray(String[]::new);
+        // array = ["Hello", "Johnny", "Welcome"];
     }
 }
