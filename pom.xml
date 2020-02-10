@@ -17,6 +17,7 @@
         <module>alg-sweep-line</module>
         <module>alg-two-pointers</module>
         <module>alg-union-find</module>
+        <module>alg-best-practice</module>
         <module>ds-binary-search-tree</module>
         <module>ds-bloom-filter</module>
         <module>ds-bplus-tree</module>
