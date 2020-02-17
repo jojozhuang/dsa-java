@@ -40,6 +40,7 @@
         <module>ds-stack</module>
         <module>ds-tree</module>
         <module>ds-trie</module>
+        <module>alg-tree-serialization</module>
     </modules>
     <dependencies>
         <dependency>
