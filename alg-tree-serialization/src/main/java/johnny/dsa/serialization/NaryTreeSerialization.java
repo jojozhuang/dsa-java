@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * Serializa n-ary tree in pre-order. Each node is represented by (value, size).
+ * Serialize N-ary tree in pre-order. Each node is represented by (value, size).
  *
  * Serialize the following tree to: "1,3,3,2,5,0,6,0,2,0,4,0".
  *
