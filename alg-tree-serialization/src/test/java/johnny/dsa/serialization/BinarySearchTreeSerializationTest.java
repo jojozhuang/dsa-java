@@ -12,7 +12,7 @@ public class BinarySearchTreeSerializationTest {
         System.out.println("serializeBinarySearchTree");
         BinarySearchTreeSerialization instance = new BinarySearchTreeSerialization();
 
-        assertEquals("null", instance.serialize(null));
+        assertEquals("#", instance.serialize(null));
 
         TreeNode root2 = new TreeNode(1);
         assertEquals("1", instance.serialize(root2));

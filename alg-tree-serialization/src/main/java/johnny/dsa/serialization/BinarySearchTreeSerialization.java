@@ -4,9 +4,21 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
 
+/**
+ * Preorder for serialization and recursion for deserialization.
+ *
+ * Serialize the following tree to: "5,3,2,6,7".
+ *
+ *      5
+ *    /  \
+ *   3    6
+ *  /     \
+ * 2      7
+ *
+ */
 public class BinarySearchTreeSerialization {
-    private static final String SEP = ",";
-    private static final String NULL = "null";
+    private static final String SEPARATOR = ",";
+    private static final String NULL = "#";
 
     // Encodes a tree to a single string in reversed sequence of pre-order
     public String serialize(TreeNode root) {
@@ -18,7 +30,7 @@ public class BinarySearchTreeSerialization {
         stack.push(root);
         while (!stack.empty()) {
             root = stack.pop();
-            sb.append(root.val).append(SEP);
+            sb.append(root.val).append(SEPARATOR);
             if (root.right != null) {
                 stack.push(root.right);
             }
@@ -35,7 +47,7 @@ public class BinarySearchTreeSerialization {
         if (data == null || data.isEmpty() || data.equals(NULL)) {
             return null;
         }
-        String[] values = data.split(SEP);
+        String[] values = data.split(SEPARATOR);
         Queue<Integer> queue = new LinkedList<>();
         for (String val : values) {
             queue.offer(Integer.parseInt(val));
@@ -47,7 +59,7 @@ public class BinarySearchTreeSerialization {
     //   5
     //  3 6
     // 2   7
-    private TreeNode helper(Queue<Integer> queue) { //q: 5,3,2,6,7
+    private TreeNode helper(Queue<Integer> queue) { // queue: 5,3,2,6,7
         if (queue.isEmpty()) {
             return null;
         }
@@ -58,7 +70,7 @@ public class BinarySearchTreeSerialization {
         }
         //smallerQueue : 3,2   storing elements smaller than 5 (root)
         root.left = helper(samllerQueue);
-        //q: 6,7   storing elements bigger than 5 (root)
+        //queue: 6,7   storing elements bigger than 5 (root)
         root.right = helper(queue);
         return root;
     }
