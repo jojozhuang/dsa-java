@@ -3,7 +3,18 @@ package johnny.dsa.serialization;
 import java.util.LinkedList;
 import java.util.Queue;
 
-// queue by level
+/**
+ * Scan by level with queue
+ *
+ * Serialize the following tree to: "1,2,3,#,#,4,5".
+ *
+ *    1
+ *  /  \
+ * 2    3
+ *     / \
+ *    4   5
+ *
+ */
 public class BinaryTreeSerializationByLevel {
     private static final String SEPARATOR = ",";
     private static final String NULL = "#";

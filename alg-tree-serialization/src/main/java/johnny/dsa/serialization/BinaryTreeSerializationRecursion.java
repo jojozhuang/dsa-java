@@ -1,6 +1,17 @@
 package johnny.dsa.serialization;
 
-// recursion
+/**
+ * Scan with pre-order (Recursion)
+ *
+ * Serialize the following tree to: "1,2,#,#,3,4,5".
+ *
+ *    1
+ *  /  \
+ * 2    3
+ *     / \
+ *    4   5
+ *
+ */
 public class BinaryTreeSerializationRecursion {
     private static final String SEPARATOR = ",";
     private static final String NULL = "#";
