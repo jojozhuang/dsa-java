@@ -15,7 +15,7 @@ import java.util.Stack;
  *     / \
  *    4   5
  *
- * limitation: Value can'be Integer.MAX_VALUE.
+ * Limitation: Value can't be Integer.MAX_VALUE.
  */
 public class BinaryTreeSerializationIteration {
     private static final String SEPARATOR = ",";

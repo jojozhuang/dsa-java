@@ -26,39 +26,40 @@ public class BinarySearchTreeSerialization {
                 stack.push(root.left);
             }
         }
+        sb.setLength(sb.length() - 1);
         return sb.toString();
     }
 
     // Decodes your encoded data to tree, pre-order traversal
     public TreeNode deserialize(String data) {
-        if (data.equals(NULL)) {
+        if (data == null || data.isEmpty() || data.equals(NULL)) {
             return null;
         }
-        String[] strs = data.split(SEP);
-        Queue<Integer> q = new LinkedList<>();
-        for (String e : strs) {
-            q.offer(Integer.parseInt(e));
+        String[] values = data.split(SEP);
+        Queue<Integer> queue = new LinkedList<>();
+        for (String val : values) {
+            queue.offer(Integer.parseInt(val));
         }
-        return getNode(q);
+        return helper(queue);
     }
 
     // some notes:
     //   5
     //  3 6
     // 2   7
-    private TreeNode getNode(Queue<Integer> q) { //q: 5,3,2,6,7
-        if (q.isEmpty()) {
+    private TreeNode helper(Queue<Integer> queue) { //q: 5,3,2,6,7
+        if (queue.isEmpty()) {
             return null;
         }
-        TreeNode root = new TreeNode(q.poll()); //root (5)
+        TreeNode root = new TreeNode(queue.poll()); // root (5)
         Queue<Integer> samllerQueue = new LinkedList<>();
-        while (!q.isEmpty() && q.peek() < root.val) {
-            samllerQueue.offer(q.poll());
+        while (!queue.isEmpty() && queue.peek() < root.val) {
+            samllerQueue.offer(queue.poll());
         }
         //smallerQueue : 3,2   storing elements smaller than 5 (root)
-        root.left = getNode(samllerQueue);
+        root.left = helper(samllerQueue);
         //q: 6,7   storing elements bigger than 5 (root)
-        root.right = getNode(q);
+        root.right = helper(queue);
         return root;
     }
 }

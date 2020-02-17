@@ -29,6 +29,7 @@ public class BinaryTreeSerializationRecursion {
         return sb.toString();
     }
 
+    // pre-order
     private void helper(TreeNode root, StringBuilder sb) {
         if (root == null) {
             sb.append(NULL).append(SEPARATOR);
@@ -53,6 +54,7 @@ public class BinaryTreeSerializationRecursion {
         return root;
     }
 
+    // pre-order + recursion
     private TreeNode helper(String[] arr, int[] pos) {
         if (pos[0] >= arr.length) {
             return null;
