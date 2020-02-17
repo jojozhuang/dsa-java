@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class BinaryTreeSerializationTest {
+public class BinaryTreeSerializationByLevelTest {
 
     @Test
     public void testSerialize() {
@@ -14,7 +14,6 @@ public class BinaryTreeSerializationTest {
 
         assertEquals("", instance.serialize(null));
 
-        // bfs , level order
         TreeNode root2 = new TreeNode(1);
         assertEquals("1,#,#", instance.serialize(root2));
 
