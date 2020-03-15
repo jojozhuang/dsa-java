@@ -38,6 +38,7 @@
         <module>ds-skiplist</module>
         <module>ds-spanning-tree</module>
         <module>ds-stack</module>
+        <module>ds-topological-sorting</module>
         <module>ds-tree</module>
         <module>ds-trie</module>
         <module>alg-tree-serialization</module>
