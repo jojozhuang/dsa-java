@@ -1,8 +1,23 @@
 package johnny.dsa.alg;
 
-/*
- * Given N items, A[i] is the weight of the i-th item. And given a backpack with capacity W, maximize the total weight
- * that the backpack can be filled. Each item can be use 0 or 1 time.
+/**
+ * Backpack
+ *
+ * Given n items with size A[i], an integer m denotes the size of a backpack. How full you can fill this backpack?
+ *
+ * You can not divide any item into small pieces.
+ *
+ * Example
+ * Example 1:
+ * Input: [3,4,8,5], backpack size=10
+ * Output:  9
+ *
+ * Example 2:
+ * Input:  [2,3,5,7], backpack size=12
+ * Output:  12
+ *
+ * https://www.lintcode.com/problem/backpack/
+ * https://www.lintcode.com/problem/?tag=backpack
  */
 public class Knapsack {
     public int knapsack(int[] A, int w) {
