@@ -4,8 +4,8 @@ package johnny.dsa.alg;
  * Given N items, A[i] is the weight of the i-th item and V[i] is the value of the i-th item. Given a backpack with
  * capacity w, maximize the total value. Each item can be use 0 or 1 time.
  */
-public class Backpack2 {
-    public int backPack(int[] A, int[] V, int w) {
+public class Knapsack2 {
+    public int knapsack(int[] A, int[] V, int w) {
         // Max value achieved by using the first i items and total weight is exact j.
         int[][] dp = new int[A.length + 1][w + 1];
 

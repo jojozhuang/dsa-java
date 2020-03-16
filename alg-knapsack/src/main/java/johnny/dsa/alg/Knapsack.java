@@ -4,8 +4,8 @@ package johnny.dsa.alg;
  * Given N items, A[i] is the weight of the i-th item. And given a backpack with capacity W, maximize the total weight
  * that the backpack can be filled. Each item can be use 0 or 1 time.
  */
-public class Backpack {
-    public int backPack(int[] A, int w) {
+public class Knapsack {
+    public int knapsack(int[] A, int w) {
         // write your code here
         boolean f[][] = new boolean[A.length + 1][w + 1];
         f[0][0] = true;
@@ -30,7 +30,7 @@ public class Backpack {
 
     }
 
-    public int backPack2(int[] A, int w) {
+    public int knapsack2(int[] A, int w) {
         // maximum weight can be filled for the every capacity
         int[] dp = new int[w + 1];
 

@@ -11,6 +11,7 @@
     <modules>
         <module>alg-binary-search</module>
         <module>alg-dp</module>
+        <module>alg-knapsack</module>
         <module>alg-map-reduce</module>
         <module>alg-sorting</module>
         <module>alg-sqrt-decomposition</module>
