@@ -9,11 +9,11 @@ import java.util.Random;
 public class LoadBalancer {
     List<Integer> list; // server id
     Map<Integer, Integer> map; // <server id, index id in list>
-    Random random;
+    //Random random;
     public LoadBalancer() {
         list = new LinkedList<>();
         map = new HashMap<>();
-        random = new Random();
+        //random = new Random();
     }
 
     /*
@@ -38,7 +38,6 @@ public class LoadBalancer {
             int serverid = list.get(list.size() - 1);
             list.set(index, serverid);
             map.put(serverid, index);
-
         }
         map.remove(server_id);
         list.remove(list.size() - 1);
@@ -48,6 +47,7 @@ public class LoadBalancer {
      * @return: pick a server in the cluster randomly with equal probability
      */
     public int pick() {
+        Random random = new Random();
         int index = random.nextInt(list.size());
         return list.get(index);
     }

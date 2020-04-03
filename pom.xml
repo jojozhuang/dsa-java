@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>alg-binary-search</module>
+        <module>alg-chi-square-test</module>
         <module>alg-dp</module>
         <module>alg-knapsack</module>
         <module>alg-map-reduce</module>
