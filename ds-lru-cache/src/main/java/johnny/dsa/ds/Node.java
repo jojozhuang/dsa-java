@@ -2,13 +2,13 @@ package johnny.dsa.ds;
 
 public class Node {
     public int key;
-    public int value;
+    public int val;
     public Node prev;
     public Node next;
 
-    public Node(int key, int value) {
+    public Node(int key, int val) {
         this.key = key;
-        this.value = value;
+        this.val = val;
         this.prev = null;
         this.next = null;
     }

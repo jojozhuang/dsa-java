@@ -10,20 +10,23 @@ public class LRU {
     private HashMap<Integer, Node> map; // key, node
     private Node head;                  // The latest accessed element
     private Node tail;                  // The least recently used element
-    private final int MAX = Integer.MAX_VALUE;
-    private final int MIN = Integer.MIN_VALUE;
-    
+
     public LRU(int capacity) {
         this.capacity = capacity;
         this.map = new HashMap<>();
-        this.head = new Node(this.MAX, this.MAX);
-        this.tail = new Node(this.MIN, this.MIN);
+        this.head = new Node(-1,-1);
+        this.tail = new Node(-1,-1);
         head.next = tail;
         tail.prev = head;
     }
     
-    public void add(int key, int value) {
+    public void put(int key, int val) {
         if (map.containsKey(key)) {
+            Node node = map.get(key);
+            node.val = val;
+            node.prev.next = node.next;
+            node.next.prev = node.prev;
+            moveToHead(node);
             return;
         }
 
@@ -33,27 +36,27 @@ public class LRU {
             tail.prev.next = tail;
         }
 
-        Node newNode = new Node(key, value);
-        map.put(key, newNode);
+        Node node = new Node(key, val);
+        map.put(key, node);
         
         // move new node to head
-        moveToHead(newNode);
+        moveToHead(node);
     }
     
     public int get(int key) {
         if (!map.containsKey(key)) {
-            return this.MIN;
+            return -1;
         }
 
         // remove current
-        Node current = map.get(key);
-        current.prev.next = current.next;
-        current.next.prev = current.prev;
+        Node node = map.get(key);
+        node.prev.next = node.next;
+        node.next.prev = node.prev;
 
         // move current node to head
-        moveToHead(current);
+        moveToHead(node);
 
-        return map.get(key).value;
+        return node.val;
     }
 
     private void moveToHead(Node node) {
@@ -71,8 +74,8 @@ public class LRU {
         Node curr = this.head.next;
         
         while(curr.next != null) {
-            if (curr.value != Integer.MIN_VALUE) {
-                res[i] = curr.value;
+            if (curr.val != Integer.MIN_VALUE) {
+                res[i] = curr.val;
                 i++;
             }
             curr = curr.next;

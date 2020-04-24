@@ -12,16 +12,20 @@ public class LRUDeque {
     private int capacity;
     private HashMap<Integer, Integer> map; // key, value
     private Deque<Integer> deque;          // key
-    private final int MIN = Integer.MIN_VALUE;
-    
+
     public LRUDeque(int capacity) {
         this.capacity = capacity;
-        this.map = new HashMap<Integer, Integer>();
-        this.deque = new LinkedList<Integer>(); 
+        this.map = new HashMap<>();
+        this.deque = new LinkedList<>();
     }
     
-    public void add(int key, int value) {
+    public void put(int key, int val) {
         if (map.containsKey(key)) {
+            map.put(key, val);
+            // remove current
+            deque.remove(key); // equivalent to removeFirstOccurrence(), performance issue, O(n)
+            // move it to head
+            deque.addFirst(key);
             return;
         }
 
@@ -31,14 +35,14 @@ public class LRUDeque {
         }
 
         // add to map
-        map.put(key, value);
+        map.put(key, val);
         // add to the head of deque
         deque.addFirst(key);
     }
     
     public int get(int key) {
         if (!map.containsKey(key)) {
-            return this.MIN;
+            return -1;
         }
 
         // remove current
