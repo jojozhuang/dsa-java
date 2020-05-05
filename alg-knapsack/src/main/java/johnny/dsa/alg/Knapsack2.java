@@ -1,5 +1,7 @@
 package johnny.dsa.alg;
 
+import java.util.Arrays;
+
 /**
  * Backpack II
  *
@@ -25,22 +27,50 @@ package johnny.dsa.alg;
  * https://www.lintcode.com/problem/backpack-ii/
  */
 public class Knapsack2 {
-    public int knapsack(int[] A, int[] V, int w) {
+    public int knapsack(int[] A, int[] V, int m) {
         // Max value achieved by using the first i items and total weight is exact j.
-        int[][] dp = new int[A.length + 1][w + 1];
+        int[][] dp = new int[A.length + 1][m + 1];
 
         for (int i = 0; i <= A.length; i++) {
-            for (int j = 0; j <= w; j++) {
-                if (i == 0 || j == 0) {
-                    dp[i][j] = 0;
-                } else if (A[i - 1] <= j)
+            dp[i][0] = 0;
+        }
+        for (int j = 0; j <= m; j++) {
+            dp[0][j] = 0;
+        }
+
+        for (int i = 1; i <= A.length; i++) {
+            for (int j = 1; j <= m; j++) {
+                if (j - A[i-1] >= 0) {
                     dp[i][j] = Math.max(dp[i - 1][j], dp[i - 1][j - A[i - 1]] + V[i - 1]);
-                else {
+                } else {
                     dp[i][j] = dp[i - 1][j];
                 }
             }
         }
 
-        return dp[A.length][w];
+        for (int i = 0; i <= A.length; i++) {
+            System.out.println(Arrays.toString(dp[i]));
+        }
+
+        return dp[A.length][m];
+    }
+
+    public int knapsack2(int[] A, int[] V, int m) {
+        // Max value achieved by using the first i items and total weight is exact j.
+        int[][] dp = new int[A.length + 1][m + 1];
+
+        for (int i = 0; i <= A.length; i++) {
+            for (int j = 0; j <= m; j++) {
+                if (i == 0 || j == 0) {
+                    dp[i][j] = 0;
+                } else if (j - A[i-1] >= 0) {
+                    dp[i][j] = Math.max(dp[i - 1][j], dp[i - 1][j - A[i - 1]] + V[i - 1]);
+                } else {
+                    dp[i][j] = dp[i - 1][j];
+                }
+            }
+        }
+
+        return dp[A.length][m];
     }
 }
