@@ -1,7 +1,5 @@
 package johnny.dsa.alg;
 
-import java.util.Arrays;
-
 /**
  * Backpack
  *
@@ -51,7 +49,7 @@ public class Knapsack1 {
     }
 
     // space: O(m)
-    public int knapsack2(int[] A, int m) {
+    public int knapsack12(int[] A, int m) {
         boolean[] dp = new boolean[m + 1];
         boolean[] dp2 = new boolean[m + 1];
         dp[0] = true;
@@ -65,7 +63,9 @@ public class Knapsack1 {
                     dp[j] = dp2[j];
                 }
             }
-            dp2 = dp.clone();
+            for (int j = 0; j <= m; j++) {
+                dp2[j] = dp[j];
+            }
         }
 
         //System.out.println(Arrays.toString(dp));
@@ -78,25 +78,62 @@ public class Knapsack1 {
 
         return 0;
     }
-    public int knapsack3(int[] A, int m) {
+    public int knapsack2(int[] A, int m) {
         // maximum weight can be filled for the every capacity
         int[][] dp = new int[A.length + 1][m + 1];
 
         for (int i = 1; i <= A.length; i++) {
-            for (int j = 1; j <= m; j++) {
+            for (int j = 0; j <= m; j++) {
                 dp[i][j] = dp[i - 1][j];
                 if (j - A[i - 1] >= 0) {
                     dp[i][j] = Math.max(dp[i][j], dp[i - 1][j - A[i - 1]] + A[i - 1]);
                 }
             }
-            System.out.println(Arrays.toString(dp[i]));
+            //System.out.println(Arrays.toString(dp[i]));
         }
 
         //System.out.println(Arrays.toString(dp));
         return dp[A.length][m];
     }
 
-    public int knapsack4(int[] A, int m) {
+    // incorrect
+    public int knapsack22(int[] A, int m) {
+        // maximum weight can be filled for the every capacity
+        int[] dp = new int[m + 1];
+
+        for (int i = 1; i <= A.length; i++) {
+            for (int j = 0; j <= m; j++) {
+                if (j - A[i - 1] >= 0) {
+                    dp[j] = Math.max(dp[j], dp[j - A[i - 1]] + A[i - 1]);
+                }
+            }
+            //System.out.println(Arrays.toString(dp));
+        }
+
+        //System.out.println(Arrays.toString(dp));
+        return dp[m];
+    }
+
+    public int knapsack23(int[] A, int m) {
+        // maximum weight can be filled for the every capacity
+        int[] dp = new int[m + 1];
+
+        for (int i = 1; i <= A.length; i++) {
+            for (int j = m; j >= 0; j--) {
+                if (j - A[i - 1] >= 0) {
+                    dp[j] = Math.max(dp[j], dp[j - A[i - 1]] + A[i - 1]);
+                }
+            }
+            //System.out.println(Arrays.toString(dp));
+        }
+
+        //System.out.println(Arrays.toString(dp));
+        return dp[m];
+    }
+
+    // set i = 0 instead of 1
+    // move check "j - A[i - 1] >= 0" to for loop
+    public int knapsack24(int[] A, int m) {
         // maximum weight can be filled for the every capacity
         int[] dp = new int[m + 1];
 
