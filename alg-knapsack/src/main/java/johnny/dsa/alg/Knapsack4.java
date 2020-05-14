@@ -1,5 +1,7 @@
 package johnny.dsa.alg;
 
+import java.util.Arrays;
+
 /**
  * Backpack IV
  *
@@ -30,31 +32,50 @@ package johnny.dsa.alg;
  * https://www.lintcode.com/problem/backpack-iv/
  */
 public class Knapsack4 {
-    public int knapsack(int[] nums, int target) {
-        int m = target;
-        int []A = nums;
-        int f[][] = new int[A.length + 1][m + 1];
+    public int knapsack41(int[] A, int m) {
+        // number of ways to full fill every capacity
+        int[][] dp = new int[A.length + 1][m + 1];
 
-        f[0][0] = 1;
+        dp[0][0] = 1;
         for (int i = 1; i <= A.length; i++) {
             for (int j = 0; j <= m; j++) {
                 int k = 0;
-                while(k * A[i-1] <= j) {
-                    f[i][j] += f[i-1][j-A[i-1]*k];
+                while (j - A[i-1]*k >= 0) {
+                    dp[i][j] += dp[i-1][j - A[i-1]*k];
                     k+=1;
                 }
-            } // for j
-        } // for i
-        return f[A.length][target];
+            }
+        }
+        return dp[A.length][m];
     }
-    public int knapsack2(int[] nums, int target) {
-        // Write your code here
-        int[] f = new int[target + 1];
-        f[0] = 1;
-        for (int i = 0; i < nums.length; ++i)
-            for (int  j = nums[i]; j <= target; ++j)
-                f[j] += f[j - nums[i]];
 
-        return f[target];
+    public int knapsack42(int[] A, int m) {
+        // number of ways to full fill every capacity
+        int[] dp = new int[m + 1];
+
+        dp[0] = 1;
+        for (int i = 1; i <= A.length; i++) {
+            for (int j = 0; j <= m; j++) {
+                if (j - A[i - 1] >= 0) {
+                    dp[j] += dp[j - A[i - 1]];
+                }
+            }
+            //System.out.println(Arrays.toString(dp));
+        }
+
+        return dp[m];
+    }
+
+    public int knapsack43(int[] A, int m) {
+        // number of ways to full fill every capacity
+        int[] dp = new int[m + 1];
+        dp[0] = 1;
+        for (int i = 0; i < A.length; i++) {
+            for (int j = A[i]; j <= m; j++) {
+                dp[j] += dp[j - A[i]];
+            }
+        }
+
+        return dp[m];
     }
 }

@@ -1,5 +1,7 @@
 package johnny.dsa.alg;
 
+import java.util.Arrays;
+
 /**
  * Backpack III
  *
@@ -23,30 +25,48 @@ package johnny.dsa.alg;
  * https://www.lintcode.com/problem/backpack-iii/
  */
 public class Knapsack3 {
-    public int knapsack(int[] A, int[] V, int m) {
-        int n = A.length;
-        int[][] f = new int[n + 1][m + 1];
-        for (int i = 1; i <= n; ++i) {
-            for (int j = 0; j <= m; ++j) {
-                f[i][j] = f[i - 1][j];
-                if (j >= A[i - 1])
-                    f[i][j] = Math.max(f[i][j - A[i - 1]] + V[i - 1], f[i][j]);
+    public int knapsack31(int[] A, int[] V, int m) {
+        // maximum value can be filled for the every capacity
+        int[][] dp = new int[A.length + 1][m + 1];
+
+        for (int i = 1; i <= A.length; i++) {
+            for (int j = 1; j <= m; j++) {
+                dp[i][j] = dp[i - 1][j];
+                if (j - A[i - 1] >= 0) {
+                    dp[i][j] = Math.max(dp[i][j], dp[i][j - A[i - 1]] + V[i - 1]);
+                }
             }
+            //System.out.println(Arrays.toString(dp[i]));
         }
 
-        return f[n][m];
+        return dp[A.length][m];
     }
-    public int knapsack2(int[] A, int[] V, int m) {
-        int n = A.length;
-        int[] f = new int[m + 1];
-        for (int i = 0; i < n; ++i) {
-            for (int j = A[i]; j <= m; ++j) {
-                if (f[j - A[i]] + V[i] > f[j]) {
-                    f[j] = f[j - A[i]] + V[i];
+
+    public int knapsack32(int[] A, int[] V, int m) {
+        // maximum value can be filled for the every capacity
+        int[] dp = new int[m + 1];
+
+        for (int i = 1; i <= A.length; i++) {
+            for (int j = 0; j <= m; j++) {
+                if (j - A[i - 1] >= 0) {
+                    dp[j] = Math.max(dp[j], dp[j - A[i - 1]] + V[i - 1]);
                 }
             }
         }
 
-        return f[m];
+        return dp[m];
+    }
+
+    public int knapsack33(int[] A, int[] V, int m) {
+        // maximum value can be filled for the every capacity
+        int[] dp = new int[m + 1];
+
+        for (int i = 0; i < A.length; i++) {
+            for (int j = A[i]; j <= m; j++) {
+                dp[j] = Math.max(dp[j], dp[j - A[i]] + V[i]);
+            }
+        }
+
+        return dp[m];
     }
 }

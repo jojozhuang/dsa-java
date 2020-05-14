@@ -21,7 +21,7 @@ package johnny.dsa.alg;
  */
 public class Knapsack1 {
     // space: O(n*m)
-    public int knapsack(int[] A, int m) {
+    public int knapsack11(int[] A, int m) {
         boolean[][] dp = new boolean[A.length + 1][m + 1];
         dp[0][0] = true;
 
@@ -78,8 +78,8 @@ public class Knapsack1 {
 
         return 0;
     }
-    public int knapsack2(int[] A, int m) {
-        // maximum weight can be filled for the every capacity
+    public int knapsack13(int[] A, int m) {
+        // maximum size can be filled for the every capacity
         int[][] dp = new int[A.length + 1][m + 1];
 
         for (int i = 1; i <= A.length; i++) {
@@ -92,13 +92,12 @@ public class Knapsack1 {
             //System.out.println(Arrays.toString(dp[i]));
         }
 
-        //System.out.println(Arrays.toString(dp));
         return dp[A.length][m];
     }
 
     // incorrect
-    public int knapsack22(int[] A, int m) {
-        // maximum weight can be filled for the every capacity
+    public int knapsack14(int[] A, int m) {
+        // maximum size can be filled for the every capacity
         int[] dp = new int[m + 1];
 
         for (int i = 1; i <= A.length; i++) {
@@ -114,8 +113,8 @@ public class Knapsack1 {
         return dp[m];
     }
 
-    public int knapsack23(int[] A, int m) {
-        // maximum weight can be filled for the every capacity
+    public int knapsack15(int[] A, int m) {
+        // maximum size can be filled for the every capacity
         int[] dp = new int[m + 1];
 
         for (int i = 1; i <= A.length; i++) {
@@ -133,8 +132,8 @@ public class Knapsack1 {
 
     // set i = 0 instead of 1
     // move check "j - A[i - 1] >= 0" to for loop
-    public int knapsack24(int[] A, int m) {
-        // maximum weight can be filled for the every capacity
+    public int knapsack16(int[] A, int m) {
+        // maximum size can be filled for the every capacity
         int[] dp = new int[m + 1];
 
         for (int i = 0; i < A.length; i++) {

@@ -27,50 +27,50 @@ import java.util.Arrays;
  * https://www.lintcode.com/problem/backpack-ii/
  */
 public class Knapsack2 {
-    public int knapsack(int[] A, int[] V, int m) {
-        // Max value achieved by using the first i items and total weight is exact j.
+    public int knapsack21(int[] A, int[] V, int m) {
         int[][] dp = new int[A.length + 1][m + 1];
-
-        for (int i = 0; i <= A.length; i++) {
-            dp[i][0] = 0;
-        }
-        for (int j = 0; j <= m; j++) {
-            dp[0][j] = 0;
-        }
 
         for (int i = 1; i <= A.length; i++) {
             for (int j = 1; j <= m; j++) {
-                if (j - A[i-1] >= 0) {
-                    dp[i][j] = Math.max(dp[i - 1][j], dp[i - 1][j - A[i - 1]] + V[i - 1]);
-                } else {
-                    dp[i][j] = dp[i - 1][j];
+                dp[i][j] = dp[i - 1][j];
+                if (j - A[i - 1] >= 0) {
+                    dp[i][j] = Math.max(dp[i][j], dp[i - 1][j - A[i - 1]] + V[i - 1]);
                 }
             }
-        }
-
-        for (int i = 0; i <= A.length; i++) {
-            System.out.println(Arrays.toString(dp[i]));
+            //System.out.println(Arrays.toString(dp[i]));
         }
 
         return dp[A.length][m];
     }
 
-    public int knapsack2(int[] A, int[] V, int m) {
-        // Max value achieved by using the first i items and total weight is exact j.
-        int[][] dp = new int[A.length + 1][m + 1];
+    public int knapsack22(int[] A, int[] V, int m) {
+        // maximum size can be filled for the every capacity
+        int[] dp = new int[m + 1];
 
-        for (int i = 0; i <= A.length; i++) {
-            for (int j = 0; j <= m; j++) {
-                if (i == 0 || j == 0) {
-                    dp[i][j] = 0;
-                } else if (j - A[i-1] >= 0) {
-                    dp[i][j] = Math.max(dp[i - 1][j], dp[i - 1][j - A[i - 1]] + V[i - 1]);
-                } else {
-                    dp[i][j] = dp[i - 1][j];
+        for (int i = 1; i <= A.length; i++) {
+            for (int j = m; j >= 0; j--) {
+                if (j - A[i - 1] >= 0) {
+                    dp[j] = Math.max(dp[j], dp[j - A[i - 1]] + V[i - 1]);
                 }
+            }
+            //System.out.println(Arrays.toString(dp));
+        }
+
+        return dp[m];
+    }
+
+    // set i = 0 instead of 1
+    // move check "j - A[i - 1] >= 0" to for loop
+    public int knapsack23(int[] A, int[] V, int m) {
+        // maximum size can be filled for the every capacity
+        int[] dp = new int[m + 1];
+
+        for (int i = 0; i < A.length; i++) {
+            for (int j = m; j >= A[i]; j--) {
+                dp[j] = Math.max(dp[j], dp[j - A[i]] + V[i]);
             }
         }
 
-        return dp[A.length][m];
+        return dp[m];
     }
 }
