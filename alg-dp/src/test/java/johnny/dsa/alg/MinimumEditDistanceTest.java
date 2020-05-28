@@ -13,6 +13,7 @@ public class MinimumEditDistanceTest {
         
         assertEquals(3, instance.minDistance("horse", "ros"));
         assertEquals(5, instance.minDistance("intention", "execution"));
+        assertEquals(2, instance.minDistance("johnny", "john"));
     }
 
 }
